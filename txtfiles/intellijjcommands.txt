@@ -1,0 +1,20 @@
+***************************************************************intellij short cuts **********************************************
+ctrl+N -- used to search the class 
+ctrl+shift+N -- used to search the class in the whole projet
+use camel case for searching the class
+ctrl+alt+< -- return back to the class from wherer u have originated 
+alt+enter -- gives u the suggestion about the class 
+ctrl+e -- shows the recent files to switch between 
+ctrl+shift+v -- to get the history of the variables 
+ctrl+alt+m -- subtract specfic set of codes in to a method and called it 
+ctrl+alt+v -- subtract any variable 			
+ctrl+d -- duplicate the command if use below 
+cmd+N -- to show the getters and setters and much more 
+double shift -- search any file in to the project 
+ctrl+alt+i -- select and provide identation
+ctrl+alt+l -- ident the whole file 
+ctrl+shift+space -- auto create objects 
+cmd+p -- to provide the arguments autometically 
+object.notnull + tab -- auto checks not null functionality 
+ctrl+f12 -- expand and search methods 
+shift+ctrl+down /up -- to goes up and down 
