@@ -21,10 +21,10 @@ SQL > var OHM varchar2(100);
 SQL > EXEC dbms_system.get_env('ORACLE_HOME', :OHM) ;
 SQL > PRINT OHM
 ****************************************adf coding******************************
-http://www.jobinesh.com/2009/11/creating-data-capture-form-using-ejb.html-- try
-http://www.jobinesh.com/2011/06/building-programmatically-managed.html--try
-http://www.jobinesh.com/2011/06/building-programmatically-managed_25.html--try
-http://andrejusb.blogspot.com/2008/09/jdeveloper-11g-crud-in-adf-form.html-- try
+http://www.jobinesh.com/2009/11/creating-data-capture-form-using-ejb.html
+http://www.jobinesh.com/2011/06/building-programmatically-managed.html
+http://www.jobinesh.com/2011/06/building-programmatically-managed_25.html
+http://andrejusb.blogspot.com/2008/09/jdeveloper-11g-crud-in-adf-form.html
 http://biemond.blogspot.com/2009/03/some-handy-code-for-backing-beans-adf.html
 http://sqltech.cl/doc/oas10gR31/web.1013/b28967/web_getstarted005.htm
 http://andrejusb.blogspot.com/2010/11/how-to-access-page-element-value-from.html
