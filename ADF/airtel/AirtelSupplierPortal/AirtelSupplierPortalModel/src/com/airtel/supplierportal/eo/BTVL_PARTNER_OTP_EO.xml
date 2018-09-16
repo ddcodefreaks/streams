@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BTVL_PARTNER_OTP_EO"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="BTVL_PARTNER_OTP"
+  AliasName="BTVL_PARTNER_OTP_EO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="OtpId"
+    ColumnName="OTP_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.DBSequence"
+    ColumnType="NUMBER"
+    TableName="BTVL_PARTNER_OTP"
+    PrimaryKey="true"
+    RetrievedOnInsert="true"
+    IsUpdateable="while_insert"
+    DefaultValue="@0"
+    Domain="oracle.jbo.domain.DBSequence"/>
+  <Attribute
+    Name="MobNo"
+    Precision="10"
+    ColumnName="MOB_NO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="BTVL_PARTNER_OTP">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Otp"
+    Precision="10"
+    ColumnName="OTP"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="BTVL_PARTNER_OTP">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="BtvlPartnerOtpEoPrimaryKey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="BTVL_PARTNER_OTP_EO_PRIMARY_KE"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.airtel.supplierportal.eo.BTVL_PARTNER_OTP_EO.OtpId"/>
+    </AttrArray>
+  </Key>
+</Entity>

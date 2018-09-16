@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <!--<af:outputText value="Thanks you!" id="ot1"/>
+  <af:button text="Home" id="b1" action="#{pageFlowScope.partnerOrgDetailBean.goToHome}"/>-->
+    <!--oracle-jdev-comment:preferred-managed-bean-name:partnerOrgDetailBean-->
+    <af:panelGroupLayout id="pgl1" styleClass="AFStretchWidth pl-400"
+                         inlineStyle="background-color: #f6f6f6; display: block">
+        <af:panelGroupLayout id="pgl2" styleClass="left-section pl-50 pr-50 pt-40"
+                             inlineStyle="display: block;width:29.2vw; background: #f6f6f6;">
+            <af:panelGroupLayout id="pgl9" styleClass="mb-50 mt-40">
+                <af:commandLink text="" id="pt_l5">
+                    <af:image styleClass="airtel-logo" source="/images/airtel-logo_opt.svg" id="pt_i1"></af:image>
+                </af:commandLink>
+            </af:panelGroupLayout>
+            <!--<af:panelGroupLayout id="pgl10" styleClass="mb-20 mt-100" layout="vertical">
+                <af:outputText value="Registration for Phase 1" styleClass="fs-20 color-black" id="ot2"/>
+            </af:panelGroupLayout>-->
+            <af:panelGroupLayout id="pgl6" styleClass="stepper org-step2 mt-100" layout="vertical">
+                <af:panelGroupLayout id="pgl11" styleClass="fs-20 color-black mt-50 mb-20" layout="vertical">
+                    <af:outputText id="ot3" styleClass="custom" value="Registration for Phase 1"/>
+                </af:panelGroupLayout>
+                <!--ul-->
+                <af:panelList id="pl1">
+                    <af:outputText id="ot5" value="Partner account creation" styleClass="activeSpan"/>
+                    <af:outputText id="ot6" value="Company detail &amp; PAN info" styleClass="activeSpan"/>
+                    <af:outputText id="ot7" value="Approval by Airtel Buyer" styleClass="activeSpan"/>
+                </af:panelList>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl16" styleClass="stepper" layout="vertical">
+                <af:panelGroupLayout id="pgl12" layout="vertical" styleClass="fs-20 color-black mt-50 mb-20">
+                    <af:outputText id="ot4" value="Registration for Phase 2"/>
+                </af:panelGroupLayout>
+                <!--ul-->
+                <af:panelList id="pl2">
+                    <af:outputText id="ot8" value="Partner place of supply &amp; bank info."/>
+                    <af:outputText id="ot9" value="Validation by Airtel Team"/>
+                </af:panelList>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pgl3" styleClass="width-full1 bg-white minH-100vh AFStretchWidth" layout="vertical"
+                             inlineStyle="display: block;">
+            <af:panelGroupLayout id="pgl5" styleClass="pt-50 pl-70 pr-70 " layout="vertical">
+                <af:panelGroupLayout id="pgl22" styleClass="mt-50" layout="vertical" halign="right">
+                    <af:panelGroupLayout id="pgl23" styleClass="profile-percentage-org-thankyou">
+                        <af:outputText value="66%" id="ot16"/>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl24" styleClass="mt-30" layout="vertical">
+                        <af:outputText value="Profile Completion Status" id="ot17" styleClass="fs-12 color-grey"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl4" layout="vertical" styleClass=" fs-60 line-70">
+                    <af:icon id="i1"
+                             styleClass="icon icon-outlined-circle-checkmark icon-size-80 color-green inline-block mb-20"/>
+                    <af:outputText value="Thank You!" id="ot1" styleClass="color-green"
+                                   inlineStyle="letter-spacing: -.4px;"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl15" layout="vertical" styleClass="fs-16 color-grey mt-10 line-height">
+                    <af:outputText value="Your request has been routed to your Airtel Buyer. Once accepted, you would be required to complete Phase 2 of the registration process"
+                                   id="ot13"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl7" layout="vertical" styleClass="fs-20 color-black mt-30 line-height">
+                    <af:outputText value="Documents for Phase 2" id="ot2"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl10" layout="vertical" styleClass="fs-16 color-grey mt-20 line-height">
+                    <af:outputText value="1. No PE ( One per Legal Entity)" id="ot10"
+                                   shortDesc="No PE stands for No Permanent Establishment . It is a signed letter on the organization's letter heads stating that the organization does not have permanent establishment in India under the relevant treaty article."/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl14" layout="vertical" styleClass="fs-16 color-grey mt-20 line-height">
+                    <af:outputText value="2. Form 10F (One per Legal Entity) "
+                                   shortDesc="Form 10F must be submitted by a non-resident to an Indian tax payer when claiming treaty benefits."
+                                   id="ot12"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl13" layout="vertical" styleClass="fs-16 color-grey mt-20 line-height">
+                    <af:outputText value="3.  TRC" id="ot11"
+                                   shortDesc="TRC stands for Tax Residency Certificate. TRC is issued by the Tax / Government authority where the beneficiary resides."/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl17" layout="vertical" styleClass="fs-16 color-grey mt-20 line-height">
+                    <af:outputText value="4. Cancelled Bank Check + KYC Certificate + Bank Letter" id="ot15"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout layout="horizontal" id="pgl20" styleClass="mt-39">
+                    <af:panelGroupLayout id="pgl8" layout="vertical" styleClass="download-link-css width-250 ">
+                        <af:link text="NO PE TEMPLATE " id="l2" styleClass="link"
+                                 destination="/faces/getDocument?attributeId=104" targetFrame="_blank">
+                            <af:icon id="i2" styleClass="icon-outlined-link-right-arrow airtelIcon"/>
+                        </af:link>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl18" layout="vertical" styleClass="download-link-css width-250 ">
+                        <af:link text="FORM 10F TEMPLATE " id="l3" styleClass="link"
+                                 destination="/faces/getDocument?attributeId=108" targetFrame="_blank">
+                            <af:icon id="i4" styleClass="icon-outlined-link-right-arrow airtelIcon"/>
+                        </af:link>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                 <af:panelGroupLayout layout="horizontal" id="pgl21" styleClass="mt-39">
+                <af:panelGroupLayout id="pgl19" layout="vertical" styleClass="download-link-css width-250 " >
+                    <af:link text="TRC SAMPLE " id="l1" styleClass="link"
+                             destination="/faces/getDocument?attributeId=105" targetFrame="_blank">
+                        <af:icon id="i3" styleClass="icon-outlined-link-right-arrow airtelIcon"/>
+                    </af:link>
+                </af:panelGroupLayout>
+                  <af:panelGroupLayout id="pgl25" layout="vertical" styleClass="download-link-css width-250 ">
+                    <af:link text="KYC TEMPLATE " id="l6" styleClass="link"
+                             destination="/faces/getDocument?attributeId=106" targetFrame="_blank">
+                        <af:icon id="i5" styleClass="icon-outlined-link-right-arrow airtelIcon"/>
+                    </af:link>
+                </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl59" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl56" layout="vertical" styleClass="footer mt-50">
+                <af:panelGroupLayout id="pgl57" layout="horizontal" styleClass="pull-left" inlineStyle="width:55%;">
+                    <af:link text="HELP CENTER" id="l4" styleClass="fs-14" inlineStyle="color: #000 !important;"
+                             destination="https://www.airtel.in/help/"/>
+                    <af:link text="VISIT AIRTEL.IN" id="l5" styleClass="fs-14"
+                             inlineStyle="color: #000 !important;padding-left: 50px!important"
+                             destination="https://www.airtel.in/"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl58" inlineStyle="float: right;">
+                    <af:outputText value="Airtel India 2018 - All Rights Reserved" id="ot14"
+                                   inlineStyle="font-size:12px;margin-top:50px;"/>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+</jsp:root>

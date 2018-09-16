@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14"
+                id="buyerHomeBTF_buyerHomeBTF_refreshListPageDef" Package="com.airtel.buyer.view.pageDefs"
+                SkipValidation="true">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator id="BTVL_WKF_PARTNER_STATUS_TBL_VO1Iterator" Binds="BTVL_WKF_PARTNER_STATUS_TBL_VO1"
+              DataControl="BuyerPortalAMDataControl" RangeSize="25"/>
+    <iterator id="BTVL_PO_LOOKUP_CODES_MV_RVO1Iterator" Binds="BTVL_PO_LOOKUP_CODES_MV_RVO1"
+              DataControl="BuyerPortalAMDataControl" RangeSize="25"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

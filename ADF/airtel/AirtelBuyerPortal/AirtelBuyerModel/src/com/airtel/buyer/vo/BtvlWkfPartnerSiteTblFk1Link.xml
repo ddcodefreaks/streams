@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BtvlWkfPartnerSiteTblFk1Link"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  EntityAssociation="com.airtel.buyer.eo.BtvlWkfPartnerSiteTblFk1Assoc">
+  <ViewLinkDefEnd
+    Name="BTVL_WKF_PARTNER_BANK_ACC_TBL_VO"
+    Cardinality="1"
+    Source="true"
+    Owner="com.airtel.buyer.vo.BTVL_WKF_PARTNER_BANK_ACC_TBL_VO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="BTVL_WKF_PARTNER_BANK_ACC_TBL_VO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.airtel.buyer.vo.BTVL_WKF_PARTNER_BANK_ACC_TBL_VO.SBankAccRowId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="BTVL_WKF_PARTNER_SITE_TBL_VO"
+    Cardinality="-1"
+    Owner="com.airtel.buyer.vo.BTVL_WKF_PARTNER_SITE_TBL_VO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="BTVL_WKF_PARTNER_SITE_TBL_VO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.airtel.buyer.vo.BTVL_WKF_PARTNER_SITE_TBL_VO.SBankAccRowId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BtvlWkfPartnerSiteTblFk1Assoc"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="BTVL_WKF_PARTNER_BANK_ACC_TBL_EO"
+    Cardinality="1"
+    Source="true"
+    Owner="com.airtel.buyer.eo.BTVL_WKF_PARTNER_BANK_ACC_TBL_EO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="BTVL_WKF_PARTNER_BANK_ACC_TBL_EO"/>
+      <Attr Name="_foreignKey" Value="com.airtel.buyer.eo.BTVL_WKF_PARTNER_BANK_ACC_TBL_EO.BtvlWkfPartnerBankAccPk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.airtel.buyer.eo.BTVL_WKF_PARTNER_BANK_ACC_TBL_EO.SBankAccRowId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="BTVL_WKF_PARTNER_SITE_TBL_EO"
+    Cardinality="-1"
+    Owner="com.airtel.buyer.eo.BTVL_WKF_PARTNER_SITE_TBL_EO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="BTVL_WKF_PARTNER_SITE_TBL_EO"/>
+      <Attr Name="_foreignKey" Value="com.airtel.buyer.eo.BTVL_WKF_PARTNER_SITE_TBL_EO.BtvlWkfPartnerSiteTblFk1"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.airtel.buyer.eo.BTVL_WKF_PARTNER_SITE_TBL_EO.SBankAccRowId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

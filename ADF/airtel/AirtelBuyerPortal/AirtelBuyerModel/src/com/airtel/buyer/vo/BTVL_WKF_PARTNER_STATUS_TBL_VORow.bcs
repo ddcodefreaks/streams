@@ -1,0 +1,13 @@
+//Groovy Scripts for com.airtel.buyer.vo.BTVL_WKF_PARTNER_STATUS_TBL_VO
+
+package com.airtel.buyer.vo
+
+import oracle.jbo.script.annotation.TransientValueExpression;
+
+@TransientValueExpression(attributeName="ExpiryDate")
+def ExpiryDate_ExpressionScript_Expression()
+{
+ModifiedDateTime.clearTime() + 15
+}
+
+

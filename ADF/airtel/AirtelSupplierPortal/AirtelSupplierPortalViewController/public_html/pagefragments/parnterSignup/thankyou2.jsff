@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:h="http://java.sun.com/jsf/html">
+    <af:panelGroupLayout id="pgl1" styleClass="AFStretchWidth" layout="vertical">
+        <af:panelGroupLayout id="pgl2" styleClass="float-left width-35 pl-80 pr-100 minH-100vh" layout="vertical">
+            <!--<af:panelGroupLayout id="pgl4" styleClass="AFStretchWidth mb-20 mt-20" layout="vertical">
+                <af:commandLink id="cl1"
+                                styleClass="airtelIcon icon-outlined-previous-page icon-size-40 color-md-grey"/>
+            </af:panelGroupLayout>-->
+            <!--<af:panelGroupLayout id="pgl5" styleClass="AFStretchWidth mt-30" layout="vertical">
+                <af:outputText id="ot2" value="Sign Up" styleClass="fs-48 h3Style"/>
+                <af:panelGroupLayout id="pgl10" styleClass="fs-14 color-grey mt-20" layout="vertical">
+                    <af:outputText id="ot1" value="Please have your organization’s PAN card handy before you begin"/>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>-->
+            <af:panelGroupLayout id="pgl6" styleClass="stepper mt-100" layout="vertical">
+                <af:panelGroupLayout id="pgl11" styleClass="fs-20 color-black mt-50 mb-20" layout="vertical">
+                    <af:outputText id="ot3" value="Registration for Phase 1"/>
+                </af:panelGroupLayout>
+                <!--ul-->
+                <af:panelList id="pl1">
+                    <af:outputText id="ot5" value="Partner account creation" styleClass="activeSpan"/>
+                    <af:outputText id="ot6" value="Company detail &amp; PAN info"/>
+                    <af:outputText id="ot7" value="Approval by Airtel Buyer"/>
+                </af:panelList>
+                <af:panelGroupLayout id="pgl12" layout="vertical" styleClass="fs-20 color-black mt-50 mb-20">
+                    <af:outputText id="ot4" value="Registration for Phase 2"/>
+                </af:panelGroupLayout>
+                <!--ul-->
+                <af:panelList id="pl2">
+                    <af:outputText id="ot8" value="Partner place of supply &amp; bank info."/>
+                    <af:outputText id="ot9" value="Validation by Airtel Team"/>
+                </af:panelList>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <!--<af:panelGroupLayout id="pgl3" styleClass="AFStretchWidth" layout="vertical"></af:panelGroupLayout>-->
+        <af:panelGroupLayout id="pgl3" styleClass="float-left width-65 pl-150 pr-100 bg-white pb-50 minH-100vh"
+                             layout="vertical">
+            <af:panelGroupLayout id="pgl8" layout="vertical"
+                                 inlineStyle="margin-top: 180px !important;font-size: 60px!important;line-height: 70px;color: #008300!important;">
+                <af:panelGroupLayout id="pgl9" layout="vertical">
+                    <af:commandLink id="cl3"
+                                    styleClass="icon-outlined-circle-checkmark1  airtelIcon icon-size-60 color-green  .inline-block-thankyou mb-20  "/>
+                </af:panelGroupLayout>
+                <af:outputText id="it2" value="Thank You!"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl7" styleClass="mt-10" layout="vertical"
+                                 inlineStyle="font-size: 16px!important;color: #707070!important;">
+                <af:outputText value="for showing interest in doing business with Airtel. An email has been sent to the corresponding Airtel Buyer." id="pg112"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl15" styleClass="AFStretchWidth mt-20" layout="vertical">
+                <af:commandLink id="cl2" styleClass="airtelIcon icon-outlined-mail fs-30 color-black">
+                    <af:outputText id="ot10" value="Need Help? Write to us." styleClass="mailUsOT color-black fs-16 ml-10"/>
+                </af:commandLink>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+</jsp:root>

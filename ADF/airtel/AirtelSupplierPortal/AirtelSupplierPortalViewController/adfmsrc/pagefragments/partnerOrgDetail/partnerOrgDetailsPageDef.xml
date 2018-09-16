@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="partnerOrgDetailsPageDef"
+                Package="pagefragments.partnerOrgDetail">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator id="BTVL_WKF_PARTNER_STATUS_TBL_VO1Iterator" Binds="BTVL_WKF_PARTNER_STATUS_TBL_VO1"
+              DataControl="SupplierPortalAMDataControl" RangeSize="25"/>
+    <iterator id="PinCityStateLookupRVO1Iterator" Binds="PinCityStateLookupRVO1"
+              DataControl="SupplierPortalAMDataControl" RangeSize="25"/>
+    <iterator id="PanCardNumberLookupRVO1Iterator" Binds="PanCardNumberLookupRVO1"
+              DataControl="SupplierPortalAMDataControl" RangeSize="25"/>
+    <iterator id="SupplierLookRVO1Iterator" Binds="SupplierLookRVO1" DataControl="SupplierPortalAMDataControl"
+              RangeSize="25"/>
+  </executables>
+  <bindings>
+    <action id="Commit" DataControl="SupplierPortalAMDataControl" RequiresUpdateModel="true"
+            Action="commitTransaction"/>
+    <methodAction id="updateOrgDetgailsStatus" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="updateOrgDetgailsStatus" IsViewObjectMethod="false"
+                  DataControl="SupplierPortalAMDataControl"
+                  InstanceName="bindings.updateOrgDetgailsStatus.dataControl.dataProvider">
+      <NamedData NDName="_partnerVendorId" NDType="java.lang.String"/>
+    </methodAction>
+    <methodAction id="updateOrgDetails" RequiresUpdateModel="true" Action="invokeMethod" MethodName="updateOrgDetails"
+                  IsViewObjectMethod="false" DataControl="SupplierPortalAMDataControl"
+                  InstanceName="bindings.updateOrgDetails.dataControl.dataProvider">
+      <NamedData NDName="_partnerUserID" NDType="java.lang.String"/>
+      <NamedData NDName="_partnerVendorId" NDType="java.lang.String"/>
+      <NamedData NDName="_partnerEmail" NDType="java.lang.String"/>
+      <NamedData NDName="_partnerMobile" NDType="java.lang.String"/>
+      <NamedData NDName="_wkfOwner" NDType="java.lang.String"/>
+      <NamedData NDName="_organizationName" NDType="java.lang.String"/>
+      <NamedData NDName="_pan" NDType="java.lang.String"/>
+      <NamedData NDName="_countryCode" NDType="java.lang.String"/>
+      <NamedData NDName="_city" NDType="java.lang.String"/>
+      <NamedData NDName="_state" NDType="java.lang.String"/>
+      <NamedData NDName="_pinCode" NDType="java.lang.String"/>
+      <NamedData NDName="_firstLineAddress" NDType="java.lang.String"/>
+      <NamedData NDName="_companyUrl" NDType="java.lang.String"/>
+      <NamedData NDName="_attribute1" NDType="java.lang.String"/>
+      <NamedData NDName="_attribute2" NDType="java.lang.String"/>
+      <NamedData NDName="_attribute3" NDType="java.lang.String"/>
+    </methodAction>
+    <methodAction id="createOrgDetails" RequiresUpdateModel="true" Action="invokeMethod" MethodName="createOrgDetails"
+                  IsViewObjectMethod="false" DataControl="SupplierPortalAMDataControl"
+                  InstanceName="bindings.createOrgDetails.dataControl.dataProvider">
+      <NamedData NDName="_partnerUserID" NDType="java.lang.String"/>
+      <NamedData NDName="_partnerVendorId" NDType="java.lang.String"/>
+      <NamedData NDName="_partnerEmail" NDType="java.lang.String"/>
+      <NamedData NDName="_partnerMobile" NDType="java.lang.String"/>
+      <NamedData NDName="_wkfOwner" NDType="java.lang.String"/>
+      <NamedData NDName="_organizationName" NDType="java.lang.String"/>
+      <NamedData NDName="_pan" NDType="java.lang.String"/>
+      <NamedData NDName="_countryCode" NDType="java.lang.String"/>
+      <NamedData NDName="_city" NDType="java.lang.String"/>
+      <NamedData NDName="_state" NDType="java.lang.String"/>
+      <NamedData NDName="_pinCode" NDType="java.lang.String"/>
+      <NamedData NDName="_firstLineAddress" NDType="java.lang.String"/>
+      <NamedData NDName="_companyUrl" NDType="java.lang.String"/>
+      <NamedData NDName="_attribute1" NDType="java.lang.String"/>
+      <NamedData NDName="_attribute2" NDType="java.lang.String"/>
+      <NamedData NDName="_attribute3" NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

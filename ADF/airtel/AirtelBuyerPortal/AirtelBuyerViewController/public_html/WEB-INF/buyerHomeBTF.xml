@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="buyerHomeBTF">
+    <default-activity>fetchVendorRequests</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <managed-bean id="__6">
+      <managed-bean-name>buyerHomeBean</managed-bean-name>
+      <managed-bean-class>com.airtel.buyer.bean.buyerhome.BuyerHomeBean</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <view id="venderRequests">
+      <page>/pageFragments/buyerHome/venderRequests.jsff</page>
+    </view>
+    <view id="rejectionReason">
+      <page>/pageFragments/buyerHome/rejectionReason.jsff</page>
+    </view>
+    <view id="venderRequestPending">
+      <page>/pageFragments/buyerHome/venderRequestPending.jsff</page>
+    </view>
+    <view id="venderRequestRejected">
+      <page>/pageFragments/buyerHome/venderRequestRejected.jsff</page>
+    </view>
+    <method-call id="fetchVendorRequests">
+      <method>#{pageFlowScope.buyerHomeBean.fetchVendorRequests}</method>
+      <outcome>
+      <to-string>true</to-string>
+      </outcome>
+    </method-call>
+    <method-call id="refreshList">
+      <method>#{pageFlowScope.buyerHomeBean.fetchVendorRequests}</method>
+      <outcome>
+        <fixed-outcome>goToPendingReq</fixed-outcome>
+      </outcome>
+    </method-call>
+    <method-call id="refreshListRejected">
+      <method>#{pageFlowScope.buyerHomeBean.fetchVendorRequests}</method>
+      <outcome>
+        <fixed-outcome>goToPendingReq</fixed-outcome>
+      </outcome>
+    </method-call>
+    <method-call id="refreshListExpiring">
+      <method>#{pageFlowScope.buyerHomeBean.fetchVendorRequests}</method>
+      <outcome>
+        <fixed-outcome>goToPendingReq</fixed-outcome>
+      </outcome>
+    </method-call>
+    <view id="rejectionReason1">
+      <page>/pageFragments/buyerHome/rejectionReason.jsff</page>
+    </view>
+    <control-flow-rule id="__3">
+      <from-activity-id>rejectionReason</from-activity-id>
+      <control-flow-case id="__4">
+        <from-outcome>cancel</from-outcome>
+        <to-activity-id>venderRequests</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__32">
+        <from-outcome>afterRejectionReasonSubmit</from-outcome>
+        <to-activity-id>refreshListExpiring</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__9">
+      <from-activity-id>*</from-activity-id>
+      <control-flow-case id="__10">
+        <from-outcome>requests</from-outcome>
+        <to-activity-id>fetchVendorRequests</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__7">
+        <from-outcome>requestRejected</from-outcome>
+        <to-activity-id>venderRequestRejected</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__13">
+        <from-outcome>requestPending</from-outcome>
+        <to-activity-id>venderRequestPending</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__11">
+      <from-activity-id>fetchVendorRequests</from-activity-id>
+      <control-flow-case id="__12">
+        <from-outcome>goToExpiry</from-outcome>
+        <to-activity-id>venderRequests</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__5">
+        <from-outcome>goToPendingReq</from-outcome>
+        <to-activity-id>venderRequestPending</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__14">
+      <from-activity-id>venderRequests</from-activity-id>
+      <control-flow-case id="__15">
+        <from-outcome>reject</from-outcome>
+        <to-activity-id>rejectionReason</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__21">
+        <from-outcome>acceptFromExpiring</from-outcome>
+        <to-activity-id>refreshListExpiring</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__16">
+      <from-activity-id>venderRequestPending</from-activity-id>
+      <control-flow-case id="__17">
+        <from-outcome>reject</from-outcome>
+        <to-activity-id>rejectionReason1</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__8">
+        <from-outcome>acceptFromPendingReq</from-outcome>
+        <to-activity-id>refreshList</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__19">
+      <from-activity-id>refreshList</from-activity-id>
+      <control-flow-case id="__20">
+        <from-outcome>goToPendingReq</from-outcome>
+        <to-activity-id>venderRequestPending</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__22">
+      <from-activity-id>refreshListExpiring</from-activity-id>
+      <control-flow-case id="__23">
+        <from-outcome>goToPendingReq</from-outcome>
+        <to-activity-id>venderRequests</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__26">
+      <from-activity-id>refreshListRejected</from-activity-id>
+      <control-flow-case id="__27">
+        <from-outcome>goToPendingReq</from-outcome>
+        <to-activity-id>venderRequestRejected</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__28">
+      <from-activity-id>venderRequestRejected</from-activity-id>
+      <control-flow-case id="__29">
+        <from-outcome>enableReapplication</from-outcome>
+        <to-activity-id>refreshListRejected</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__30">
+      <from-activity-id>rejectionReason1</from-activity-id>
+      <control-flow-case id="__31">
+        <from-outcome>cancel</from-outcome>
+        <to-activity-id>venderRequestPending</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__33">
+        <from-outcome>afterRejectionReasonSubmit</from-outcome>
+        <to-activity-id>refreshList</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

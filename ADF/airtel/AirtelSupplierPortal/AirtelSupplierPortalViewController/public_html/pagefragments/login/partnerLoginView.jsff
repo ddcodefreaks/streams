@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:resource type="css">
+    select::-ms-expand {
+        display: none;
+    }
+    input::-ms-check {
+        color: #F00;
+    }
+    </af:resource>
+    <af:panelGroupLayout id="pgl101" styleClass="AFStretchWidth">
+        <af:panelGroupLayout id="pgl2" styleClass="float-left min-viewport-height width-half pl-50 pr-50 bg-white"
+                             layout="vertical">
+            <af:panelGroupLayout id="pgl1" layout="vertical" styleClass="mt-110 fs-48 color-red">
+                <af:outputText value="Get Your Business" id="ot1"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl6" layout="vertical" styleClass="fs-48">
+                <af:outputText value="Airtel Advantage" id="ot3"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl7" layout="vertical" styleClass="fs-20 color-grey mt-15">
+                <af:outputText value="Come partner with us and see your business grow" id="ot2"/>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pgl3" styleClass="float-left width-half pl-80  bg-color-f6" layout="vertical" partialTriggers="b1">
+            <af:panelGroupLayout layout="vertical" styleClass="pull-right notification" id="pgl26"
+                                 rendered="#{pageFlowScope.LoginBean.showNotification}"
+                                 binding="#{pageFlowScope.LoginBean.notificationPGLEmailLogIn}">
+                <af:link  id="l3" styleClass="cross" inlineStyle="right: 20px;top: 20px;"
+                         actionListener="#{pageFlowScope.LoginBean.closeNotificationAL}"/>
+                <af:outputText value="#{pageFlowScope.LoginBean.notificationHeader}"  styleClass="fs-16 color-green"
+                               id="ot16"/>
+                <af:panelGroupLayout  layout="vertical" inlineStyle="margin-top:5px;" id="pgl27">
+                 <af:outputText value="#{pageFlowScope.LoginBean.notificationBody}"  styleClass="fs-12 color-black"
+                                id="ot4"/>
+                       </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl24" styleClass="pb-80 pr-250" layout="vertical">
+                <af:panelGroupLayout id="pgl16" layout="vertical" styleClass="mt-120 fs-36">
+                    <af:outputText value="Partner Login" id="ot15"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl9" layout="vertical" styleClass="fs-20 mt-5 mb-50">
+                    <af:outputText value="Please enter your credentials " id="it1"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl4" styleClass="AFStretchWidth" layout="horizontal">
+                    <af:selectOneRadio layout="horizontal" id="sor1" styleClass="mysor" value="email"
+                                       valueChangeListener="#{pageFlowScope.LoginBean.onRadioValueChangeListner}"
+                                       autoSubmit="true">
+                        <af:selectItem label="Email" value="email" id="si2"/>
+                        <af:selectItem label="Mobile Number" value="mobile" id="si1"/>
+                    </af:selectOneRadio>
+                </af:panelGroupLayout>
+                <!-- visible="#{loginHandlerBean.emailValidationMessage ne &quot;&quot;}"-->
+                <af:panelGroupLayout id="pgl10" layout="vertical" styleClass="form-group mt-30">
+                    <af:panelGroupLayout id="pgl21" layout="horizontal">
+                        <af:outputText value="EMAIL" styleClass="field-title" id="ot7"/>
+                        <af:outputText styleClass="label warning" id="ot9"
+                                       rendered="#{pageFlowScope.LoginBean.showEmailWarning}"/>
+                    </af:panelGroupLayout>
+                    <!--value="#{loginHandlerBean.supplierMail}"-->
+                    <!--valueChangeListener="#{pageFlowScope.LoginBean.emailAddressChangeListener}"-->
+                    <af:inputText id="it2" placeholder="Enter email address" styleClass="AFStretchWidth"
+                                  value="#{pageFlowScope.LoginBean.email}" partialTriggers="b1"
+                                  valueChangeListener="#{pageFlowScope.LoginBean.onEmailVC}" autoSubmit="true"
+                                  immediate="true">
+                                  
+                    </af:inputText>
+                    <af:outputText id="ot5" styleClass="error-msg" value="#{pageFlowScope.LoginBean.emailWarningMsg}"
+                                   rendered="#{pageFlowScope.LoginBean.showEmailWarning}"/>
+                    <!--<af:panelGroupLayout id="pgl16" layout="vertical" styleClass="error-msg" inlineStyle="display: block;">
+                    -->
+                    <!--value="#{loginHandlerBean.validationMessagesString}"-->
+                    <!--
+                    -->
+                    <!--binding="#{loginHandlerBean.validationMessages}"-->
+                    <!--
+                    -->
+                    <!--clientComponent="true"-->
+                    <!--
+                    <af:outputText id="ot5" />
+                </af:panelGroupLayout>-->
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl11" layout="vertical" styleClass="form-group mt-30">
+                    <af:panelGroupLayout id="pgl22" layout="horizontal">
+                        <af:outputText value="Password" styleClass="field-title" id="ot8"/>
+                        <af:outputText styleClass="label warning" id="ot10"
+                                       rendered="#{pageFlowScope.LoginBean.showPasswordWarning}"/>
+                    </af:panelGroupLayout>
+                    <!--value="#{loginHandlerBean.password}"-->
+                    <!--valueChangeListener="#{pageFlowScope.LoginBean.passwordFieldChangeListner}"-->
+                    <af:inputText id="it3" placeholder="Enter password" secret="true" styleClass="AFStretchWidth"
+                                  value="#{pageFlowScope.LoginBean.password}" partialTriggers="b1"
+                                  valueChangeListener="#{pageFlowScope.LoginBean.onPasswordVC}" autoSubmit="true"
+                                  immediate="true">
+                      <af:clientListener method="passChange" type="valueChange"/>  
+                    </af:inputText>
+                    <af:outputText id="ot13" styleClass="error-msg"
+                                   value="#{pageFlowScope.LoginBean.passwordWarningMsg}"
+                                   rendered="#{pageFlowScope.LoginBean.showPasswordWarning}"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl17" layout="vertical" styleClass="form-group mt-30">
+                    <af:panelGroupLayout id="pgl19" layout="horizontal" >
+                        <af:image source="/captchaservlet?#{pageFlowScope.LoginBean.captchaCount}" id="i2" inlineStyle="width:240px; height:60.0px;"
+                                  binding="#{pageFlowScope.LoginBean.captchImg}"/>
+                        <af:panelGroupLayout id="pgl20" layout="vertical" styleClass="ml-20">
+                            <af:link styleClass="icon-outlined-retry fs-30 airtelIcon color-red ml-8 fw-600" id="cl1"
+                                     partialSubmit="false" immediate="true" 
+                                     actionListener="#{pageFlowScope.LoginBean.refrshCaptchaClick}">
+                                
+                            </af:link>
+                            <af:outputText value="Refresh" id="ot6" styleClass="field-title mt-8"/>
+                        
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl18" layout="vertical" styleClass="form-group mt-30">
+                    <af:panelGroupLayout id="pgl23" layout="horizontal">
+                        <af:outputText value="Captcha" styleClass="field-title " id="ot11"/>
+                        <af:outputText styleClass="label warning" id="ot12"
+                                       rendered="#{pageFlowScope.LoginBean.showCaptchaWarning}"/>
+                    </af:panelGroupLayout>
+                    <af:inputText id="it5" placeholder="Enter captcha" styleClass="AFStretchWidth"
+                                  valueChangeListener="#{pageFlowScope.LoginBean.onCaptchaVC}"
+                                  value="#{pageFlowScope.LoginBean.captcha}" partialTriggers="b1" autoSubmit="true"
+                                  immediate="true">
+                        <af:clientListener method="submitForm" type="keyPress"/>
+                    </af:inputText>
+                    <af:outputText id="ot14" styleClass="error-msg" value="#{pageFlowScope.LoginBean.captchaWarningMsg}"
+                                   rendered="#{pageFlowScope.LoginBean.showCaptchaWarning}"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl12" layout="vertical" styleClass="mt-50">
+                    <af:button text="Login" id="b1" styleClass="btn" inlineStyle="width:90%"
+                               disabled="#{pageFlowScope.LoginBean.disableLoginBtn}"
+                               actionListener="#{pageFlowScope.LoginBean.onLoginButonClickAL}"
+                               binding="#{pageFlowScope.LoginBean.loginBtn}"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl13" layout="vertical" styleClass="fs-12 mt-25">
+                    <af:commandLink text="Forgot Credentials?" id="l1"
+                                    action="#{pageFlowScope.LoginBean.onForgotpasswordClick}" styleClass="color-grey"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl5" styleClass="AFStretchWidth overflow-hidden mt-60" layout="vertical">
+                    <af:panelGroupLayout id="pgl14" styleClass="pull-left">
+                        <af:outputFormatted value="New to Airtel Partners" id="of1"
+                                            styleClass="pull-left fs-14 color-grey"/>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl15" styleClass="pull-right fs-14"
+                                         inlineStyle="margin-top: 2px;margin-right:10%">
+                        <af:commandLink id="l2" styleClass="signup-style"
+                                        inlineStyle="margin-top: 0px;margin-left: 4px;"
+                                        action="#{pageFlowScope.LoginBean.onSignupClick}">
+                            <af:icon styleClass="icon-outlined-b2b-login icon-size-20 airtelIcon" id="i1"/>
+                            SIGN UP
+                        </af:commandLink>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+</jsp:root>

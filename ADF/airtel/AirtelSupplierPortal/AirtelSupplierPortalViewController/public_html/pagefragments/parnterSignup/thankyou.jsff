@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+ 
+ 
+  <af:panelGroupLayout id="pgl1" styleClass="AFStretchWidth" layout="vertical">
+        <af:panelGroupLayout id="pgl2" styleClass="float-left width-35 pl-80 pr-100 minH-100vh" layout="vertical">
+            <af:panelGroupLayout id="pgl6" styleClass="stepper mt-50" layout="vertical">
+                <af:panelGroupLayout id="pgl11" styleClass="fs-20 color-black mt-50 mb-20" layout="vertical">
+                    <af:outputText id="ot3" value="Registration for Phase 1"/>
+                </af:panelGroupLayout>
+                <!--ul-->
+                <af:panelList id="pl1">
+                    <af:outputText id="ot5" value="Partner account creation" styleClass="activeSpan"/>
+                    <af:outputText id="ot6" value="Company detail &amp; PAN info"/>
+                    <af:outputText id="ot7" value="Approval by Airtel Buyer"/>
+                </af:panelList>
+                <af:panelGroupLayout id="pgl12" layout="vertical" styleClass="fs-20 color-black mt-50 mb-20">
+                    <af:outputText id="ot4" value="Registration for Phase 2"/>
+                </af:panelGroupLayout>
+                <!--ul-->
+                <af:panelList id="pl2">
+                    <af:outputText id="ot8" value="Partner place of supply &amp; bank info."/>
+                    <af:outputText id="ot9" value="Validation by Airtel Team"/>
+                </af:panelList>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        
+        <af:panelGroupLayout id="pgl3" styleClass="float-left width-65 pl-150 pr-100 bg-white pb-50 minH-100vh"
+                             layout="vertical">
+            <af:panelGroupLayout id="pgl10" layout="vertical"
+                                 inlineStyle="margin-top: 180px !important;font-size: 60px!important;line-height: 70px;color: #008300!important;">
+                <af:panelGroupLayout id="pgl4" layout="vertical">
+                    <af:commandLink id="cl1" styleClass="icon-outlined-circle-checkmark1  airtelIcon icon-size-60 color-green  .inline-block-thankyou mb-20  "/>
+                </af:panelGroupLayout>
+                <af:outputText id="it2" value="Thank You!"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl7"
+                                 inlineStyle="margin-bottom:510px !important;font-size: 16px!important;color: #707070!important;">
+                <af:outputText value="An email with the verification link has been sent to your email id: " id="pg112"/>
+                <af:panelGroupLayout id="pgl5" inlineStyle="color: #000!important;font-size: 16px!important;">
+                    <af:outputText value="#{pageFlowScope.signupBean.supplierMail}" id="ot2"/>
+                </af:panelGroupLayout>
+                <af:outputText value=" click on the verification link to proceed further. The link will be valid for 2 hrs."
+                               id="ot1"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl15" styleClass="link-thankyou"
+                                 inlineStyle="margin-top: 20px;margin-right:10%">
+                <af:commandLink text="Resend Link" id="l2" styleClass="signup-style"
+                                actionListener="#{pageFlowScope.signupBean.resendActivationMail}">
+                    <af:icon id="i1" styleClass="icon-outlined-b2b-login icon-size-20 airtelIcon"/>
+                </af:commandLink>
+                <!--<af:commandLink id="cl2" styleClass="icon-outlined-b2b-login icon-size-20 airtelIcon color-red"/>-->
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+</jsp:root>

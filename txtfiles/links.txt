@@ -20,7 +20,7 @@ There's a system stored procedure called get_env for retrieving the value for OR
 SQL > var OHM varchar2(100);
 SQL > EXEC dbms_system.get_env('ORACLE_HOME', :OHM) ;
 SQL > PRINT OHM
-****************************************adf coding******************************
+****************************************adf coding********************************#**
 http://www.jobinesh.com/2009/11/creating-data-capture-form-using-ejb.html
 http://www.jobinesh.com/2011/06/building-programmatically-managed.html
 http://www.jobinesh.com/2011/06/building-programmatically-managed_25.html

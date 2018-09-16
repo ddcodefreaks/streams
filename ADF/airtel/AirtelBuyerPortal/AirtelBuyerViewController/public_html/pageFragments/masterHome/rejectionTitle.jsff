@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <!--<af:panelGroupLayout id="pgl1">
+    <af:button text="Back" id="b1" action="back"/>
+    <af:button text="Send To Partner" id="b2"/>
+  </af:panelGroupLayout>-->
+  <af:resource type="css">
+        select::-ms-expand {
+            display: none;
+        }
+    </af:resource>
+    <af:panelGroupLayout id="pgl1" styleClass="AFStretchWidth pl-301"
+                         inlineStyle="background-color: #f6f6f6; display: block">
+        <af:panelGroupLayout id="pgl2" styleClass="left-section pt-40"
+                             inlineStyle="display: block; background: #f6f6f6;">
+            <af:panelGroupLayout id="pgl10" layout="vertical">
+                <af:panelGroupLayout id="pgl31" layout="vertical" styleClass="ml-50">
+                    <af:link id="l1">
+                        <af:icon id="i1" styleClass="icon icon-outlined-previous-page icon-size-40 color-md-grey airtelIcon"/>
+                    </af:link>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl14" styleClass="mt-60 ml-50 " layout="vertical">
+                    <af:outputText value="Rejection" styleClass="fs-48 color-black " id="ot2"/>
+                </af:panelGroupLayout>
+                  <af:panelGroupLayout id="pgl34" styleClass="ml-50" layout="vertical">
+                    <af:outputText value="Title" styleClass="fs-48 color-red " id="ot7"/>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pgl3" styleClass="bg-white minH-100vh AFStretchWidth" layout="vertical">
+            <af:panelGroupLayout id="pgl4" styleClass="user-header bg-white AFStretchWidth" layout="horizontal"
+                                 inlineStyle="padding-right:301px;left:301px;">
+                <!--<af:panelGroupLayout id="pgl6" styleClass="pull-left mt-minus-2 ml-40 fs-20 color-red">
+                    <af:outputText value="Dear Buyer," id="ot1"/>
+                </af:panelGroupLayout>-->
+                <af:panelGroupLayout id="pgl7" styleClass="pull-right mt-minus-2 mr-40">
+                    <!--<af:panelGroupLayout id="pgl8" styleClass="color-red mr-40">
+                        <af:commandLink id="pt_l7" styleClass="icon-outlined-user color-red airtelIcon fs-24"/>
+                    </af:panelGroupLayout>-->
+                    <af:panelGroupLayout id="pgl11" styleClass="color-red">
+                        <af:commandLink id="cl1" styleClass="icon-outlined-logout color-red airtelIcon fs-24">
+                            <?audit suppress oracle.ide.xml.validation-warning?>
+                        </af:commandLink>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl5" styleClass="mt-108 pt-40 pl-30 pr-30" layout="vertical">
+                <af:panelGroupLayout id="pgl18" styleClass="vendor-requests">
+                    <af:panelList id="pl2">
+                        <af:panelGroupLayout id="pgl44" layout="vertical" styleClass="AFStretchWidth"
+                                             inlineStyle="margin-bottom: 30px;margin-top:-35px;padding-bottom:50px !important;">
+                            <af:panelGroupLayout id="pgl58" layout="vertical" styleClass="AFStretchWidth" inlineStyle="margin-top:50px;">
+                                <af:panelGroupLayout id="pgl59" layout="vertical" styleClass="AFStretchWidth">
+                                    <af:panelGroupLayout id="pgl19" layout="vertical" styleClass="details-blocks1" inlineStyle="margin-left:0px !important;">
+                                        <af:panelGroupLayout id="pgl23" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="ORGANIZATION NAME" id="ot11"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl27" styleClass="fs-16 color-black">
+                                            <af:outputText value="XYZ" id="ot23" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <af:panelGroupLayout id="pgl20" layout="vertical" styleClass="details-blocks1" inlineStyle="margin-left:0px !important;">
+                                        <af:panelGroupLayout id="pgl24" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="PARTNER CODE" id="ot13"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl28" styleClass="fs-16 color-black">
+                                            <af:outputText value="123456" id="ot14" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <!--<af:panelGroupLayout id="pgl22" layout="vertical" styleClass="details-blocks1">
+                                        <af:panelGroupLayout id="pgl26" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="COMPANY URL" id="ot17"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl30" styleClass="fs-16 color-black">
+                                            <af:outputText value="www.xyz.com" id="ot18" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>-->
+                                    <!--<af:panelGroupLayout id="pgl21" layout="vertical" styleClass="details-blocks1">
+                                        <af:panelGroupLayout id="pgl25" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="PAN NO." id="ot15"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl29" styleClass="fs-16 color-black">
+                                            <af:outputText value="ABCF1234H" id="ot16" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>-->
+                                </af:panelGroupLayout>
+                                  <af:panelGroupLayout id="pgl60" layout="vertical" styleClass="AFStretchWidth">
+                                      <af:panelGroupLayout id="pgl61" layout="vertical" styleClass="details-blocks1" inlineStyle="width:460px;margin-left: 0px !important;">
+                                        <af:panelGroupLayout id="pgl62" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="SITE ADDRESS" id="ot36"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl63" styleClass="fs-16 color-black">
+                                            <af:outputText value="Plot no.5, Guragaon" id="ot35" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <!--<af:panelGroupLayout id="pgl64" layout="vertical" styleClass="details-blocks1">
+                                        <af:panelGroupLayout id="pgl66" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="EMAIL" id="ot37"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl65" styleClass="fs-16 color-black">
+                                            <af:outputText value="abc@gmail.com" id="ot38" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>-->
+                                    <!--<af:panelGroupLayout id="pgl8" layout="vertical" styleClass="details-blocks1">
+                                        <af:panelGroupLayout id="pgl9" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="PHONE NO." id="ot3"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl12" styleClass="fs-16 color-black">
+                                            <af:outputText value="1234567890" id="ot4" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>-->
+                                    <!--<af:panelGroupLayout id="pgl13" layout="vertical" styleClass="details-blocks1">
+                                        <af:panelGroupLayout id="pgl16" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="SCAN" id="ot5"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl15" styleClass="fs-16 color-black">
+                                            <af:outputText value="xxxxxxxxx" id="ot6" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>-->
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl17" layout="vertical" styleClass="AFStretchWidth">
+                                    <!--<af:panelGroupLayout id="pgl37" layout="vertical"
+                                             styleClass="form-group float-left select-color-black mt-10">
+                            <af:selectOneChoice id="soc8" styleClass="myBigSoc mt-5 ml-10 width-170"
+                                                labelStyle="display:none" unselectedLabel="Bharti Airtel limited..">
+                                <f:selectItems id="si17"/>
+                            </af:selectOneChoice>
+                        </af:panelGroupLayout>-->
+                                    <af:panelGroupLayout id="pgl43" layout="vertical" styleClass="details-blocks1" inlineStyle="width:45%; margin-left: 0px !important;">
+                                        <af:panelGroupLayout id="pgl45" styleClass="fs-12 color-grey text-uppercase mb-15" layout="vertical">
+                                            <af:outputText value=" Add a landline number of your workplace." id="ot10"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl46" styleClass="fs-16 color-black">
+                                            <af:selectOneChoice id="soc8" styleClass="myBigSoc AFStretchWidth"
+                                                                labelStyle="display:none"
+                                                                unselectedLabel="GSTN scan is not readable">
+                                                <?audit suppress oracle.adf.faces.compnotlabelled?>
+                                                <f:selectItems id="si17"/>
+                                            </af:selectOneChoice>
+                                        </af:panelGroupLayout>
+                                          <!--<af:panelGroupLayout id="pgl6" styleClass="fs-12 color-grey text-uppercase">
+                                           <af:icon id="i2" styleClass="icon icon-outlined-circle-plus fs-20 color-black inline-block airtelIcon" inlineStyle="vertical-align: bottom;"/>
+                                            <af:outputText value="Invoice Validated Successfully"
+                                                           id="ot1" styleClass="ml-5"/>
+                                        </af:panelGroupLayout>-->
+                                    </af:panelGroupLayout>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                            
+                            <af:panelGroupLayout id="pgl88" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+                        <!--<af:panelGroupLayout id="pgl8" layout="vertical" styleClass="form-group width-65">
+                        
+                                <af:outputText value="DESCRIPTION" id="ot1" />
+                                <af:inputText  id="it1" rows="5" styleClass="form-control mt-20"/>
+                            </af:panelGroupLayout>-->   
+                            
+                               <af:panelGroupLayout id="pgl9" layout="vertical"
+                                     styleClass="AFStretchWidth fs-12 color-grey text-uppercase description-input mt-40" inlineStyle="width:60% !important;margin-top: 0px !important;margin-left: 15px;">
+                    <af:outputText value="DESCRIPTION" id="ot15" styleClass="ww-bw"/>
+                    <af:panelGroupLayout id="pgl39" layout="vertical" inlineStyle="margin-top:20px;">
+                        <af:inputText id="it2" placeholder="Description...." styleClass="des-input" rows="5"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                            
+                            
+                            
+                                 <af:panelGroupLayout id="pgl6" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+                             <af:panelGroupLayout id="pgl38" styleClass="AFStretchWidth mt-50 text-right">
+                                    <af:panelGroupLayout id="pgl32" inlineStyle="float:right;">
+                                   <af:panelGroupLayout id="pgl33" styleClass="btn-class-vendor-request-notification">
+                                            <af:button text="SEND TO PARTNER" id="b1" styleClass="btn btn-red-thin-stroked-notification"></af:button>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                    </af:panelList>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl12" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl56" layout="vertical" styleClass="footer mt-50">
+                <af:panelGroupLayout id="pgl57" layout="horizontal" styleClass="pull-left" inlineStyle="width:55%;">
+                    <af:link text="HELP CENTER" id="l4" destination="https://www.airtel.in/help/" styleClass="fs-14"
+                             inlineStyle="color: #000 !important;"/>
+                    <af:link text="VISIT AIRTEL.IN" id="l5" destination="https://www.airtel.in/" styleClass="fs-14"
+                             inlineStyle="color: #000 !important;padding-left: 50px!important"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl40">
+                    <af:outputText value="Airtel India 2018 - All Rights Reserved" id="ot22"
+                                   inlineStyle="font-size:12px;margin-top:50px;"/>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+</jsp:root>

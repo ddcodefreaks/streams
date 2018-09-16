@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+            xmlns:f="http://java.sun.com/jsf/core">
+<af:resource type="css">
+    select::-ms-expand {
+        display: none;
+    }
+    </af:resource>
+<af:panelGroupLayout id="pgl1" styleClass="AFStretchWidth pl-301"
+                         inlineStyle="background-color: #f6f6f6; display: block"
+                     binding="#{pageFlowScope.buyerHomeBean.rejectedRequestParentPGL}">
+        <af:panelGroupLayout id="pgl2" styleClass="left-section pt-40" inlineStyle="display: block;background: #f6f6f6;">
+            <af:panelGroupLayout id="pgl9" styleClass="mb-50 mt-40 ml-50">
+                <af:commandLink text="" id="pt_l5">
+                    <af:image styleClass="airtel-logo" source="/images/airtel-logo_opt.svg" id="pt_i1"></af:image>
+                </af:commandLink>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl10" layout="vertical" styleClass="account-overview">
+                <af:panelGroupLayout id="pgl14" styleClass="mt-62 ml-40" layout="vertical">
+                    <af:outputText value="ACCOUNT OVERVIEW" styleClass="color-black text-style fs-16" id="ot2"/>
+                </af:panelGroupLayout>
+                <af:panelList id="pl1">
+                    <af:commandLink action="requests" id="cl4">
+                    <af:panelGroupLayout id="pgl15" layout="vertical" styleClass="list-item-class">
+                    
+                        <af:outputText value="#{pageFlowScope.buyerHomeBean.vendorRequestExpiringTodayCount}" id="ot6" styleClass="fs-30 color-black"/>
+                        <af:outputText value="Requests Expiring today" id="ot10" styleClass="fs-16 color-black mt-5"/>
+                    </af:panelGroupLayout>
+                    </af:commandLink>
+                    <af:commandLink action="requestPending" id="cl3">
+                    <af:panelGroupLayout id="pgl16" layout="vertical" styleClass="list-item-class">
+                        <af:outputText value="#{pageFlowScope.buyerHomeBean.vendorRequestPendingCount}" id="ot5" styleClass="fs-30 color-black"/>
+                        <af:outputText value="Pending Requests" id="ot7" styleClass="fs-16 color-black mt-5 pr-44"/>
+                    </af:panelGroupLayout>
+                    </af:commandLink>
+                    <af:commandLink action="requestRejected" id="cl2">
+                    <af:panelGroupLayout id="pgl17" layout="vertical" styleClass="list-item-class list-item-class-active">
+                        <af:outputText value="#{pageFlowScope.buyerHomeBean.vendorRequestRejectedCount}" id="ot8" styleClass="fs-30  color-red"/>
+                        <af:outputText value="Rejected Partners" id="ot9" styleClass="fs-16  color-red mt-5 pr-46"/>
+                    </af:panelGroupLayout>
+                    </af:commandLink>
+                </af:panelList>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pgl3" styleClass="bg-white minH-100vh AFStretchWidth" layout="vertical">
+            <af:panelGroupLayout id="pgl4" styleClass="user-header bg-white" layout="horizontal"
+                                 inlineStyle="width: 100%;padding-right:301px;left:301px;">
+                <af:panelGroupLayout id="pgl6" styleClass="pull-left mt-minus-2 ml-40 fs-20 color-red">
+                    <af:outputText value="Dear Buyer," id="ot1"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl7" styleClass="pull-right mt-minus-2 mr-40">
+                    <!--<af:panelGroupLayout id="pgl8" styleClass="color-red mr-40">
+                        <af:commandLink id="pt_l7" styleClass="icon-outlined-user color-red airtelIcon fs-24"/>
+                    </af:panelGroupLayout>-->
+                    <af:panelGroupLayout id="pgl11" styleClass="color-red">
+                        <af:commandLink id="cl1" styleClass="icon-outlined-logout color-red airtelIcon fs-24"
+                                        actionListener="#{pageFlowScope.buyerHomeBean.doLogout}"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl5" styleClass="mt-108 pt-64 pl-40 pr-40" layout="vertical">
+                <af:panelGroupLayout id="pgl12" styleClass="fs-30 width-60" inlineStyle="margin-bottom: 10px;">
+                    <af:outputText value="Rejected Requests" id="ot3" styleClass="letter-spacing"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl13" styleClass="color-grey fs-16 mt-13 mb-50" layout="vertical"
+                                     inlineStyle="width: 50%;">
+                    <af:outputText value="Note: Click on view attachment to view details and ensure scan is readable and provided information is accurate."
+                                   id="ot4" styleClass="line-height-24"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl18" styleClass="vendor-requests">
+                    <af:panelList id="pl2">
+					<af:iterator id="i1"
+                     value="#{pageFlowScope.buyerHomeBean.vendorRequestRejectedListObj}"
+                     var="row" varStatus="vs">
+                        <af:panelGroupLayout id="pgl44" layout="vertical" styleClass="AFStretchWidth"
+                                             inlineStyle="margin-bottom: 30px;margin-top:-35px">
+                            <af:panelGroupLayout id="pgl58" layout="vertical" styleClass="AFStretchWidth">
+                                <af:panelGroupLayout id="pgl59" layout="vertical" styleClass="AFStretchWidth">
+                                    <af:panelGroupLayout id="pgl19" layout="vertical" styleClass="details-blocks">
+                                        <af:panelGroupLayout id="pgl23" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="COMPANY NAME" id="ot11"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl27" styleClass="fs-16 color-black">
+                                            <af:outputText  value="#{row.ORG_NAME.length() gt 20 ? row.ORG_NAME.substring(0,20).concat('...') : row.ORG_NAME}" shortDesc="#{row.ORG_NAME}" id="ot12" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <af:panelGroupLayout id="pgl20" layout="vertical" styleClass="details-blocks">
+                                        <af:panelGroupLayout id="pgl24" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="ADDRESS" id="ot13"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl28" styleClass="fs-16 color-black">
+                                            <af:outputText value="#{row.ADD_LINE_1.length() gt 20 ? row.ADD_LINE_1.substring(0,20).concat('...') : row.ADD_LINE_1}" shortDesc="#{row.ADD_LINE_1}" id="ot14" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <af:panelGroupLayout id="pgl21" layout="vertical" styleClass="details-blocks">
+                                        <af:panelGroupLayout id="pgl25" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="COMPANY URL" id="ot15"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl29" styleClass="fs-16 color-black">
+                                            <af:outputText value="#{row.COMPANY_URL.length() gt 20 ? row.COMPANY_URL.substring(0,20).concat('...') : row.COMPANY_URL}" shortDesc="#{row.COMPANY_URL}" id="ot16" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <af:panelGroupLayout id="pgl22" layout="vertical" styleClass="details-blocks">
+                                        <af:panelGroupLayout id="pgl26" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="PAN NO." id="ot17"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl30" styleClass="fs-16 color-black">
+                                            <af:outputText value="#{row.PAN.length() gt 20 ? row.PAN.substring(0,20).concat('...') : row.PAN}" shortDesc="#{row.PAN}" id="ot18" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl60" layout="vertical" styleClass="AFStretchWidth">
+                                    <af:panelGroupLayout id="pgl61" layout="vertical" styleClass="details-blocks">
+                                        <af:panelGroupLayout id="pgl62" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="PHONE NO." id="ot36"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl63" styleClass="fs-16 color-black">
+                                            <af:outputText value="#{row.PARTNER_MOBILE.length() gt 20 ? row.PARTNER_MOBILE.substring(0,20).concat('...') : row.PARTNER_MOBILE}" shortDesc="#{row.PARTNER_MOBILE}" id="ot35" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <af:panelGroupLayout id="pgl64" layout="vertical" styleClass="details-blocks">
+                                        <af:panelGroupLayout id="pgl66" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="EMAIL" id="ot37"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl65" styleClass="fs-16 color-black">
+                                            <af:outputText value="#{row.PARTNER_EMAIL.length() gt 20 ? row.PARTNER_EMAIL.substring(0,20).concat('...') : row.PARTNER_EMAIL}" shortDesc="#{row.PARTNER_EMAIL}" id="ot38" styleClass="ww-bw"/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <af:panelGroupLayout id="pgl67" layout="vertical" styleClass="details-blocks">
+                                        <af:panelGroupLayout id="pgl68" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="SCAN" id="ot39"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl69" styleClass="fs-16 color-black">
+                                            <af:link styleClass="text-decoration-none" text="View Attachment" id="l2"
+                                                     inlineStyle="color: Red; font-size: 16px "/>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                    <af:panelGroupLayout id="pgl70" layout="vertical" styleClass="details-blocks">
+                                        <af:panelGroupLayout id="pgl71" styleClass="fs-12 color-grey text-uppercase">
+                                            <af:outputText value="VENDOR TYPE" id="ot41"/>
+                                        </af:panelGroupLayout>
+                                        <af:panelGroupLayout id="pgl72" styleClass="fs-16 color-black">
+                                            <!--<af:selectOneChoice id="smc1" styleClass="vendorTypeSoc width-95%" labelStyle="display:none">
+                                                --><!--<af:selectItem label="Vendor1" id="si1"/>--><!--
+                                                --><!--<af:selectItem label="Vendor2" id="si2"/>--><!--
+                                                <f:selectItem  id="si1"
+                                                               value="#{pageFlowScope.buyerHomeBean.vendorTypeList}"/>
+                                            </af:selectOneChoice>-->
+                                                <af:selectOneChoice id="smc1" styleClass="vendorTypeSoc width-95per" labelStyle="display:none">
+                                                    <f:selectItems value="#{pageFlowScope.buyerHomeBean.vendorTypeList}"
+                                                                   id="si1"/>
+                                                </af:selectOneChoice>
+                                            </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl31" styleClass="mt-50 text-right" layout="vertical">
+                                    <af:panelGroupLayout id="pgl32">
+                                        <!--<af:panelGroupLayout id="pgl34" styleClass="reject-class">
+                                            <af:link text="Reject" id="l1" action="reject"/>
+                                        </af:panelGroupLayout> action="enableReapplication"-->
+                                        <af:panelGroupLayout id="pgl33" styleClass="btn-class-vendor-request">
+                                            <af:button text="ENABLE REAPPLICATION" id="b1" styleClass="btn btn-red-thin-stroked"
+                                                       actionListener="#{pageFlowScope.buyerHomeBean.enableReapplication}"
+                                                       action="enableReapplication">
+                                                <f:attribute name="rowWkfId" value="#{row.WkfId}"/>
+                                                <f:attribute name="rowPartnerVendorId" value="#{row.PARTNER_VENDOR_ID}"/>
+                                                <!--<af:showPopupBehavior popupId="p1"/>-->
+                                            </af:button>
+                                        </af:panelGroupLayout>
+                                    </af:panelGroupLayout>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                    </af:iterator>
+					</af:panelList>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl39" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+              <af:panelGroupLayout id="pgl56" layout="vertical" styleClass="footer mt-50">
+                  <af:panelGroupLayout id="pgl57" layout="horizontal" styleClass="pull-left" inlineStyle="width:55%;">
+                      <af:link text="HELP CENTER" id="l4" destination="https://www.airtel.in/help/" styleClass="fs-14" inlineStyle="color: #000 !important;"/>
+                     <af:link text="VISIT AIRTEL.IN" id="l5" destination="https://www.airtel.in/" styleClass="fs-14" inlineStyle="color: #000 !important;padding-left: 50px!important"/>
+                  </af:panelGroupLayout>   
+                   <af:panelGroupLayout id="pgl40" >
+                     <af:outputText value="Airtel India 2018 - All Rights Reserved" id="ot22" inlineStyle="font-size:12px;margin-top:50px;"/>
+                   </af:panelGroupLayout>
+                 </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+    <af:popup childCreation="deferred" autoCancel="disabled" id="p1"
+              binding="#{pageFlowScope.buyerHomeBean.reenablePopup}">
+        <af:dialog id="d2" type="cancel" closeIconVisible="false"  styleClass="MyDialog" cancelTextAndAccessKey="CLOSE">
+            <af:panelGroupLayout id="pgl36" layout="vertical" inlineStyle="padding: 40px;">
+                <af:panelGroupLayout id="pgl37" layout="vertical" inlineStyle="padding-bottom: 30px;">
+                    <af:outputText value="Dear Buyer," id="ot19"
+                                   inlineStyle="font-size: 24px;line-height: 28px;letter-spacing: 0;margin-bottom: 30px;"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl38" layout="vertical" styleClass="fs-16 color-grey">
+                    <af:outputText value="Partner has been enabled for reapplication." id="ot20"/>
+                </af:panelGroupLayout>
+                <!--<af:panelGroupLayout id="pgl35" layout="vertical" styleClass="fs-16 color-grey mt-30">
+                    <af:outputText value="A confirmation email and SMS will be sent to the partner on their registered email id and mobile number in next 2hrs"
+                                   id="ot21"/>
+                </af:panelGroupLayout>-->
+                <!--<af:panelGroupLayout id="pgl39" layout="vertical" styleClass="popup-btn-class"
+                                 inlineStyle="float: right;     margin-top: 30px;     margin-bottom: 40px;">
+                <af:button text="CLOSE" id="b2" styleClass="btn btn-lg fs-16"/>
+            </af:panelGroupLayout>-->
+            </af:panelGroupLayout>
+        </af:dialog>
+    </af:popup>
+</jsp:root>

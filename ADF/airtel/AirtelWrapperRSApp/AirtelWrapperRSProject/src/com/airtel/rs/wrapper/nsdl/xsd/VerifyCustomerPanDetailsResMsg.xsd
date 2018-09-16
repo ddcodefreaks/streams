@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.airtel.com/aim/schema/nsdl/v1/pan_response"
+            targetNamespace="http://www.airtel.com/aim/schema/nsdl/v1/pan_response" elementFormDefault="qualified">
+  <xsd:element name="verifyCustomerPanDetailsResMsg">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ebmHeader" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="lob" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="consumerTransactionId" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="consumerName" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="programmeName" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="dataArea" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="verifyCustomerPanDetailsResponse" minOccurs="0">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="status" minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="statusCode" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="statusDescription" type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="panDetails" minOccurs="0" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="panNumber" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="panStatus" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="lastName" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="firstName" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="middleName" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="panTitle" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="lastUpdatedDate" type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

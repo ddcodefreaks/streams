@@ -1,0 +1,3436 @@
+@charset "UTF-8";
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+    line-height: 17px;
+    letter-spacing: 1.2px;
+}
+.fs-12 {
+    font-size: 12px!important;
+    line-height: 15px;
+    letter-spacing: .5px;
+}
+.font-size-16, .fs-16 {
+    font-size: 16px!important;
+}
+.pl-50 {
+    padding-left: 50px !important;
+}
+
+.color-black {
+    color: #000 !important;
+}
+.color-md-grey{
+    color:#9f9f9f!important
+}
+.mybody {
+    margin: 0 !important;
+    text-rendering: auto !important;
+    font-smoothing: antialiased !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    background-color: white !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    background-color: white !important;
+}
+
+.AFDefaultFontFamily:alias, body {
+    font-family: Tondo-Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+/*
+
+Styling from Airtel Standardization CSS Starts
+
+*/
+.container-fluid {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.container-fluid:after, .container-fluid:before {
+    content: " ";
+    display: table
+}
+
+.container-fluid:after {
+    clear: both
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.top-smal-menu {
+    font-size: 10px !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    opacity: 1 !important;
+}
+
+.top-smal-menu a {
+    font-size: 10px !important;
+    color: #707070;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.top-smal-menu a:focus, .top-smal-menu a:hover {
+    color: #000;
+}
+
+.min-viewport-height {
+    min-height: calc(100vh - 210px);
+}
+.width-half {
+    width: calc(98.5vw/2);
+}
+.padding-left-50, .pl-50 {
+    padding-left: 50px!important;
+}
+.padding-right-50, .pr-50 {
+    padding-right: 50px!important;
+}
+.bg-white {
+    background: #fff!important;
+}
+.padding-right-250, .pr-250 {
+    padding-right: 250px!important;
+}
+.padding-left-80, .pl-80 {
+    padding-left: 80px!important;
+}
+.padding-bottom-80, .pb-80 {
+    padding-bottom: 80px!important;
+}
+.margin-top-110, .mt-110 {
+    margin-top: 110px!important;
+}
+.margin-top-100,.mt-100{
+    margin-top:100px!important
+}
+.margin-top-5, .mt-5 {
+    margin-top: 5px!important;
+}
+.margin-top-25, .mt-25 {
+    margin-top: 25px!important;
+}
+.fs-48 {
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: -.4px;
+}
+.font-size-20, .fs-20 {
+    font-size: 20px!important;
+    line-height: 24px;
+}
+.margin-top-15, .mt-15 {
+    margin-top: 15px!important;
+}
+.color-grey {
+    color: #707070!important;
+}
+.bg-color-f6 {
+    background-color: #f6f6f6!important;
+}
+.mt-120 {
+    margin-top: 120px !important;
+}
+.margin-bottom-50, .mb-50 {
+    margin-bottom: 50px!important;
+}
+.font-size-36, .fs-36 {
+    font-size: 36px!important;
+    line-height: 40px;
+}
+.float-left{
+    float:left;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.margin-top-60, .mt-60 {
+    margin-top: 60px!important;
+}
+af|commandLink{
+    text-decoration: none !important ;
+}
+.link-hover a {
+    color:#e40000 !important;
+}
+
+.link-hover a:active {
+    color:red !important;
+}
+.link-hover a:hover {
+    color:red !important;
+}
+af|panelGroupLayout.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+af|panelGroupLayout.pull-left {
+    float: left !important;
+}
+
+af|panelGroupLayout.pull-right {
+    float: right !important;
+}
+
+af|commandLink.topNavTab {
+    text-decoration: none;
+}
+
+af|commandLink:hover.topNavTab {
+    text-decoration: none;
+    color: #000;
+}
+
+af|commandLink.mega-menu-link {
+    font-size: 14px;
+    font-family: Tondo-Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    font-weight: 100;
+}
+
+af|commandLink:hover.mega-menu-link {
+    text-decoration: none !important;
+    color: #e40000;
+}
+
+af|panelGroupLayout.navbar-default {
+    background: #fff;
+    font-weight: 100;
+    height: 107px;
+    font-size: 14px;
+    box-sizing: border-box;
+    /*position: fixed;*/
+
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-radius: 0;
+    box-shadow: none;
+    transition: .7s;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+af|panelGroupLayout.large-menu {
+    transition: .7s;
+    padding-top: 15px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+af|image.airtelLogo {
+    height: 60px;
+}
+
+.main-nav-center {
+    position: absolute;
+}
+
+.navbar-nav.main-nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9px;
+}
+
+.navbar-nav {
+    float: none;
+    display: inline-block;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.nav-icon-navbaar {
+    font-size: 25px;
+    position: relative;
+}
+
+.nav-icon-navbaar a {
+    margin-left: 15px;
+    font-size: 25px !important;
+}
+
+.navbar-nav.main-nav a {
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 0;
+    margin: 0 28px;
+    cursor: pointer;
+    line-height: 17px;
+    color: #707070;
+    padding-bottom: 20px;
+    top: -5px;
+    position: relative;
+}
+
+af|panelGroupLayout.footerPanel {
+    height: 103px;
+    border-top: 1px solid #E7E7E7;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    top: -14px;
+    position: relative;
+}
+/*Airtel Icons Starts*/
+.airtelIcon {
+    font-family: airtel-icons !important;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+.icon-font-size {
+    font-size: 40px
+}
+
+.icon-font-size-sm {
+    font-size: 20px
+}
+
+.icon-font-size-lg {
+    font-size: 80px
+}
+
+.icon-filled-blob-1:before {
+    content: "\F101"
+}
+
+.icon-filled-blob-2:before {
+    content: "\F102"
+}
+
+.icon-filled-blob-3:before {
+    content: "\F103"
+}
+
+.icon-filled-cashback:before {
+    content: "\F104"
+}
+
+.icon-filled-checkmark:before {
+    content: "\F105"
+}
+
+.icon-filled-circle:before {
+    content: "\F106"
+}
+
+.icon-filled-facebook:before {
+    content: "\F107"
+}
+
+.icon-filled-google:before {
+    content: "\F108"
+}
+
+.icon-filled-information:before {
+    content: "\F109"
+}
+
+.icon-filled-linkedin:before {
+    content: "\F10A"
+}
+
+.icon-filled-location:before {
+    content: "\F10B"
+}
+
+.icon-filled-rupee:before {
+    content: "\F10C"
+}
+
+.icon-filled-twitter:before {
+    content: "\F10D"
+}
+
+.icon-filled-warning:before {
+    content: "\F10E"
+}
+
+.icon-filled-youtube:before {
+    content: "\F10F"
+}
+
+.icon-outlined-404:before {
+    content: "\F110"
+}
+.icon-outlined-b2b-login:before { content: "\F1AA";}
+
+.icon-outlined-aim:before {
+    content: "\F111"
+}
+
+.icon-outlined-airplane:before {
+    content: "\F112"
+}
+
+.icon-outlined-airtel-money:before {
+    content: "\F113"
+}
+
+.icon-outlined-allplans:before {
+    content: "\F114"
+}
+
+.icon-outlined-arrow-down:before {
+    content: "\F115"
+}
+
+.icon-outlined-arrow-left:before {
+    content: "\F116"
+}
+
+.icon-outlined-arrow-right:before {
+    content: "\F117"
+}
+
+.icon-outlined-arrow-up:before {
+    content: "\F118"
+}
+
+.icon-outlined-back-to-top:before {
+    content: "\F119"
+}
+
+.icon-outlined-billing:before {
+    content: "\F11A"
+}
+
+.icon-outlined-broadband:before, .icon-outlined-internet:before {
+    content: "\F11B"
+}
+
+.icon-outlined-car:before {
+    content: "\F11C"
+}
+
+.icon-outlined-cash:before {
+    content: "\F11D"
+}
+
+.icon-outlined-chat:before {
+    content: "\F11E"
+}
+
+.icon-outlined-checkmark:before {
+    content: "\F11F"
+}
+
+.icon-outlined-chevron-down:before {
+    content: "\F120"
+}
+
+.icon-outlined-chevron-up:before {
+    content: "\F121"
+}
+
+.icon-outlined-circle-checkmark:before {
+    content: "\F122"
+}
+
+.icon-outlined-circle-information:before {
+    content: "\F123"
+}
+
+.icon-outlined-clock:before {
+    content: "\F124"
+}
+
+.icon-outlined-coverage:before {
+    content: "\F125"
+}
+
+.icon-outlined-credit-card:before {
+    content: "\F126"
+}
+
+.icon-outlined-cross:before {
+    content: "\F127"
+}
+
+.icon-outlined-debit-card:before {
+    content: "\F128"
+}
+
+.icon-outlined-desktop-lock:before {
+    content: "\F129"
+}
+
+.icon-outlined-directions:before {
+    content: "\F12A"
+}
+
+.icon-outlined-doublearrow-left:before {
+    content: "\F12B"
+}
+
+.icon-outlined-doublearrow-right:before {
+    content: "\F12C"
+}
+
+.icon-outlined-equal-sign:before {
+    content: "\F12D"
+}
+
+.icon-outlined-gamepad:before {
+    content: "\F12E"
+}
+
+.icon-outlined-gift:before {
+    content: "\F12F"
+}
+
+.icon-outlined-group:before {
+    content: "\F130"
+}
+
+.icon-outlined-india:before {
+    content: "\F131"
+}
+
+.icon-outlined-international:before {
+    content: "\F132"
+}
+
+.icon-outlined-list:before {
+    content: "\F133"
+}
+
+.icon-outlined-local:before {
+    content: "\F134"
+}
+
+.icon-outlined-location:before {
+    content: "\F135"
+}
+
+.icon-outlined-magnifier:before {
+    content: "\F136"
+}
+
+.icon-outlined-magnifierplus:before {
+    content: "\F137"
+}
+
+.icon-outlined-mail-atachment:before {
+    content: "\F104"
+}
+
+.icon-outlined-mail:before {
+    content: "\F104"
+}
+
+.icon-outlined-menu:before {
+    content: "\F13A"
+}
+
+.icon-outlined-minus:before {
+    content: "\F13B"
+}
+
+.icon-outlined-modem:before {
+    content: "\F13C"
+}
+
+.icon-outlined-movie:before {
+    content: "\F13D"
+}
+
+.icon-outlined-music:before {
+    content: "\F13E"
+}
+
+.icon-outlined-paperplane:before {
+    content: "\F13F"
+}
+
+.icon-outlined-pen:before {
+    content: "\F140"
+}
+
+.icon-outlined-phone:before {
+    content: "\F141"
+}
+
+.icon-outlined-picture:before {
+    content: "\F142"
+}
+
+.icon-outlined-pinch:before {
+    content: "\F143"
+}
+
+.icon-outlined-plans:before {
+    content: "\F144"
+}
+
+.icon-outlined-plus:before {
+    content: "\F145"
+}
+
+.icon-outlined-questionmark:before {
+    content: "\F146"
+}
+
+.icon-outlined-recharge:before {
+    content: "\F147"
+}
+
+.icon-outlined-refresh:before {
+    content: "\F148"
+}
+
+.icon-outlined-road-sign:before {
+    content: "\F149"
+}
+
+.icon-outlined-saved-card:before {
+    content: "\F14A"
+}
+
+.icon-outlined-secure:before {
+    content: "\F14B"
+}
+
+.icon-outlined-simcard:before {
+    content: "\F14C"
+}
+
+.icon-outlined-smartphone:before {
+    content: "\F14D"
+}
+
+.icon-outlined-startmyplan:before {
+    content: "\F14E"
+}
+
+.icon-outlined-store:before {
+    content: "\F14F"
+}
+
+.icon-outlined-stream:before {
+    content: "\F150"
+}
+
+.icon-outlined-summary:before {
+    content: "\F151"
+}
+
+.icon-outlined-tag:before {
+    content: "\F152"
+}
+
+.icon-outlined-tap:before {
+    content: "\F153"
+}
+
+.icon-outlined-tile:before {
+    content: "\F154"
+}
+
+.icon-outlined-truck:before {
+    content: "\F155"
+}
+
+.icon-outlined-warn:before {
+   content: "\F15D";
+   color: #ef8d07 !important;
+   font-size: 11px !important;
+}
+.icon-outlined-user:before {
+    content: "\F10A"
+}
+.icon-outlined-video:before {
+    content: "\F157"
+}
+
+.icon-outlined-warning:before {
+    content: "\F158"
+}
+
+.icon-outlined-website:before {
+    content: "\F159"
+}
+
+.icon-outlined-phone-local:before {
+    content: "\F15A"
+}
+
+.icon-outlined-tvcable:before {
+    content: "\F15B"
+}
+
+.icon-filled-tower:before {
+    content: "\F15C"
+}
+
+.icon-filled-lock:before {
+    content: "\F15D"
+}
+
+.icon-filled-star:before {
+    content: "\F15E"
+}
+
+.icon-outlined-circle-plus:before {
+    content: "\F15F"
+}
+
+.icon-outlined-delete:before {
+    content: "\F160"
+}
+
+.icon-outlined-previous-page:before {
+    content: "\F161"
+}
+
+.icon-outlined-next-page:before {
+    content: "\F162"
+}
+
+.icon-outlined-retry:before {
+    content: "\F168"
+}
+
+.icon-outlined-mobile-hand:before {
+    content: "\F164"
+}
+
+.icon-outlined-document:before {
+    content: "\F165"
+}
+
+.icon-outlined-identification:before {
+    content: "\F166"
+}
+
+.icon-outlined-other-document:before {
+    content: "\F167"
+}
+
+.icon-outlined-photo:before {
+    content: "\F168"
+}
+
+.icon-outlined-mobile-cover:before {
+    content: "\F169"
+}
+
+.icon-outlined-settings:before {
+    content: "\F16A"
+}
+
+.icon-outlined-speed:before {
+    content: "\F16B"
+}
+
+.icon-outlined-wallet:before {
+    content: "\F16C"
+}
+
+.icon-outlined-sim-open:before {
+    content: "\F16D"
+}
+
+.icon-outlined-link-arrow-right:before, .icon-outlined-link-right-arrow:before {
+    content: "\F172"
+}
+
+.icon-outlined-truck-status:before {
+    content: "\F16F"
+}
+
+.icon-outlined-tunes:before {
+    content: "\F170"
+}
+
+.icon-outlined-rewards:before {
+    content: "\F171"
+}
+
+.icon-outlined-postpaidbenefits:before {
+    content: "\F172"
+}
+
+.icon-outlined-moneyapp:before {
+    content: "\F173"
+}
+
+.icon-outlined-manageairtel:before {
+    content: "\F174"
+}
+
+.icon-outlined-india-call:before {
+    content: "\F175"
+}
+
+.icon-outlined-hdc-onnection:before {
+    content: "\F176"
+}
+
+.icon-outlined-activate-sim:before {
+    content: "\F177"
+}
+
+.icon-outlined-last-page:before {
+    content: "\F178"
+}
+
+.icon-outlined-first-page:before {
+    content: "\F179"
+}
+
+.icon-outlined-dongle:before {
+    content: "\F17A"
+}
+
+.icon-outlined-add-new:before {
+    content: "\F17B"
+}
+
+.icon-outlined-airtel-money-wallet:before {
+    content: "\F17C"
+}
+
+.icon-outlined-mobile-apps:before {
+    content: "\F17D"
+}
+
+.icon-outlined-bill:before {
+    content: "\F17E"
+}
+
+.icon-outlined-calendar:before {
+    content: "\F17F"
+}
+
+.icon-outlined-camera:before {
+    content: "\F180"
+}
+
+.icon-outlined-cart:before {
+    content: "\F181"
+}
+
+.icon-outlined-click-cursor:before {
+    content: "\F182"
+}
+
+.icon-outlined-customer-support:before {
+    content: "\F183"
+}
+
+.icon-outlined-download:before {
+    content: "\F184"
+}
+
+.icon-outlined-dth:before {
+    content: "\F185"
+}
+
+.icon-outlined-edit:before {
+    content: "\F186"
+}
+
+.icon-outlined-external-page:before {
+    content: "\F187"
+}
+
+.icon-outlined-family:before {
+    content: "\F188"
+}
+
+.icon-outlined-feedback:before {
+    content: "\F189"
+}
+
+.icon-outlined-helpful-up:before {
+    content: "\F18A"
+}
+
+.icon-outlined-helpful-down:before {
+    content: "\F18B"
+}
+
+.icon-outlined-circle-helpful-up:before {
+    content: "\F18C"
+}
+
+.icon-outlined-circle-helpful-down:before {
+    content: "\F18D"
+}
+
+.icon-outlined-landline:before {
+    content: "\F18E"
+}
+
+.icon-outlined-livechat:before {
+    content: "\F18F"
+}
+
+.icon-outlined-logout:before {
+    content: "\F192"
+}
+
+.icon-outlined-menu-nav:before {
+    content: "\F191"
+}
+
+.icon-outlined-monthly-bill:before {
+    content: "\F190"
+}
+
+.icon-outlined-movies:before {
+    content: "\F193"
+}
+
+.icon-outlined-notification:before {
+    content: "\F194"
+}
+
+.icon-outlined-offers:before {
+    content: "\F195"
+}
+
+.icon-outlined-payment:before {
+    content: "\F196"
+}
+
+.icon-outlined-postpaid:before {
+    content: "\F197"
+}
+
+.icon-outlined-prepaid:before {
+    content: "\F198"
+}
+
+.icon-outlined-print:before {
+    content: "\F199"
+}
+
+.icon-outlined-privacy:before {
+    content: "\F19A"
+}
+
+.icon-outlined-salary:before {
+    content: "\F19B"
+}
+
+.icon-outlined-star:before {
+    content: "\F19C"
+}
+
+.icon-outlined-share:before {
+    content: "\F19D"
+}
+
+.icon-outlined-wifi:before {
+    content: "\F19E"
+}
+
+.icon-outlined-payment-bank:before {
+    content: "\F19F"
+}
+
+.icon-outlined-interest:before {
+    content: "\F1A0"
+}
+
+.icon-outlined-bank-insurance:before {
+    content: "\F1A1"
+}
+
+.icon-outlined-payment-bank2:before {
+    content: "\F1A2"
+}
+
+.icon-filled-map-current-location:before {
+    content: "\F1A3"
+}
+
+.icon-outlined-network-issues:before {
+    content: "\F1A4"
+}
+
+.icon-outlined-help:before {
+    content: "\F1A5"
+}
+
+.icon-outlined-search-files:before {
+    content: "\F1A6"
+}
+
+.icon-outlined-send-sim-card:before {
+    content: "\F1A7"
+}
+
+.icon-outlined-write:before {
+    content: "\F1A8"
+}
+
+.icon-smartphone-hand:before {
+    content: "\F1A9"
+}
+
+.icon-outlined-data:before {
+    content: "\F1AA"
+}
+
+.icon-outlined-family-member:before {
+    content: "\F1AB"
+}
+
+.icon-outlined-handset-damage:before {
+    content: "\F1AC"
+}
+
+.icon-outlined-musicmovie:before {
+    content: "\F1AD"
+}
+
+.icon-outlined-unlimited-calling:before {
+    content: "\F1AE"
+}
+
+.icon-outlined-uploadcloud:before {
+    content: "\F1AF"
+}
+
+.icon-outlined-upgrade-phone:before {
+    content: "\F1B0"
+}
+
+.icon-outlined-box-details:before {
+    content: "\F1B1"
+}
+
+.icon-filled-heart:before {
+    content: "\F1B2"
+}
+
+.icon-outlined-heart:before {
+    content: "\F1B3"
+}
+
+.icon-outlined-aadhaar:before {
+    content: "\F1B4"
+}
+
+.icon-outlined-add-money:before {
+    content: "\F1B5"
+}
+
+.icon-outlined-airtel-transfer:before {
+    content: "\F1B6"
+}
+
+.icon-outlined-cash-deposit:before {
+    content: "\F1B7"
+}
+
+.icon-outlined-cash-withdrawal:before {
+    content: "\F1B8"
+}
+
+.icon-outlined-coupons:before {
+    content: "\F1B9"
+}
+
+.icon-outlined-electricity-bill:before {
+    content: "\F1BA"
+}
+
+.icon-outlined-explore:before {
+    content: "\F1BB"
+}
+
+.icon-outlined-gas:before {
+    content: "\F1BC"
+}
+
+.icon-outlined-group-insurance:before {
+    content: "\F1BD"
+}
+
+.icon-outlined-high-interest-rate:before {
+    content: "\F1BE"
+}
+
+.icon-outlined-imps:before {
+    content: "\F1BF"
+}
+
+.icon-outlined-interbank-transfer:before {
+    content: "\F1C0"
+}
+
+.icon-outlined-low-minimum-balance:before {
+    content: "\F1C1"
+}
+
+.icon-outlined-money-transfer:before {
+    content: "\F1C2"
+}
+
+.icon-outlined-more:before {
+    content: "\F1C3"
+}
+
+.icon-outlined-mpin:before {
+    content: "\F1C4"
+}
+
+.icon-outlined-neft:before {
+    content: "\F1C5"
+}
+
+.icon-outlined-records:before {
+    content: "\F1C6"
+}
+
+.icon-outlined-filter:before {
+    content: "\F1C7"
+}
+
+.icon-filled-airtel-movie:before {
+    content: "\F1C8"
+}
+
+.icon-filled-airtel-music:before {
+    content: "\F1C9"
+}
+
+.icon-filled-user:before {
+    content: "\F1CA"
+}
+
+.icon-outlined-secure2:before {
+    content: "\F1CB"
+}
+
+.icon-outlined-offer-cashback:before {
+    content: "\F1CC"
+}
+
+.icon-outlined-roaming:before {
+    content: "\F1CD"
+}
+/*Airtel Icons End*/
+.color-red {
+    color: #e40000 !important;
+}
+
+.mysor af|selectOneRadio::content label{
+    font-weight: 100 !important;
+    font-size: 16px !important;
+    margin-right:26px;
+}
+.mysor af|selectOneRadio::content input{
+    transition: box-shadow .2s ease-in-out!important;
+    height: 24px!important;
+    width: 24px!important;
+    background: #fff!important;
+    border: 1px solid #707070!important;
+    box-shadow: inset 0 0 0 2px transparent!important;
+    cursor: pointer!important;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    display: inline-block!important;
+    vertical-align: bottom!important;
+    -webkit-appearance: none;
+    border-radius: 50%;
+}
+.mysor af|selectOneRadio::content input:focus,.mysor af|selectOneRadio::content input:checked,.mysor af|selectOneRadio::content input:visited{
+    transition: box-shadow .2s ease-in-out!important;
+    height: 24px!important;
+    width: 24px!important;
+    background: #fff!important;
+    border: 1px solid #000!important;
+    box-shadow: inset 0 0 0 2px transparent!important;
+    cursor: pointer!important;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    display: inline-block!important;
+    vertical-align: bottom!important;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    outline: none;
+}
+.mysor af|selectOneRadio::content input:hover{
+    border-color:#343434!important;
+}
+/*input[type=radio]{
+    border-color: #000 !important;
+    background: #fff !important;
+}*/
+
+/* Radio button styling */
+input[type='radio']:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 12px;
+    width: 12px;
+    background: #fff;
+    border-radius: 50%;
+    content: '';
+    transform: translate(-50%,-50%);
+}
+
+input[type='radio']:checked:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 12px;
+    width: 12px;
+    background: #e40000;
+    border-radius: 50%;
+    content: '';
+    transform: translate(-50%,-50%);
+} 
+
+/* radio button styling ends*/
+
+.form-group{
+    margin-bottom:15px
+}
+.form-group:after,.form-group:before{
+    content:"";
+    clear:both;
+    display:block
+}
+.margin-top-30, .mt-30 {
+    margin-top: 30px !important;
+}
+.margin-top-35, .mt-35 {
+    margin-top: 35px !important;
+}
+.mob-width-100 table {
+    width:100% !important;
+    }
+
+af|inputText::label{
+    width:0px;
+    display:none;
+}
+af|inputText::content{
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9f9f9f;
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+    height: 36px;
+    outline: none;
+    box-shadow: none;
+}
+@media (min-width:1199px) {
+    .navbar-nav.main-nav a {
+        margin: 0 35px;
+    }
+}
+
+@media (min-width:992px) {
+    .main-nav-center {
+        left: 120px;
+        right: 120px;
+    }
+}
+
+@media (min-width:768px) {
+    .container-fluid {
+        width: 96%
+    }
+    .navbar-header {
+        float: left;
+        margin-right: 0;
+        margin-left: 0;
+        position: relative;
+        top: -15px;
+        z-index: 2;
+    }
+    .large-menu {
+        padding-top: 15px;
+        margin-bottom: 24px;
+    }
+    .main-nav-center {
+        left: 120px;
+        right: 120px;
+    }
+    .flex-container {
+        display: flex;
+        width: 100%;
+    }
+}
+
+af|button.btn {
+    /*width: 100%!important;*/
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: .5s;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    border: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 0;
+    background-image: none;
+    white-space: nowrap;
+    padding: 17px 40px;
+    font-size: 20px;
+    line-height: 1.3333333;
+    color: #fff;
+    background-color: #e40000;
+    border-color: #df0000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+af|button.btn:hover, af|button.btn:focus{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: .5s;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    border: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 0;
+    background-image: none;
+    white-space: nowrap;
+    padding: 17px 40px;
+    font-size: 20px;
+    line-height: 1.3333333;
+    color: #fff;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background-color: #a30000 ;
+    border-color: #a30000 ;
+
+}
+
+af|button.btn:disabled {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: .5s;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    white-space: nowrap;
+    padding: 17px 40px;
+    font-size: 20px;
+    line-height: 1.3333333;
+
+    border-color: #a30000 ;
+    
+    pointer-events: none;
+    color: #000;
+    background-color: #d4d4d4;
+
+}
+
+af|panelGroupLayout.contentArea{
+    top: -14px;
+    position: relative;
+    /*background-color: #f6f6f6;*/
+}
+
+af|commandLink.signup-style{
+    font-size: 14px!important;
+    /*line-height: 17px!important;*/
+    letter-spacing: 1.2px!important;
+    color: #e40000!important;
+}
+af|commandLink.signup-style:hover{
+    font-size: 14px!important;
+    /*line-height: 17px!important;*/
+    letter-spacing: 1.2px!important;
+    color: #a30000!important;
+}
+af|commandLink.signup-style:focus {
+    outline: none !important ;
+}
+
+af|commandLink.icon-size-20, af|commandLink.icon-size-20 {
+    font-size: 20px!important;
+}
+af|commandLink.icon-size-30, af|commandLink.icon-size-30 {
+    font-size: 30px!important;
+}
+
+/* Styling for Signup Starts */
+.minH-100vh{min-height: 100vh;}
+.width-35 {width: 35% !important;}
+.width-65 {width: 65% !important;}
+.pl-150 {padding-left: 150px;}
+.padding-right-100,.pr-100{
+    padding-right:100px!important
+}
+.padding-bottom-50,.pb-50{
+    padding-bottom:50px!important
+}
+.margin-top-50,.mt-50{
+    margin-top:50px!important
+}
+.margin-top-20,.mt-20{
+    margin-top:20px!important
+}
+.margin-bottom-20,.mb-20{
+    margin-bottom:20px!important
+}
+.margin-bottom-5, .mb-5 {
+    margin-bottom: 5px!important;
+}
+@media (width: 1024px) {
+	.pr-250 {padding-right: 100px !important;}
+	.width-78per {width: 74% !important;}
+	.tablet.pr-80 {padding-right: 20px !important;}
+	.width-35.pl-80 {padding-left: 40px !important;}
+	.width-35.pr-100 {padding-right: 50px !important;}
+}
+af|commandLink.icon-size-40 {
+    font-size:40px!important
+}
+af|commandLink.icon-outlined-previous-page:before {
+    content: "\F166";
+}
+.h3Style{
+    font-weight: 100;
+    font-family: Tondo-light,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+/*for stepper*/
+.stepper ul {list-style: none; counter-reset: stepper;padding-left:0px;}
+.stepper ul li{font-size: 16px; color: #707070; font-weight: 300; padding-bottom: 30px; position: relative; padding-left: 50px;}
+.stepper ul li:before{counter-increment: stepper; content: counter(stepper); width: 40px; height: 40px; border: 1px solid #707070; border-radius: 50%;
+background: #fff; font-size: 16px; color: #666; text-align: center; line-height: 40px; z-index: 2; position: absolute; left: 0;}
+.stepper ul li:after {content: ""; position: absolute; height: 100%; width: 1px; background: #ccc; left: 20px; top: 8px;}
+.stepper ul li:last-child {padding-bottom: 0;}
+.stepper ul li:last-child:after {content: none;}
+
+.stepper ul li.active, .stepper ul li.completed {color: #000;}
+.stepper ul li.active:before {font-weight: 500; color: #000; border-color: #000;}
+.stepper ul li.completed:before {font-weight: 500; color: #96BA3A; border-color: #96BA3A;}
+
+.activeSpan{
+    color: #000;
+}
+.padding-top-140,.pt-140{padding-top:140px!important}
+.form-group {
+    margin-bottom: 0;
+}
+.field-title{
+    font-weight: 100;
+    color: #707070;
+    text-align: left;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0;
+   
+}
+.text-none {
+    text-transform: none !important;
+}
+
+.select {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+.width-100px {
+    width: 100px;
+}
+.margin-top-10, .mt-10 {
+    margin-top: 10px!important;
+}
+select {
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    -ms-appearance: none!important;
+    -o-appearance: none!important;
+    appearance: none!important;
+    font-size: 16px!important;
+    color: #000!important;
+    width: 100%!important;
+    background: transparent!important;
+    border: none!important;
+    border-bottom: 1px solid #9f9f9f!important;
+    border-radius: 0!important;
+    padding: 0!important;
+    position: relative!important;
+    vertical-align: middle!important;
+    z-index: 1!important;
+    height: 36px!important;
+    outline: none!important;
+    box-shadow: none!important;
+    text-transform:none!important;
+}
+.mysoc:after {
+    position: relative;
+    content: '\F129';
+    font-family: airtel-icons;
+    line-height: 18px;
+    /* height: 20px; */
+    /* width: 20px; */
+    /* margin-top: -10px; */
+    pointer-events: none;
+    /* text-align: center; */
+    z-index: 1;
+    top: -25px;
+    left: 68px;
+}
+
+.mysoc1:after {
+    position: relative;
+    content: '\F129';
+    font-family: airtel-icons;
+    line-height: 18px;
+    /* height: 20px; */
+    /* width: 20px; */
+    /* margin-top: -10px; */
+    pointer-events: none;
+    /* text-align: center; */
+    z-index: 1;
+    top: -25px;
+    left: 38px;
+}
+.myBigSoc:after {
+    position: relative;
+    content: '\F129';
+    font-family: airtel-icons;
+    line-height: 18px;
+    /* height: 20px; */
+    /* width: 20px; */
+    /* margin-top: -10px; */
+    pointer-events: none;
+    /* text-align: center; */
+    z-index: 1;
+    top: -25px;
+    left: 96%;
+}
+.mt-42 {
+    margin-top: 42px !important;
+}
+.mt-190 {
+    margin-top: 80px !important;
+}
+.padding-top-155, .pt-155 {
+    padding-top: 155px!important;
+}
+.margin-top-140, .mt-140 {
+    margin-top: 140px!important;
+}
+.text-right {
+    text-align: right;
+}
+
+/* Styling for Signup Ends */
+/*
+
+Styling from Airtel Standardization CSS Ends
+
+*/
+
+
+/*----------------------------thankyou css(bhaskar)----------------------------*/
+.link-thankyou {
+    color: #e40000;
+    /*cursor: pointer;*/
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.icon-outlined-circle-checkmark1:before {
+    content: "\F12B";
+    color: #008300!important;
+   
+
+}
+af|commandLink.icon-size-60 {
+        font-size: 60px!important;
+}
+.color-green {
+    color: #008300!important;
+}
+.inline-block-thankyou {
+    display: inline-block;
+}
+.mb-20 {
+    margin-bottom: 20px!important;
+}
+.font-size-30, .fs-30 {
+    font-size: 30px!important;
+}
+.margin-left-10, .ml-10 {
+    margin-left: 10px!important;
+}
+.margin-left-8, .ml-8 {
+    margin-left: 8px!important;
+}
+.mailUsOT{
+    font-family: Tondo-light,Helvetica Neue,Helvetica,Arial,sans-serif!important;
+    line-height: 24px!important;
+    font-weight: 100!important;
+    position: relative;
+    top: -10px;
+}
+
+
+/*-------------- forgot password CSS ------------*/
+.full-viewport-height {
+min-height: 100vh !important;
+}
+.width-35 {
+    width: 35% !important;
+}
+.padding-right-100, .pr-100 {
+    padding-right: 100px!important;
+}
+.padding-left-80, .pl-80 {
+    padding-left: 80px!important;
+}
+.pl-150 {
+    padding-left: 150px;
+}
+.text{
+  font-size: 16px;
+    color: #000;
+    width: 40%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9f9f9f;
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+    height: 36px;
+    outline: none;  
+   
+}
+/*.btn-lg
+{
+  padding:17px 40px !important ;
+    font-size: 20px !important;
+    line-height: 1.3333333 !important;
+}
+.btn{
+    display: inline-block !important;
+    font-weight:100 !important;
+   
+    text-align: center !important;
+    background-color:#e40000 !important;
+    border-color: #df0000 !important;
+    letter-spacing: 2px !important;
+    vertical-align: middle !important;
+    border: none !important;
+    cursor: pointer !important;
+    border-radius: 0 !important;
+
+}*/
+.mt200
+{
+    margin-top:200px;
+}
+.mt-30
+{
+  margin-top:30px !important;  
+}
+.mt-8
+{
+  margin-top:8px !important;  
+}
+.fs-16
+{
+ font-size:16px
+}
+.field-title
+{
+    font-weight: 100;
+    color: #707070;
+    text-align: left;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    display: block;
+}
+.mb-5 {
+    margin-bottom: 5px!important;
+}
+.min-height-100vh {
+    min-height: 100vh !important;
+}
+.mt-40 {
+    margin-top: 40px!important;
+}
+/*color: #a30000;*/
+
+/*
+background: #a30000 ;
+    border-color: #a30000 ;
+Styling from Airtel Standardization CSS Ends
+
+*/
+
+/*---------------------- Vender Management CSS Start --------------*/
+.minH-100vh {
+    min-height: 100vh;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.width-full {
+    width: 100vw !important;
+}
+
+.user-header {
+    height: 108px;
+    border-bottom: 1px solid #E7E7E7;
+    position: fixed;
+    top: 0;
+    width: calc(100% -400px);
+    z-index: 3;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.margin-left-40, .ml-40 {
+    margin-left: 40px !important;
+}
+
+.margin-top-20, .mt-20 {
+    margin-top: 20px !important;
+}
+
+.color-red {
+    color: #e40000 !important;
+}
+/*airtel-logo left*/
+.pull-left {
+    float: left !important;
+}
+
+.font-size-20, .fs-20 {
+    font-size: 20px !important;
+    line-height: 24px;
+}
+/*logot right  and logout icon*/
+.margin-right-40, .mr-40 {
+    margin-right: 40px !important;
+}
+
+.margin-top-40, .mt-40 {
+    margin-top: 40px !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.fw-bold {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.icon {
+    font-family: airtel-icons;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-size-24, .fs-24 {
+    font-size: 24px !important;
+}
+/*starting content*/
+.margin-top-110, .mt-110 {
+    margin-top: 110px !important;
+}
+
+.padding-top-60, .pt-60 {
+    padding-top: 60px !important;
+}
+
+.padding-left-40, .pl-40 {
+    padding-left: 40px !important;
+}
+
+.padding-right-40, .pr-40 {
+    padding-right: 40px !important;
+}
+
+.margin-bottom-50, .mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.header4 {
+    margin: 0;
+    line-height: 40px;
+    letter-spacing: -.1px;
+    font-weight: 100;
+    color: inherit;
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.font-size-30, .fs-30 {
+    font-size: 30px !important;
+}
+
+.color-grey {
+    color: #707070 !important;
+}
+
+.font-size-16, .fs-16 {
+    font-size: 16px !important;
+}
+
+.margin-top-10, .mt-10 {
+    margin-top: 10px !important;
+}
+/*cards works start*/
+.info-cards {
+    width: 31%;
+    padding: 30px 0;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    float: left;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.icon-outlined-identification-box:before {
+    content: "\F16A";
+}
+
+.icon-outlined-mail:before {
+    content: "\F104";
+}
+
+.icon-outlined-phone:before {
+    content: "\F105";
+}
+
+.margin-left-30, .ml-30 {
+    margin-left: 30px !important;
+}
+
+.margin-left-20, .ml-20 {
+    margin-left: 20px !important;
+}
+
+font-weight-400 {
+    font-weight: 400;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear:after, .clear:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.colsm12with100 {
+    width: 100%;
+}
+
+.colsm4width33 {
+    width: 33.3333333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.colsm8width66 {
+    width: 66.6666666667%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.colsm3width25 {
+    width: 25%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mr-60 {
+    margin-right: 60px;
+}
+
+.link {
+    color: #e40000;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.link .icon-outlined-link-right-arrow::before {
+    font-size: 130%;
+    vertical-align: text-bottom;
+    margin-left: 8px;
+}
+
+.mt-50Important {
+    margin-top: 50px !important;
+}
+
+.vender-profile-footer {
+    height: 103px;
+    border-top: 1px solid #E7E7E7;
+    background: #fff;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+    display: block;
+}
+/* --------------------- Vender Management CSS End --------------*/
+/*color: #a30000;*/
+/*
+background: #a30000 ;
+    border-color: #a30000 ;
+Styling from Airtel Standardization CSS Ends
+
+*/
+
+
+                      /*Terms and Conditions*/
+.mt-180
+{
+     margin-top: 
+     180px;
+}
+.width-40
+{
+    width:40%;
+}
+.width-60
+{
+    width:60%;
+}
+.pl-80
+{
+ padding-left: 80px!important;
+}
+.pr-80 
+{
+  padding-right: 80px!important;
+}
+.pt-80
+{
+  padding-top: 80px!important;
+}
+.terms-wrapper
+{
+    max-height: 550px;
+    overflow: auto;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 100;
+}
+.mr-70
+{
+    margin-right:70px;
+}
+.icon    
+{
+   font-family: airtel-icons;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.width-250 {
+    width: 250px !important;
+}
+.ml-100 {
+    margin-left: 100px!important;
+}
+.ml-10 {
+    margin-left: 10px!important;
+}
+.icon-size-20
+{
+  font-size: 20px!important;  
+}
+.icon-outlined-download:before {
+    content: "\F102";
+}
+
+/* end terms and condition */
+
+af|selectBooleanCheckbox {
+    height: 20%; 
+}
+
+
+/*------------------------- Organization Details CSS Start------------------------------*/
+.left-section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.width-29 {
+    width:29.45%;
+}
+.width-70 {
+    width:70.55%;
+}
+.pl-400 {
+    padding-left: 400px;
+}
+
+.width-400 {
+    width: 400px;
+}
+
+.padding-left-50, .pl-50 {
+    padding-left: 50px !important;
+}
+
+.padding-right-50, .pr-50 {
+    padding-right: 50px !important;
+}
+
+.minH-100vh {
+    min-height: 100vh;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.width-full1 {
+    width: 100% !important;
+}
+
+.user-header {
+    height: 108px;
+    border-bottom: 1px solid #E7E7E7;
+    position: fixed;
+    top: 0;
+    width: calc(100vw -400px);
+    z-index: 3;
+}
+
+.margin-left-70, .ml-70 {
+    margin-left: 70px !important;
+}
+
+.margin-top-40, .mt-40 {
+    margin-top: 40px !important;
+}
+
+.color-red {
+    color: #e40000 !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.font-size-20, .fs-20 {
+    font-size: 20px !important;
+    line-height: 24px;
+}
+
+.margin-right-40, .mr-40 {
+    margin-right: 40px !important;
+}
+
+.margin-top-40, .mt-40 {
+    margin-top: 40px !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.margin-bottom-50, .mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.margin-top-40, .mt-40 {
+    margin-top: 40px !important;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.airtel-logo {
+    vertical-align: middle;
+    width: 156px;
+}
+
+.margin-top-100, .mt-100 {
+    margin-top: 100px !important;
+}
+
+.margin-top-50, .mt-50 {
+    margin-top: 50px !important;
+}
+
+.margin-bottom-20, .mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.color-black {
+    color: #000 !important;
+}
+
+.font-size-20, .fs-20 {
+    font-size: 20px !important;
+    line-height: 24px;
+}
+
+.margin-top-108, .mt-108 {
+    margin-top: 108px !important;
+}
+
+.padding-left-70, .pl-70 {
+    padding-left: 70px !important;
+}
+
+.padding-right-70, .pr-70 {
+    padding-right: 70px !important;
+}
+
+.padding-top-64, .pt-64 {
+    padding-top: 64px !important;
+}
+
+.mb-100 {
+    margin-bottom: 100px !important;
+}
+
+.width-60 {
+    width: 60% !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.font-size-30, .fs-30 {
+    font-size: 30px !important;
+}
+
+.text-style {
+    line-height: 40px;
+    letter-spacing: -.1px;
+}
+
+.line-height-20 {
+    line-height: 20px !important;
+}
+
+.margin-top-10, .mt-10 {
+    margin-top: 10px !important;
+}
+
+.color-grey {
+    color: #707070 !important;
+}
+
+.font-size-16, .fs-16 {
+    font-size: 16px !important;
+}
+
+.font-size-24, .fs-24 {
+    font-size: 24px !important;
+}
+
+.mt-minus-2 {
+    margin-top: -2px;
+}
+
+.mr-25 {
+    margin-right: 25px;
+}
+
+.letter-spacing {
+    letter-spacing: -0.1px;
+}
+.clear {
+    clear: both;
+}
+
+.progress-circle {
+    position: relative;
+    padding: 0;
+    width: 52px;
+    height: 52px;
+    background-color: #dfdfdf;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+/*.progress-circle:after {
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    content: " ";
+    transform: translate(-50%, -50%);
+}*/
+.left-half-clipper {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    clip: rect(0, 52px, 52px, 26px);
+}
+/*.progress-circle.p0 .value-bar {
+    display: none;
+}
+
+.value-bar {
+    position: absolute;
+    clip: rect(0, 26px, 52px, 0);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 4px solid #e40000;
+    box-sizing: border-box;
+}
+.first50-bar {
+    display: none;
+}*/
+.width-70 % {
+    width: 70% !important;
+}
+.pr-28 {
+    padding-right: 28px;
+}
+
+.field-title, .form-group label {
+    font-weight: 100;
+    color: #707070;
+    text-align: left;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    display: block;
+    font-family: Tondo;
+    margin-bottom: 0;
+}
+
+.margin-bottom-5, .mb-5 {
+    margin-bottom: 5px !important;
+}
+.margin-top-13 {
+    margin-top:13px;
+}
+
+.text-h4 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -.1px;
+}
+
+.float-left {
+    float: left !important;
+}
+label {
+    font-family: Tondo-Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+.upload-document {
+    border: 1px dotted #707070;
+    padding: 50px 50px 50px 75px;
+    overflow: hidden;
+}
+.upload-document.uploaded .file-name:before {
+    content: "\F12B";
+    color: #008300;
+}
+.upload-document .file-name:before {
+    content: "\F17F";
+    font-family: airtel-icons;
+       position: absolute;
+    font-size: 40px;
+    color: #999;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.upload-document .file-name {
+    position: relative;
+    padding-left: 50px;
+}
+.font-size-14-1, .fs-14-1 {
+    font-size: 14px!important;
+    line-height: 17px;
+    letter-spacing: 1.2px;
+    color: #e40000;
+}
+.margin-right-80, .mr-80 {
+    margin-right: 80px!important;
+}
+a:focus {
+    outline: none !important ;
+}
+a span:focus {
+    outline: none !important ;
+}
+a span:hover {
+    outline: none !important ;
+    text-decoration: none !important ;
+}
+a span:active {
+   text-decoration: none !important ;
+}
+.a-span-hover a span:hover, .a-span-hover a span:active, .a-span-hover a span:focus {
+     text-decoration: none;
+}
+.footer {
+    height: 103px;
+    border-top: 1px solid #E7E7E7;
+    background: #fff;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.footer.fs-14 {
+    font-size: 14px!important;
+    line-height: 17px;
+    letter-spacing: 1.2px;
+    color: #000;
+}
+a span {
+    font-family: Tondo-Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+.line-70 {
+    line-height: 70px;
+}
+.font-size-60, .fs-60 {
+    font-size: 60px!important;
+}
+.icon-outlined-circle-checkmark:before {
+    content: "\F12B";
+}
+.display-inline-block, .inline-block {
+    display: inline-block;
+}
+.link .icon-outlined-link-right-arrow {
+    font-size: 130%;
+    vertical-align: text-bottom;
+    margin-left: 8px;
+}
+.icon-outlined-link-arrow-right:before, .icon-outlined-link-right-arrow:before {
+    content: "\F172";
+}
+.link {
+    font-family: Tondo,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: #e40000;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.line-height {
+    line-height: 24px !important;
+}
+.download-link-css {
+    font-family: Tondo,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.download-link-css a:active {
+    color:red !important;
+}
+.download-link-css a:hover {
+    color:red !important;
+}
+.mt-39 {
+    margin-top: 39px !important;
+}
+.nav-icon-navbaar a:active {
+    font-family: airtel-icons !important;
+}
+.pt-50 {
+    padding-top: 50px !important;
+}
+/*input[type='file'] {
+  color: transparent;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}*/
+/*------------------------- Organization Details CSS End ------------------------------*/
+
+
+
+/*-------------------------- Login Start ---------------------------*/
+.error-msg {
+    margin-top: 0px;
+    font-size: 11px;
+    color: #ee8d06;
+    margin-bottom: 0px;
+}
+input {
+    text-align: left !important;
+}
+/*-------------------------- Login End ---------------------------*/
+af|inputText::content:hover{
+    border-color: #000;
+}
+af|selectBooleanCheckbox::native-input:rtl {
+    height: 20%; 
+    border: solid; 
+    border-color: Black Black Black Black; 
+}
+.label.warning:before {
+    content: "\F15D";
+    font-family: airtel-icons;
+    font-size: 17px;
+    height: 16px;
+    width: 16px;
+    line-height: 15px;
+    color: #ef8d07;
+    vertical-align: top;
+    margin-left: 10px;
+}
+/* New CSS */
+.step1 ul li:first-child:before{
+        font-weight: 600;
+        color: #000;
+        border: 1px solid #000;
+}
+.step-1 ul li:nth-child(1):before {
+    font-weight: 600;
+    color:#000;
+    border: 1px solid #000;
+}
+
+
+.org-step1 ul li:first-child:before{
+    color: #96BA3A !important;
+    border-color: transparent !important ;
+    content: "\F114" !important;
+    font-family: airtel-icons !important;
+    font-size: 40px !important;
+    border: none !important ;
+}
+
+
+.org-step2 ul li:first-child:before{
+    color: #96BA3A !important;
+    border-color: transparent !important ;
+    content: "\F114" !important;
+    font-family: airtel-icons !important;
+    font-size: 40px !important;
+    border: none !important ;
+}
+
+.org-step2 ul li:nth-child(2):before{
+    color: #96BA3A !important;
+    border-color: transparent !important ;
+    content: "\F114" !important;
+    font-family: airtel-icons !important;
+    font-size: 40px !important;
+    border: none !important ;
+}
+.profile-percentage {
+    border: 2px solid #ddd;
+    width: 30px;
+    height: 33px;
+    padding: 17px 15px;
+    border-radius: 50%;
+        margin-right: 50px;
+}
+.profile-percentage-org-detail {
+    border: 2px solid #ddd;
+    padding: 20px 15px;
+    border-radius: 50%;
+}
+.profile-percentage-org-thankyou {
+     border: 2px solid #ddd;
+    padding: 20px 15px;
+    border-radius: 50%;
+       margin-right: 50px;
+}
+.pt-70 {
+    padding-top: 70px !important;
+}
+.fw-bold {
+    font-weight: 400;
+}
+.text-underline {
+letter-spacing: .1px;
+    text-decoration: underline !important; 
+}
+a.text-underline:hover, a.text-underline:active {
+ text-decoration: none !important;
+}
+.color-black {
+    color: #000!important;
+}
+.pr-200 {
+    padding-right: 200px !important;
+}
+/*a:hover, a:active {
+    font-family: airtel-icons !important;
+}
+a span:hover, a span:active {
+    font-family: airtel-icons !important;
+}*/
+af|commandLink:active.airtelIcon {
+     font-family: airtel-icons !important;
+}
+.notification {
+    background: #F0F6EB;
+    padding: 20px;
+    position: absolute;
+    right: 12px;
+    width: 350px !important;
+}
+.notification .cross {
+    background: url(/images/cross-green.svg) no-repeat;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+/* ------------2-Supplier-registration-phase-2 css start--------*/
+.link-red-pointer {
+    color: #e40000;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+af|commandLink.icon-outlined-link-right-arrow-red:before {
+    content: "\F172"
+}
+
+.link-red-pointer .icon-outlined-link-right-arrow-red {
+    font-size: 130%;
+    vertical-align: text-bottom;
+    margin-left: 8px;
+}
+/*------------------2-Supplier-registration-phase-2 css  ends-----------------*/
+/*------------------3-Supplier-registration-phase-2 css start-----------*/
+.org-step3 ul li:nth-child(3):before {
+    color: #96BA3A !important;
+    border-color: transparent !important;
+    content: "\F114" !important;
+    font-family: airtel-icons !important;
+    font-size: 40px !important;
+    border: none !important;
+}
+
+.stepper ul li span {
+    MARGIN-TOP: 10PX;
+    display: inline-block;
+}
+
+.supplier-add-percentage-detail {
+    border: 2px solid #ddd;
+    padding: 17px 15px;
+    border-radius: 50%;
+}
+
+.AFStretchWidth-info div {
+    line-height: normal;
+}
+
+.AFStretchWidth-info af|selectOneRadio::content label {
+    font-weight: 100 !important;
+    font-size: 14px !important;
+    margin-right: 18px;
+    margin-left: 15px;
+    color: #707070;
+    letter-spacing: 1.2px;
+}
+
+.icon-outlined-circle-information:before {
+    content: "\F12C";
+    vertical-align: middle;
+}
+
+select {
+    color: #737373 !important;
+}
+/*.x17w span:before{    font-size: 130%;
+vertical-align: text-bottom;
+margin-left: 8px;}
+.x17w:hover span:before{animation: linkanimation .7s linear;}*/
+.link:hover {
+    animation: linkanimation .7s linear !important;
+}
+/*------------------Supplier Address css end-----------*/
+/*--------------- 5-Supplier-registration-phase-2 start -------------------*/
+.icon-outlined-circle-plus:before {
+    content: "\F164";
+    color: #737373 !important;
+}
+
+.mt-12 {
+    margin-top: 12px !important;
+}
+
+.circle-icon-size a {
+    font-size: 24px !important;
+}
+
+.ml-85 {
+    margin-left: 85px !important;
+}
+
+.label-title {
+    font-weight: 100;
+    color: #000;
+    text-align: left;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: .01em;
+    display: block;
+    margin-bottom: 0;
+}
+
+.select-color-black select {
+    color: #000 !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.width-290 {
+    width: 290px;
+}
+
+.width-170 {
+    width: 170px;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.mr-135 {
+    margin-right: 135px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.width-120 {
+    width: 120px;
+}
+/*--------------- 5-Supplier-registration-phase-2 end -------------------*/
+/*--------------------7-Complete your profile-phase-2 css--------*/
+af|button.btn-mid {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    background-image: none;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #e40000;
+    border-color: #df0000;
+}
+
+.thank-you-btn .btn:hover, thank-you-btn .btn:focus {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: .5s;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    border: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 0;
+    background-image: none;
+    white-space: nowrap;
+    padding: 10px 25px;
+    font-size: 16px;
+    line-height: 1.3333333;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #a30000;
+    border-color: #a30000;
+}
+
+.thank-you-btn .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 100 !important;
+    text-align: center;
+    text-transform: uppercase;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: .5s;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    border: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 0;
+    background-image: none;
+    white-space: nowrap;
+    padding: 10px 25px;
+    font-size: 16px;
+    line-height: 1.3333333;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*background-color: #a30000;
+    border-color: #a30000;*/
+}
+/*--------------------------------7-Complete your profile-phase-2 ends here------------------*/
+/*--------------- 8-Supplier-registration-phase-2 start -------------------*/
+.ml-130 {
+    margin-left: 130px !important;
+}
+
+.mysor1 div {
+    margin-bottom: 45px !important;
+}
+
+.width-35 {
+    width: 35% !important;
+}
+/*--------------- 8-Supplier-registration-phase-2 end -------------------*/
+/*-------------------9-Supplier-registration-phase-2--------------------*/
+.ml-130 {
+    margin-left: 130px !important;
+}
+
+.AFStretchWidth-info1 div {
+    margin-bottom: 45px !important;
+}
+
+.width-35 {
+    width: 35% !important;
+}
+
+.mt-160 {
+    margin-top: 160px !important;
+}
+/*-------------------9-Supplier-registration-phase-2 end--------------------*/
+/*---------- new changes vendor profile no-2 start--------------- */
+.display-block {
+    display: block !important;
+}
+
+.text-align-center {
+    text-align: center !important;
+}
+
+.icon-outlined-notification:before {
+    content: "\F109";
+}
+
+.icon-outlined-bill:before {
+    content: "\F182";
+}
+
+.pt-72 {
+    padding-top: 72px !important;
+}
+
+.vendor-profile-phase-2 .profile-percentage-org-detail {
+    padding: 15px 9px !important;
+    font-size: 15px !important;
+}
+
+.width-50 {
+    width: 50% !important;
+}
+
+.line-height-24 {
+    line-height: 24px !important;
+}
+
+.info-cards {
+    width: 31%;
+    padding: 30px 0;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    float: left;
+}
+
+.info-cards .icon-outlined-identification:before {
+    content: "\F16A";
+}
+
+.font-weight-600 {
+    font-weight: 600 !important;
+}
+
+.info-cards .icon-outlined-mail:before {
+    content: "\F104";
+}
+
+.info-cards .icon-outlined-phone:before {
+    content: "\F105";
+}
+
+.company-list ul {
+    list-style: none;
+}
+
+.company-details td {
+    width: 205px;
+}
+
+.left-half-clipper {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    /*clip: rect(0, 52px, 52px, 26px);*/
+}
+/*.progress-circle:not(.over50) .first50-bar {
+    display: none;
+}
+.progress-circle.p50 .value-bar {
+    transform: rotate(180deg);
+}
+.value-bar {
+    position: absolute;*/
+/*clip: rect(0, 26px, 52px, 0);*/
+/*width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 4px solid #e40000;
+    box-sizing: border-box;
+}
+.progress-circle:after {
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    content: " ";
+    transform: translate(-50%, -50%);
+}*/
+.stepper .icon-outlined-circle-information:before {
+    content: "\F12C";
+    vertical-align: super;
+    font-size: 28px !important;
+    margin-left: 5px;
+}
+
+.mt-70 {
+    margin-top: 70px !important;
+}
+
+a.color-red:hover {
+    color: #a30000 !important;
+}
+/*---------- new changes vendor profile no-2 end ---------------- */
+/*--------------- new changes Registration Phase-2 no-5 start -------------------*/
+.mysoc11:after {
+    position: relative;
+    content: '\F129';
+    font-family: airtel-icons;
+    line-height: 18px;
+    pointer-events: none;
+    z-index: 1;
+    top: -25px;
+    left: 60px;
+    /* float: right; */
+}
+
+.info .icon-outlined-circle-information:before {
+    content: "\F12C";
+    font-size: 28px !important;
+    margin-left: 5px;
+}
+
+.label-info .icon-outlined-circle-information:before {
+    content: "\F12C";
+    margin-left: 5px;
+}
+
+.statutory-documents-info .icon-outlined-circle-information:before {
+    content: "\F12C";
+    margin-left: 5px;
+    vertical-align: text-top;
+}
+
+.width-285 {
+    width: 285px !important;
+}
+
+.date-input .input {
+    font-weight: normal;
+    font-family: Tondo-Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DFE4E7;
+    box-sizing: border-box;
+    background-color: #FCFDFE;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0px;
+    -webkit-appearance: none;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9f9f9f;
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+    height: 36px;
+    outline: none;
+    box-shadow: none;
+}
+
+.date-input input {
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    width: 170px !important;
+}
+
+.date-input input:focus {
+    outline: none !important;
+}
+
+.field-title-date {
+    font-weight: 100;
+    color: #707070;
+    text-align: left;
+    font-size: 14px !important;
+    line-height: 17px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0;
+    
+}
+.no-pe-description-info .icon-outlined-circle-information:before {
+    content: "\F12C";
+    margin-left: 5px;
+    vertical-align: text-top;
+}
+.list-item-class ul {
+    list-style: none !important ;
+    padding: 0px !important ;
+}
+.stepper ul li.activeSpan:before {
+    color: #000 !important;
+    border-color: #000 !important ;
+}
+
+/*--------------- new changes Registration Phase-2 no-5 end -------------------*/
+ /*---------------------- new changes Registration phase-2-9 start ----------------------*/
+ .width-300 {
+     width: 300px !important;
+ }
+ /*---------------------- new changes Registration phase-2-9 end ----------------------*/
+ 
+ /* ------------ new changes 30-aug start----------------- */
+ .checkbox-size input {
+     height: 23px;
+     width: 23px;
+ }
+ /*------------------------ 15-Notification-request CSS start -----------------------*/
+.ml {
+    margin-left: 20px !important;
+}
+
+.mt-160 {
+    margin-top: 160px !important;
+}
+
+.pl-20 {
+    padding-left: 20px !important;
+}
+
+.vendor-requests .details-blocks1 {
+    width: 35%;
+    float: left;
+    padding: 0px 15px;
+    min-height: 80px;
+    margin-bottom: 15px;
+}
+
+.width-170 {
+    width: 170px !important;
+}
+
+.pl-30 {
+    padding-left: 30px !important;
+}
+
+.pr-30 {
+    padding-right: 30px !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear:after, .clear:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn-red-thin-stroked-notification A {
+    cursor: pointer;
+    color: #e40000;
+    font-size: 16px;
+    padding: 12px 35px !important;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e40000;
+}
+
+.btn-class-vendor-request-notification af|button.btn {
+    cursor: default !important;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 0;
+    background-image: none;
+    white-space: nowrap;
+    /*padding: 12px 32px;*/
+
+    font-size: 20px;
+    line-height: 1.3333333;
+    background-color: #fff;
+    border: none;
+}
+
+.btn-red-thin-stroked-notification:hover, btn-red-thin-stroked-notification:active {
+    background: #e40000 !important;
+    color: #fff !important;
+}
+
+.btn-red-thin-stroked-notification A:hover {
+    border: 1px solid #e40000;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px !important;
+    width: 100%;
+    height: 100%;
+}
+
+.checkboxes input {
+    height: 28px;
+    width: 28px;
+}
+/*------------------------ 15-Notification-request CSS end -----------------------*/
+/*------------- 16-Information Request start ----------- */
+.vertical-scroll {
+    overflow-y: auto;
+}
+
+.content-w-chat {
+    height: calc(100vh -250px);
+}
+
+.chat-grid {
+    position: relative;
+    background: #fdfdfd !important;
+    margin: 30px 0 !important;
+    padding: 40px !important;
+}
+
+.chat-grid li .chat-aria {
+    display: inline-block;
+    text-align: left;
+}
+
+.chat-grid li .chat-aria .user-name {
+    margin: 10px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #e40000 !important;
+    line-height: normal;
+}
+
+.chat-grid li .chat-aria .chat {
+    max-width: 245px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #000 !important;
+    line-height: normal;
+    padding: 20px 10px !important;
+    border-radius: 20px !important;
+    background: #f6f6f6 !important;
+}
+
+.pl-60 {
+    padding-left: 60px;
+}
+
+.pr-60 {
+    padding-right: 60px;
+}
+
+.chat-grid li {
+    list-style: none !important;
+}
+
+.chat-grid li .chat-aria {
+    display: inline-block;
+    text-align: left;
+}
+
+.chat-wrap {
+    display: inline-block;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.chat-wrap .label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px !important;
+}
+
+.chat-wrap .text {
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9f9f9f;
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+    height: 20px;
+    outline: none;
+}
+
+.chat-wrap textarea {
+    border-bottom: none !important;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.chat-btn-padding .btn {
+    padding: 10px 40px !important;
+    text-shadow: none !important;
+}
+/*------------- 16-Information Request end ----------- */
+
+.checkbox-size input {
+    height: 23px;
+    width: 23px;
+}
+
+.mb-60 {
+    margin-bottom: 60px !important;
+}
+
+.color-md-grey {
+    color: #9f9f9f !important;
+}
+
+.icon-size-40, .icon-size-40 {
+    font-size: 40px !important;
+}
+
+.icon-outlined-previous-page:before {
+    content: "\F166";
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.pl-300 {
+    padding-left: 300px;
+}
+
+ul {
+    list-style: none;
+}
+/*---- Vendor Request Counter start ------*/
+a.airtelIcon:active {
+    font-family: airtel-icons !important;
+}
+
+.decoration-none a span:hover {
+    text-decoration: none !important;
+}
+
+.vendor-requests ul li:before {
+    content: counter(vendor) ".";
+    counter-increment: vendor;
+    font-size: 48px;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.vendor-requests ul {
+    counter-reset: vendor;
+    margin: 0;
+    padding: 0;
+}
+
+.vendor-requests ul li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0px;
+    margin-bottom: 49px;
+    padding-left: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vendor-requests UL {
+    list-style: none !important;
+}
+
+.pt-150 {
+    padding-top: 150px;
+}
+/*---- Vendor Request Counter Ends ------*/
+.description-input textarea {
+    font-weight: normal;
+    font-family: Tondo-Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    /* border-style: solid; */
+
+    border-width: 1px;
+    border-color: #DFE4E7;
+    box-sizing: border-box;
+    background-color: #FCFDFE;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0px;
+    -webkit-appearance: none;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #DFE4E7 !important;
+    /* border-bottom: 1px solid #9f9f9f; */
+
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+    height: 36px;
+    outline: none;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.des-input {
+    width: 70%;
+}
+
+.respond-btn a {
+    text-shadow: none;
+    font-weight: normal;
+    font-family: Tondo-Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    font-size: 16px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.respond-btn af|button.btn:hover, .respond-btn af|button.btn:active {
+    padding: 12px 32px !important;
+}
+
+.respond-btn af|button.btn {
+    padding: 12px 32px !important;
+}
+
+
+.pl-400 {
+    padding-left: 400px !important;
+}
+
+.width-95 {
+    width: 95%;
+}
+
+.box-padding {
+    padding: 50px 5px 50px 40px !important;
+}
+
+.min-height {
+    height: 300vh !important;
+}
+
+.account-overview-scrollable ul {
+    max-height: 35vh;
+    overflow-y: auto;
+}
+/* ------------ new changes 30-aug end----------------- */
