@@ -82,6 +82,13 @@ Stream apis
 servlet
 bootstrap
 genrics and lambda expressions
+regex in java for  email and password and phone number validation 
+stream api 
+collection 
+iterate list under list
+how to send email with attachments
+how to upload and download files utility methods 
+https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/
 https://forum.theodinproject.com/c/introductions
 https://gitter.im/TheOdinProject/theodinproject--community
 https://forum.theodinproject.com/c/introductions
@@ -95,6 +102,7 @@ https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework
 https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html
 https://www.happybearsoftware.com/how-to-get-a-programmer-job
 *********************spring boot app**************************************
+https://www.codejava.net/frameworks/spring/spring-mvc-send-e-mail-with-attachments
 http://javasampleapproach.com/spring-framework/perform-form-validation-spring-boot
 http://javasampleapproach.com/java-integration/integrate-angular-4-springboot-web-app-springtoolsuite
 https://www.concretepage.com/spring-boot/spring-boot-rest-angular-2-jpa-hibernate-mysql-crud-example
@@ -647,7 +655,11 @@ http://www.programming-free.com/2012/11/simple-word-search-in-pdf-files-using.ht
 https://www.hostingraja.in/buy-web-hosting/?task=domaincheckstep2&Itemid=435
 https://www.quora.com/Which-are-the-Best-Cheap-Web-Hosting-Providers-with-India-Data-Centers
 https://www.bloggerfreak.com/cheap-wordpress-hosting-india/
-*******************************************interviews*****************************
+
+*******************************************interviews java tricks*****************************
+https://www.futurehosting.com/blog/six-awesome-java-tricks-you-might-not-know-about/
+https://www.geeksforgeeks.org/java-tricks-competitive-programming-java-8/
+http://viralpatel.net/blogs/check-string-is-valid-date-java/
 https://www.geeksforgeeks.org/java-util-hashmap-in-java/
 https://www.quora.com/What-are-some-good-sites-for-Java-interview-questions-for-someone-having-2+-years-of-experience#
 https://javasearch.buggybread.com/OnlineTest/javaTest.php
