@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EmpManagerFkLink"
+  Version="12.2.1.12.2"
+  InheritPersonalization="merge"
+  EntityAssociation="test.generateAppModule.model.EmpManagerFkAssoc">
+  <ViewLinkDefEnd
+    Name="ManagerIdEmployeeEOView"
+    Cardinality="1"
+    Source="true"
+    Owner="test.generateAppModule.model.EmployeeEOView">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="ManagerIdEmployeeEOView"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="test.generateAppModule.model.EmployeeEOView.EmployeeId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="EmployeeEOView"
+    Cardinality="-1"
+    Owner="test.generateAppModule.model.EmployeeEOView">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="EmployeeEOView"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="test.generateAppModule.model.EmployeeEOView.ManagerId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

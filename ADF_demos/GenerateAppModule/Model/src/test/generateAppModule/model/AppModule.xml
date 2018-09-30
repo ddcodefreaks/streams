@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.2.1.12.2"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="test.generateAppModule.model.AppModuleImpl"
+  DefClass="test.generateAppModule.model.AppModuleDefImpl"
+  ComponentInterface="test.generateAppModule.model.common.AppModule">
+  <DesignTime>
+    <Attr Name="_isDefCodegen" Value="true"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="CountryEOView1"
+    ViewObjectName="test.generateAppModule.model.CountryEOView"/>
+  <ViewUsage
+    Name="EmployeeEOView1"
+    ViewObjectName="test.generateAppModule.model.EmployeeEOView"/>
+  <ViewUsage
+    Name="EmployeeEOView2"
+    ViewObjectName="test.generateAppModule.model.EmployeeEOView"/>
+  <ViewUsage
+    Name="JobEOView1"
+    ViewObjectName="test.generateAppModule.model.JobEOView"/>
+  <ViewUsage
+    Name="EmployeeEOView3"
+    ViewObjectName="test.generateAppModule.model.EmployeeEOView"/>
+  <ViewLinkUsage
+    Name="EmpManagerFkLink"
+    ViewLinkObjectName="test.generateAppModule.model.EmpManagerFkLink"
+    SrcViewUsageName="test.generateAppModule.model.AppModule.EmployeeEOView1"
+    DstViewUsageName="test.generateAppModule.model.AppModule.EmployeeEOView2"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="EmpJobFkLink"
+    ViewLinkObjectName="test.generateAppModule.model.EmpJobFkLink"
+    SrcViewUsageName="test.generateAppModule.model.AppModule.JobEOView1"
+    DstViewUsageName="test.generateAppModule.model.AppModule.EmployeeEOView3"
+    Reversed="false"/>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="createRow"
+      MethodName="createRow">
+      <Return
+        Name="_return_type_"
+        Type="void"/>
+    </Method>
+    <Method
+      Name="createRow"
+      MethodName="createRow">
+      <Return
+        Name="_return_type_"
+        Type="void"/>
+    </Method>
+  </ClientInterface>
+</AppModule>

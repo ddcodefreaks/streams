@@ -702,3 +702,4 @@ https://dev-561325.oktapreview.com/app/exkg0s7dcwkKYbAlt0h7/sso/saml/metadata
 keytool -genkey -v -keystore keystore.jks -alias spring -keyalg RSA -keysize 2048 -validity 10000
 https://developer.okta.com/code/java/spring_security_saml
 ***********************************
+https://www.devglan.com/spring-boot/spring-boot-angular-example

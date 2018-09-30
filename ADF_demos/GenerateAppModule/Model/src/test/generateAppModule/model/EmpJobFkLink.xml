@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EmpJobFkLink"
+  Version="12.2.1.12.2"
+  InheritPersonalization="merge"
+  EntityAssociation="test.generateAppModule.model.EmpJobFkAssoc">
+  <ViewLinkDefEnd
+    Name="JobEOView"
+    Cardinality="1"
+    Source="true"
+    Owner="test.generateAppModule.model.JobEOView">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_finderName" Value="JobEOView"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="test.generateAppModule.model.JobEOView.JobId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="EmployeeEOView"
+    Cardinality="-1"
+    Owner="test.generateAppModule.model.EmployeeEOView">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="EmployeeEOView"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="test.generateAppModule.model.EmployeeEOView.JobId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>
