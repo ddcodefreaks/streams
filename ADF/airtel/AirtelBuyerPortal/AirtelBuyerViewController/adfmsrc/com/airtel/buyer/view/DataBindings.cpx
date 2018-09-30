@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.9.14" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.airtel.buyer.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/pages/buyerHome/home.jspx" usageId="com_airtel_buyer_view_homePageDef"/>
+    <page path="/WEB-INF/buyerHomeBTF.xml#buyerHomeBTF@fetchVendorRequests"
+          usageId="com_airtel_buyer_view_buyerHomeBTF_buyerHomeBTF_fetchVendorRequestsPageDef"/>
+    <page path="/pageFragments/buyerHome/venderRequests.jsff" usageId="com_airtel_buyer_view_venderRequestsPageDef"/>
+    <page path="/pageFragments/buyerHome/venderRequestPending.jsff" usageId="com_airtel_buyer_view_venderRequestPendingPageDef"/>
+    <page path="/pageFragments/buyerHome/rejectionReason.jsff" usageId="com_airtel_buyer_view_rejectionReasonPageDef"/>
+    <page path="/pageFragments/buyerHome/venderRequestRejected.jsff"
+          usageId="com_airtel_buyer_view_venderRequestRejectedPageDef"/>
+    <page path="/WEB-INF/buyerHomeBTF.xml#buyerHomeBTF@refreshList"
+          usageId="com_airtel_buyer_view_buyerHomeBTF_buyerHomeBTF_refreshListPageDef"/>
+    <page path="/WEB-INF/buyerHomeBTF.xml#buyerHomeBTF@refreshListExpiring"
+          usageId="com_airtel_buyer_view_buyerHomeBTF_buyerHomeBTF_refreshListExpiringPageDef"/>
+    <page path="/WEB-INF/buyerHomeBTF.xml#buyerHomeBTF@refreshListRejected"
+          usageId="com_airtel_buyer_view_buyerHomeBTF_buyerHomeBTF_refreshListRejectedPageDef"/>
+    <page path="/pages/masterHome/masterHome.jspx" usageId="com_airtel_buyer_view_masterHomePageDef"/>
+    <page path="/pageFragments/masterHome/pendingRequests.jsff" usageId="com_airtel_buyer_view_pendingRequestsPageDef"/>
+    <page path="/WEB-INF/masterHomeBTF.xml#masterHomeBTF@fetchWKFVendorSiteRequest"
+          usageId="com_airtel_buyer_view_masterHomeBTF_masterHomeBTF_fetchWKFVendorSiteRequestPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_airtel_buyer_view_homePageDef" path="pages.buyerHome.homePageDef"/>
+    <page id="com_airtel_buyer_view_buyerHomeBTF_buyerHomeBTF_fetchVendorRequestsPageDef"
+          path="com.airtel.buyer.view.pageDefs.buyerHomeBTF_buyerHomeBTF_fetchVendorRequestsPageDef"/>
+    <page id="com_airtel_buyer_view_venderRequestsPageDef" path="pageFragments.venderRequestsPageDef"/>
+    <page id="com_airtel_buyer_view_venderRequestPendingPageDef" path="pageFragments.venderRequestPendingPageDef"/>
+    <page id="com_airtel_buyer_view_rejectionReasonPageDef" path="pageFragments.rejectionReasonPageDef"/>
+    <page id="com_airtel_buyer_view_venderRequestRejectedPageDef" path="pageFragments.venderRequestRejectedPageDef"/>
+    <page id="com_airtel_buyer_view_buyerHomeBTF_buyerHomeBTF_refreshListPageDef"
+          path="com.airtel.buyer.view.pageDefs.buyerHomeBTF_buyerHomeBTF_refreshListPageDef"/>
+    <page id="com_airtel_buyer_view_buyerHomeBTF_buyerHomeBTF_refreshListExpiringPageDef"
+          path="com.airtel.buyer.view.pageDefs.buyerHomeBTF_buyerHomeBTF_refreshListExpiringPageDef"/>
+    <page id="com_airtel_buyer_view_buyerHomeBTF_buyerHomeBTF_refreshListRejectedPageDef"
+          path="com.airtel.buyer.view.pageDefs.buyerHomeBTF_buyerHomeBTF_refreshListRejectedPageDef"/>
+    <page id="com_airtel_buyer_view_masterHomePageDef" path="pages.masterHome.masterHomePageDef"/>
+    <page id="com_airtel_buyer_view_pendingRequestsPageDef" path="pageFragments.masterHome.pendingRequestsPageDef"/>
+    <page id="com_airtel_buyer_view_masterHomeBTF_masterHomeBTF_fetchWKFVendorSiteRequestPageDef"
+          path="com.airtel.buyer.view.pageDefs.masterHomeBTF_masterHomeBTF_fetchWKFVendorSiteRequestPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="BuyerPortalAMDataControl" Package="com.airtel.buyer.am"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="BuyerPortalAMLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

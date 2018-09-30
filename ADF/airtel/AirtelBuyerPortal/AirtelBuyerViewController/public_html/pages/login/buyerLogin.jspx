@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="buyerLogin.jspx" id="d1">
+            <af:form id="f1">
+                <af:pageTemplate viewId="/pageTemplates/airtelDefaultPageTemplate.jspx" id="pt1">
+                    <f:facet name="content">
+                        <af:panelGroupLayout id="pgl101" styleClass="AFStretchWidth">
+                            <af:panelGroupLayout id="pgl2"
+                                                 styleClass="float-left min-viewport-height width-half pl-50 pr-50 bg-white"
+                                                 layout="vertical">
+                                <af:panelGroupLayout id="pgl1" layout="vertical" styleClass="mt-110 fs-48 color-red">
+                                    <af:outputText value="Get Your Business" id="ot1"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl6" layout="vertical" styleClass="fs-48">
+                                    <af:outputText value="Airtel Advantage" id="ot3"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl7" layout="vertical" styleClass="fs-20 color-grey mt-15">
+                                    <af:outputText value="Come partner with us and see your business grow" id="ot2"/>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl3"
+                                                 styleClass="float-left width-half pl-80 pb-80 pr-250 bg-color-f6"
+                                                 layout="vertical">
+                                <af:panelGroupLayout id="pgl8" layout="vertical" styleClass="mt-120 fs-36">
+                                    <af:outputText value="Buyer Login" id="ot4"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl9" layout="vertical" styleClass="fs-20 mt-5 mb-50">
+                                    <af:outputText value="Please enter your credentials " id="it1"/>
+                                </af:panelGroupLayout>
+                              
+                                <af:panelGroupLayout id="pgl10" layout="vertical" styleCLass="form-group mt-30">
+                                <af:outputText value="OLM ID" styleClass="field-title" id="ot7"/>
+                                    <af:inputText id="it2" placeholder="Enter OLM ID" styleCLass="AFStretchWidth"
+                                                  value="#{pageFlowScope.loginBean.username}" autoSubmit="true"
+                                                  valueChangeListener="#{pageFlowScope.loginBean.onEmailValueChange}"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl11" layout="vertical" styleClass="form-group mt-30">
+                                <af:outputText value="PASSWORD" styleClass="field-title" id="ot5"/>
+                                    <af:inputText id="it3" placeholder="Enter password" styleCLass="AFStretchWidth"
+                                                  secret="true" value="#{pageFlowScope.loginBean.password}"
+                                                  autoSubmit="true"
+                                                  valueChangeListener="#{pageFlowScope.loginBean.onPasswordValueChange}"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl12" layout="vertical" styleClass="mt-50 login-btn-class">
+                                    <af:button text="Login" id="b1" styleClass="btn" inlineStyle="width:90%"
+                                               disabled="#{pageFlowScope.loginBean.disableLoginBtn}"
+                                               actionListener="#{pageFlowScope.loginBean.doLogin}"
+                                               binding="#{pageFlowScope.loginBean.loginBtn}"></af:button>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                    </f:facet>
+                </af:pageTemplate>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14"
+                id="masterHomeBTF_masterHomeBTF_fetchWKFVendorSiteRequestPageDef"
+                Package="com.airtel.buyer.view.pageDefs" SkipValidation="true">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator id="BTVL_WKF_PARTNER_SITE_TBL_VO1Iterator" Binds="BTVL_WKF_PARTNER_SITE_TBL_VO1"
+              DataControl="BuyerPortalAMDataControl" RangeSize="25"/>
+    <iterator id="BTVL_WKF_PARTNER_STATUS_TBL_VO1Iterator" Binds="BTVL_WKF_PARTNER_STATUS_TBL_VO1"
+              DataControl="BuyerPortalAMDataControl" RangeSize="25"/>
+    <iterator id="BTVL_WKF_PARTNER_BANK_ACC_TBL_VO1Iterator" Binds="BTVL_WKF_PARTNER_BANK_ACC_TBL_VO1"
+              DataControl="BuyerPortalAMDataControl" RangeSize="25"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

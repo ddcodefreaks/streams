@@ -1,0 +1,19 @@
+//Groovy Scripts for com.airtel.supplierportal.vo.BTVL_WKF_PARTNER_STATUS_TBL_VO
+
+package com.airtel.supplierportal.vo
+
+import oracle.jbo.script.annotation.TransientValueExpression;
+
+@TransientValueExpression(attributeName="CreatedDateTime")
+def CreatedDateTime_ExpressionScript_Expression()
+{
+adf.currentDateTime
+}
+
+
+@TransientValueExpression(attributeName="ModifiedDateTime")
+def ModifiedDateTime_ExpressionScript_Expression()
+{
+adf.currentDateTime
+}
+

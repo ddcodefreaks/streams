@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+    <af:resource type="css">
+        select::-ms-expand {
+            display: none;
+        }
+    </af:resource>
+    <af:panelGroupLayout id="pgl1" styleClass="AFStretchWidth pl-400"
+                         inlineStyle="background-color: #f6f6f6; display: block">
+        <af:panelGroupLayout id="pgl2" styleClass="left-section pt-40 pl-60 pr-20"
+                             inlineStyle="display: block; background: #f6f6f6;">
+            <af:panelGroupLayout id="pgl10" layout="vertical">
+                <af:panelGroupLayout id="pgl14" styleClass="mt-160 " layout="vertical">
+                    <af:outputText value="Information" styleClass="fs-48 color-black " id="ot2"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl6" layout="vertical">
+                    <af:outputText value="Requested" styleClass="fs-48 color-red " id="ot1"/>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pgl3" styleClass="bg-white AFStretchWidth" layout="vertical" inlineStyle="display: inline-block;">
+            <af:panelGroupLayout id="pgl5" styleClass="vertical-scroll content-w-chat pl-60 pr-60" layout="vertical">
+                <af:panelGroupLayout id="pgl18" styleClass="chat-grid">
+                    <af:panelList id="pl2" inlineStyle="padding:0px 40px !important;">
+                        <af:panelGroupLayout id="pgl4" layout="vertical">
+                            <af:panelGroupLayout id="pgl8" layout="vertical" styleClass="chat-aria">
+                                <af:panelGroupLayout id="pgl11" layout="vertical" styleClass="user-name">
+                                    <af:outputText value="Airtel" id="ot3"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl12" layout="vertical" styleClass="chat">
+                                    <af:outputText value="Please upload proper scan of Invoice" id="ot4"/>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl7" layout="vertical" styleClass="text-right">
+                            <af:panelGroupLayout id="pgl9" layout="vertical" styleClass="chat-aria">
+                                <af:panelGroupLayout id="pgl13" layout="vertical" styleClass="user-name">
+                                    <af:outputText value="Airtel" id="ot5"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl15" layout="vertical" styleClass="chat">
+                                    <af:outputText value="Please upload proper scan of Invoice" id="ot6"/>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl16" layout="vertical">
+                            <af:panelGroupLayout id="pgl17" layout="vertical" styleClass="chat-aria">
+                                <af:panelGroupLayout id="pgl19" layout="vertical" styleClass="user-name">
+                                    <af:outputText value="Airtel" id="ot7"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl20" layout="vertical" styleClass="chat">
+                                    <af:outputText value="Please upload proper scan of Invoice" id="ot8"/>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl21" layout="vertical" styleClass="text-right">
+                            <af:panelGroupLayout id="pgl22" layout="vertical" styleClass="chat-aria">
+                                <af:panelGroupLayout id="pgl23" layout="vertical" styleClass="user-name">
+                                    <af:outputText value="Airtel" id="ot9"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl24" layout="vertical" styleClass="chat">
+                                    <af:outputText value="Please upload proper scan of Invoice" id="ot10"/>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl25" layout="vertical">
+                            <af:panelGroupLayout id="pgl26" layout="vertical" styleClass="chat-aria">
+                                <af:panelGroupLayout id="pgl27" layout="vertical" styleClass="user-name">
+                                    <af:outputText value="Airtel" id="ot11"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl28" layout="vertical" styleClass="chat">
+                                    <af:outputText value="Please upload proper scan of Invoice" id="ot12"/>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl29" layout="vertical" styleClass="text-right">
+                            <af:panelGroupLayout id="pgl30" layout="vertical" styleClass="chat-aria">
+                                <af:panelGroupLayout id="pgl31" layout="vertical" styleClass="user-name">
+                                    <af:outputText value="Airtel" id="ot13"/>
+                                </af:panelGroupLayout>
+                                <af:panelGroupLayout id="pgl32" layout="vertical" styleClass="chat">
+                                    <af:outputText value="Please upload proper scan of Invoice" id="ot14"/>
+                                </af:panelGroupLayout>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                    </af:panelList>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl33" styleClass="pl-60 pr-60" layout="vertical">
+                <af:panelGroupLayout id="pgl34" styleClass="chat-wrap" layout="vertical"
+                                     inlineStyle="margin-top: 20px;">
+                    <af:outputText value="PLEASE ENTER YOUR RESPONSE" id="ot15" styleClass="label"/>
+                    <af:inputText id="it2" rows="2" styleClass="text"/>
+                    <!--<af:panelGroupLayout id="pgl35" styleClass="text-right" layout="vertical">
+                    <af:link text="ADD ATTACHMENT" id="l1" styleClass="color-red " inlineStyle="font-size:11px"/>
+                    </af:panelGroupLayout>-->
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl131" layout="vertical" styleClass="mt-50">
+                    <af:panelGroupLayout id="pgl67" layout="horizontal"
+                                         styleClass="float-left fs-30 statutory-documents-info">
+                        <af:outputText value="Upload Documents" id="ot29"/>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl35" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl51" layout="vertical" inlineStyle="width: 50%;">
+                        <af:outputLabel value="SELECT DOCUMENT NAME" id="ol14" styleClass="field-title mb-5 mt-40"/>
+                        <af:selectOneChoice id="soc2" styleClass="myBigSoc" labelStyle="display:none"
+                                            inlineStyle="width: 25%; position: absolute;" autoSubmit="true"
+                                            unselectedLabel="Select Certificate">
+                            <f:selectItems id="si7"/>
+                        </af:selectOneChoice>
+                        <af:outputText id="ot16" styleClass="error-msg" inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                 
+                <af:panelGroupLayout id="pgl190" layout="horizontal" styleClass="mt-50 AFStretchWidth"
+                                     inlineStyle="padding-right: 40px">
+                    <af:panelGroupLayout id="pgl191" layout="horizontal" styleClass="upload-document box-padding width-95">
+                        <af:panelGroupLayout id="pgl192" layout="vertical" styleClass="file-name">
+                            <af:panelGroupLayout id="pgl193" layout="vertical" styleClass="fs-16 color-black">
+                                <af:outputText value="Upload company MSMED certificate copy" id="ot70"/>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl194" layout="vertical" styleClass="fs-12 color-grey mt-5">
+                                <af:outputText value="PDF, PNG, JPG files only with max. file size 2mb" id="ot71"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl195" layout="vertical" styleClass="pull-right mt-10">
+                            <af:inputFile id="if10" styleClass="fs-14-1"/>
+                            <af:outputText styleClass="error-msg" inlineStyle="display: -webkit-inline-box;" id="ot72"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                      <af:panelGroupLayout id="pgl40" layout="vertical" styleClass="float-left circle-icon-size">
+                        <af:link id="l2" styleClass="link fs-24 mt-12">
+                            <af:icon id="i4" styleClass="icon-outlined-circle-plus airtelIcon"/>
+                        </af:link>
+                    </af:panelGroupLayout>
+                 
+                </af:panelGroupLayout>
+                 <af:panelGroupLayout id="pgl57" layout="vertical" inlineStyle="width: 50%;">
+                        <af:outputLabel value="SELECT DOCUMENT NAME" id="ol1" styleClass="field-title mb-5 mt-40"/>
+                        <af:selectOneChoice id="soc1" styleClass="myBigSoc" labelStyle="display:none"
+                                            inlineStyle="width: 25%; position: absolute;" autoSubmit="true"
+                                            unselectedLabel="Select Certificate">
+                            <f:selectItems id="si1"/>
+                        </af:selectOneChoice>
+                        <af:outputText id="ot23" styleClass="error-msg" inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                  <af:panelGroupLayout id="pgl42" layout="horizontal" styleClass="mt-50 AFStretchWidth"
+                                     inlineStyle="padding-right: 40px">
+                    <af:panelGroupLayout id="pgl43" layout="horizontal" styleClass="upload-document box-padding width-95">
+                        <af:panelGroupLayout id="pgl44" layout="vertical" styleClass="file-name">
+                            <af:panelGroupLayout id="pgl45" layout="vertical" styleClass="fs-16 color-black">
+                                <af:outputText value="Upload company GSTN Exempt certificate" id="ot17"/>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl46" layout="vertical" styleClass="fs-12 color-grey mt-5">
+                                <af:outputText value="PDF, PNG, JPG files only with max. file size 2mb" id="ot18"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl47" layout="vertical" styleClass="pull-right mt-10">
+                            <af:inputFile id="if1" styleClass="fs-14-1"/>
+                            <af:outputText styleClass="error-msg" inlineStyle="display: -webkit-inline-box;" id="ot19"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                      <af:panelGroupLayout id="pgl48" layout="vertical" styleClass="float-left circle-icon-size">
+                        <af:link id="l1" styleClass="link fs-24 mt-12">
+                            <af:icon id="i1" styleClass="icon-outlined-circle-plus airtelIcon"/>
+                        </af:link>
+                    </af:panelGroupLayout>
+                
+                </af:panelGroupLayout>
+                 <af:panelGroupLayout id="pgl58" layout="vertical" inlineStyle="width: 50%;">
+                        <af:outputLabel value="SELECT DOCUMENT NAME" id="ol2" styleClass="field-title mb-5 mt-40"/>
+                        <af:selectOneChoice id="soc3" styleClass="myBigSoc" labelStyle="display:none"
+                                            inlineStyle="width: 25%; position: absolute;" autoSubmit="true"
+                                            unselectedLabel="Select Certificate">
+                            <f:selectItems id="si2"/>
+                        </af:selectOneChoice>
+                        <af:outputText id="ot24" styleClass="error-msg" inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                  <af:panelGroupLayout id="pgl49" layout="horizontal" styleClass="mt-50 AFStretchWidth"
+                                     inlineStyle="padding-right: 40px">
+                    <af:panelGroupLayout id="pgl50" layout="horizontal" styleClass="upload-document box-padding width-95">
+                        <af:panelGroupLayout id="pgl52" layout="vertical" styleClass="file-name">
+                            <af:panelGroupLayout id="pgl53" layout="vertical" styleClass="fs-16 color-black">
+                                <af:outputText value="Upload company GSTN certificate" id="ot20"/>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl54" layout="vertical" styleClass="fs-12 color-grey mt-5">
+                                <af:outputText value="PDF, PNG, JPG files only with max. file size 2mb" id="ot21"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl55" layout="vertical" styleClass="pull-right mt-10">
+                            <af:inputFile id="if2" styleClass="fs-14-1"/>
+                            <af:outputText styleClass="error-msg" inlineStyle="display: -webkit-inline-box;" id="ot22"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                      <af:panelGroupLayout id="pgl56" layout="vertical" styleClass="float-left circle-icon-size">
+                        <af:link id="l3" styleClass="link fs-24 mt-12">
+                            <af:icon id="i2" styleClass="icon-outlined-circle-plus airtelIcon"/>
+                        </af:link>
+                    </af:panelGroupLayout>
+                    <!--<af:panelGroupLayout id="pgl196" styleClass="mt-10">
+                        <af:link text="Download Sample Format" id="l10" styleClass="fs-12 pull-left color-red"/>
+                    </af:panelGroupLayout>-->
+                </af:panelGroupLayout>
+            
+                <af:panelGroupLayout id="pgl41" layout="vertical" inlineStyle="margin-bottom:30px">
+                    <af:panelGroupLayout id="pgl36" layout="horizontal" styleClass="AFStretchWidth"
+                                         inlineStyle="margin-top:30px!important;width:100px;float:right;">
+                        <af:panelGroupLayout id="pgl37" styleClass="mr-30" layout="vertical">
+                            <af:commandLink text="CANCEL" id="cl1" styleClass="signup-style" action="cancel"/>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl38" styleClass="login-btn-class chat-btn-padding">
+                            <af:button text="SEND" id="b1" styleClass="btn btn-lg" inlineStyle="margin-bottom:30px;" />
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+</jsp:root>

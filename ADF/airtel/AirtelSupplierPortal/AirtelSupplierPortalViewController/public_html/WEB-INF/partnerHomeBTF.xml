@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="partnerHomeBTF">
+    <default-activity>onPageLoad</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <managed-bean id="__5">
+      <managed-bean-name>partnerHomeBean</managed-bean-name>
+      <managed-bean-class>com.airtel.supplierportal.bean.partnerhome.PartnerHomeBean</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <view id="partnerHomePage">
+      <page>/pagefragments/partnerHome/partnerHomePage.jsff</page>
+    </view>
+    <method-call id="onPageLoad">
+      <method>#{pageFlowScope.partnerHomeBean.onPageLoad}</method>
+      <outcome>
+        <fixed-outcome>onPageLoad</fixed-outcome>
+      </outcome>
+    </method-call>
+    <task-flow-call id="partnerRegistrationPhase2BTF">
+      <task-flow-reference>
+        <document>/WEB-INF/partnerRegistrationPhase2BTF.xml</document>
+        <id>partnerRegistrationPhase2BTF</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="addAnotherSiteAddressBTF">
+      <task-flow-reference>
+        <document>/WEB-INF/addAnotherSiteAddressBTF.xml</document>
+        <id>addAnotherSiteAddressBTF</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="notificationsBTF">
+      <task-flow-reference>
+        <document>/WEB-INF/notificationsBTF.xml</document>
+        <id>notificationsBTF</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <control-flow-rule id="__1">
+      <from-activity-id>onPageLoad</from-activity-id>
+      <control-flow-case id="__2">
+        <to-activity-id>partnerHomePage</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__3">
+      <from-activity-id>partnerHomePage</from-activity-id>
+      <control-flow-case id="__4">
+        <from-outcome>completeRegistrationPhase2</from-outcome>
+        <to-activity-id>partnerRegistrationPhase2BTF</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__6">
+        <from-outcome>addAnotherSiteAddress</from-outcome>
+        <to-activity-id>addAnotherSiteAddressBTF</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__7">
+        <from-outcome>notifications</from-outcome>
+        <to-activity-id>notificationsBTF</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

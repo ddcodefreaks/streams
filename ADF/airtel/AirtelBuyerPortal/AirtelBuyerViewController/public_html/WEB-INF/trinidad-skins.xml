@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<skins xmlns="http://myfaces.apache.org/trinidad/skin">
+  <skin>
+    <id>airtel-skin1.desktop</id>
+    <family>airtel-skin1</family>
+    <extends>alta-v1.desktop</extends>
+    <render-kit-id>org.apache.myfaces.trinidad.desktop</render-kit-id>
+    <style-sheet-name>css/airtel-skin1/airtel-skin1.css</style-sheet-name>
+    <bundle-name>com.airtel.buyer.view.skinBundle</bundle-name>
+  </skin>
+</skins>

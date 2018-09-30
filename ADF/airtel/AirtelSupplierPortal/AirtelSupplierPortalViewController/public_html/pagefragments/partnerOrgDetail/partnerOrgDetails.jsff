@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+    <af:resource type="css">
+    select::-ms-expand {
+        display: none;
+    }
+    </af:resource>
+    <af:panelGroupLayout id="pgl1" styleClass="AFStretchWidth pl-400"
+                         inlineStyle="background-color: #f6f6f6; display: block">
+        <af:panelGroupLayout id="pgl2" styleClass="left-section pl-50 pr-50 pt-40"
+                             inlineStyle="display: block;width:29.2vw; background: #f6f6f6;">
+            <af:panelGroupLayout id="pgl9" styleClass="mb-50 mt-40">
+                <af:commandLink text="" id="pt_l5">
+                    <af:image styleClass="airtel-logo" source="/images/airtel-logo_opt.svg" id="pt_i1"></af:image>
+                </af:commandLink>
+            </af:panelGroupLayout>
+            <!--<af:panelGroupLayout id="pgl10" styleClass="mb-20 mt-100" layout="vertical">
+                <af:outputText value="Registration for Phase 1" styleClass="fs-20 color-black" id="ot2"/>
+            </af:panelGroupLayout>-->
+            <af:panelGroupLayout id="pgl6" styleClass="stepper org-step1 mt-100" layout="vertical">
+                <af:panelGroupLayout id="pgl11" styleClass="fs-20 color-black mt-50 mb-20" layout="vertical">
+                    <af:outputText id="ot3" value="Registration for Phase 1"/>
+                </af:panelGroupLayout>
+                <!--ul-->
+                <af:panelList id="pl1">
+                    <af:outputText id="ot5" value="Partner account creation" styleClass="activeSpan"/>
+                    <af:outputText id="ot6" value="Company detail &amp; PAN info" styleClass="activeSpan"/>
+                    <af:outputText id="ot7" value="Approval by Airtel Buyer"/>
+                </af:panelList>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl60" styleClass="stepper" layout="vertical">
+                <af:panelGroupLayout id="pgl12" layout="vertical" styleClass="fs-20 color-black mt-50 mb-20">
+                    <af:outputText id="ot4" value="Registration for Phase 2"/>
+                </af:panelGroupLayout>
+                <!--ul-->
+                <af:panelList id="pl2">
+                    <af:outputText id="ot8" value="Partner place of supply &amp; bank info."/>
+                    <af:outputText id="ot9" value="Validation by Airtel Team"/>
+                </af:panelList>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pgl3" styleClass="width-full1 bg-white minH-100vh AFStretchWidth" layout="vertical"
+                             inlineStyle="display: block;">
+            <af:panelGroupLayout id="pgl4" styleClass="user-header bg-white" layout="vertical"
+                                 inlineStyle="width: calc(100% - 400px);">
+                <af:panelGroupLayout id="pgl10" styleClass="pull-left mt-40 ml-70 fs-20 color-red">
+                    <af:outputText value="Dear Partner," id="ot1"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl7" styleClass="pull-right mt-40 mr-40">
+                    <!--<af:panelGroupLayout id="pgl8" styleClass="color-red mr-40">
+                        <af:commandLink id="pt_l7" styleClass="icon-outlined-user color-red airtelIcon fs-24"/>
+                    </af:panelGroupLayout>-->
+                    <af:panelGroupLayout id="pgl35" styleClass="color-red">
+                        <af:commandLink id="cl1" styleClass="icon-outlined-logout color-red airtelIcon fs-24"
+                                        actionListener="#{loginHandlerBean.doLogout}"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl5" styleClass="mt-108 pt-64 pl-70 pr-28 " layout="vertical" inlineStyle="" partialTriggers="it2 smc1">
+                <af:panelGroupLayout id="pgl33" layout="vertical" inlineStyle="padding-right: 40px">
+                    <af:panelGroupLayout id="pgl14" layout="vertical" styleClass="pull-left width-60">
+                        <af:panelGroupLayout id="pgl36" styleClass="fs-30">
+                            <af:outputText value="Organization Details" id="ot2" styleClass="letter-spacing"/>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl13" layout="vertical"
+                                             styleClass="color-grey fs-16 margin-top-13 line-height-20 letter-spacing">
+                            <af:outputText value="Please fill in your organization details to be able to connect with a buyer"
+                                           id="ot10"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl15" styleClass="pull-right" inlineStyle="text-align: center;">
+                        <!--<af:panelGroupLayout id="pgl37" styleClass="progress-circle p0">
+                            <af:panelGroupLayout id="pgl16" styleClass="left-half-clipper">
+                                -->
+                        <!--<af:panelGroupLayout id="pgl33" styleClass="first50-bar"/>
+                                <af:panelGroupLayout id="pgl34" styleClass="value-bar"/>-->
+                        <!--
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl32" styleClass="mt-10">
+                            <af:outputText value="Profile Completion Status" id="ot11" styleClass="fs-12 color-grey"/>
+                        </af:panelGroupLayout>-->
+                        <af:panelGroupLayout id="pgl23" styleClass="profile-percentage-org-detail">
+                            <af:outputText value="33%" id="ot16"/>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl24" styleClass="mt-30" layout="vertical">
+                            <af:outputText value="Profile Completion Status" id="ot17" styleClass="fs-12 color-grey"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl17" layout="vertical" styleClass="AFStretchWidth inline-block">
+                    <!--Country starts Here-->
+                    <af:panelGroupLayout id="pgl22" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;margin-top:100px;">
+                        <af:outputLabel value="COUNTRY" id="ol3" styleClass="field-title mb-5"/>
+                        <af:selectOneChoice id="smc1" styleClass=" myBigSoc" labelStyle="display:none"
+                                            inlineStyle="width: 28.5%; position: absolute;" autoSubmit="true"
+                                            unselectedLabel="Enter Country Name"
+                                            value="#{pageFlowScope.partnerOrgDetailBean.countryCode}"
+                                            valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.onCountryChangeListener}">
+                            <f:selectItems value="#{pageFlowScope.partnerOrgDetailBean.countryList}" id="si1"/>
+                        </af:selectOneChoice>
+                        <af:outputText id="ot23" inlineStyle="margin-top: 42px;display: -webkit-box;display: -ms-grid;"
+                                       value="#{pageFlowScope.partnerOrgDetailBean.countryWarningMsg}"
+                                       styleClass="error-msg " partialTriggers="b1 smc1"/>
+                    </af:panelGroupLayout>
+                    <!--Country Ends Here-->
+                    <af:panelGroupLayout id="pgl19" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;margin-top:100px;">
+                        <af:outputLabel value="NAME OF THE ORGANIZATION" id="ol1" styleClass="field-title mb-5"/>
+                        <af:inputText id="it1" placeholder="Enter organization name" styleClass="AFStretchWidth"
+                                      autoSubmit="true" value="#{pageFlowScope.partnerOrgDetailBean.organizationName}"
+                                      valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.onOrganizationChange}"/>
+                        <af:outputText id="ol11"
+                                       value="#{pageFlowScope.partnerOrgDetailBean.organizationNameWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1"
+                                       inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                    
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl21" layout="vertical" styleClass="AFStretchWidth inline-block">
+                    <af:panelGroupLayout id="pgl20" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;">
+                        <af:outputLabel value="PAN NO. (FOR INDIAN PARTNERS ONLY)" id="ol2"
+                                        styleClass="field-title mb-5 mt-40"/>
+                        <af:inputText id="it2" placeholder="Enter pan number" styleClass="AFStretchWidth"
+                                      value="#{pageFlowScope.partnerOrgDetailBean.pan}" autoSubmit="true"
+                                      partialTriggers="smc1"
+                                      valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.onChangePanValidate}"
+                                      disabled="#{pageFlowScope.partnerOrgDetailBean.isPanDisabled}"/>
+                        <af:outputText value="#{pageFlowScope.partnerOrgDetailBean.panInvalidError}" id="ot24"
+                                       styleClass="error-msg" partialTriggers="it2 b1"
+                                       inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                    <!--Country starts Here-->
+                    <!--<af:panelGroupLayout id="pgl22" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;">
+                        <af:outputLabel value="COUNTRY" id="ol3" styleClass="field-title mb-5 mt-40"/>
+                        <af:selectOneChoice id="smc1" styleClass=" myBigSoc" labelStyle="display:none"
+                                            inlineStyle="width: 28.5%; position: absolute;" autoSubmit="true"
+                                            unselectedLabel="Enter Country Name"
+                                            value="#{pageFlowScope.partnerOrgDetailBean.countryCode}"
+                                            valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.onCountryChangeListener}">
+                            <f:selectItems value="#{pageFlowScope.partnerOrgDetailBean.countryList}" id="si1"/>
+                        </af:selectOneChoice>
+                        <af:outputText id="ot23" inlineStyle="margin-top: 42px;display: -webkit-box;display: -ms-grid;"
+                                       value="#{pageFlowScope.partnerOrgDetailBean.countryWarningMsg}"
+                                       styleClass="error-msg " partialTriggers="b1 smc1"/>
+                    </af:panelGroupLayout>-->
+                    <!--Country Ends Here-->
+                    <af:panelGroupLayout id="pgl16" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;">
+                        <af:outputLabel value="PIN CODE" id="ol4" styleClass="field-title mb-5 mt-40"/>
+                        <af:inputText id="it4" placeholder="Enter PIN Code" styleClass="AFStretchWidth"
+                                      value="#{pageFlowScope.partnerOrgDetailBean.pinCode}"
+                                      valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.pinCodeChangeListener}"
+                                      autoSubmit="true" maximumLength="10"/>
+                        <af:outputText id="ot22" value="#{pageFlowScope.partnerOrgDetailBean.pinCodeWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1"
+                                       inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl32" layout="vertical" styleClass="AFStretchWidth inline-block">
+                    <af:panelGroupLayout id="pgl25" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;">
+                        <af:outputLabel value="CITY" id="ol5" styleClass="field-title mb-5 mt-40"/>
+                        <af:inputText id="it5" placeholder="Enter City" styleClass="AFStretchWidth"
+                                      value="#{pageFlowScope.partnerOrgDetailBean.city}"
+                                      disabled="#{pageFlowScope.partnerOrgDetailBean.isDisabled == true}"
+                                      partialTriggers="it4 smc1"
+                                      autoSubmit="true"
+                                      valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.cityChangeListener}"/>
+                        <af:outputText id="ot21" value="#{pageFlowScope.partnerOrgDetailBean.cityWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1 it4"/>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl26" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;">
+                        <af:outputLabel value="STATE" id="ol6" styleClass="field-title mb-5 mt-40"/>
+                        <af:inputText id="it6" placeholder="Enter State" styleClass="AFStretchWidth"
+                                      value="#{pageFlowScope.partnerOrgDetailBean.state}"
+                                      disabled="#{pageFlowScope.partnerOrgDetailBean.isDisabled == true}"
+                                      partialTriggers="it4 smc1"
+                                      autoSubmit="true"
+                                      valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.onStateChangeListener}"/>
+                        <af:outputText id="ot20" value="#{pageFlowScope.partnerOrgDetailBean.stateWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1 it4"
+                                       inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl27" layout="vertical" styleClass="AFStretchWidth inline-block">
+                    <af:panelGroupLayout id="pgl28" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;">
+                        <af:outputLabel value="FIRST LINE ADDRESS" id="ol7" styleClass="field-title mb-5 mt-40"/>
+                        <af:inputText id="it7" placeholder="Enter Address" styleClass="AFStretchWidth"
+                                      value="#{pageFlowScope.partnerOrgDetailBean.firstLineAddress}" autoSubmit="true"
+                                      valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.firstLineChangeListener}"/>
+                        <af:outputText id="ot19"
+                                       value="#{pageFlowScope.partnerOrgDetailBean.firstLineAddressWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1"
+                                       inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl29" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="width: 50%;">
+                        <af:outputLabel value="EMAIL" id="ol8" styleClass="field-title mb-5 mt-40"/>
+                        <af:inputText id="it8" placeholder="Enter Email Address (abc@xyz.com)"
+                                      styleClass="AFStretchWidth" value="#{pageFlowScope.partnerOrgDetailBean.mail}"
+                                      disabled="true"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl30" layout="vertical" inlineStyle="width: 50%;">
+                    <af:panelGroupLayout id="pgl31" layout="vertical" styleClass="form-group float-left AFStretchWidth">
+                        <af:outputLabel value="CONTACT NUMBER" id="ol9" styleClass="field-title mb-5 mt-40"/>
+                        <af:inputText id="it9" placeholder="Enter Contact Number" styleClass="AFStretchWidth"
+                                      value="#{pageFlowScope.partnerOrgDetailBean.contact}" disabled="true"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl18" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl34" layout="vertical" styleClass="fs-30 mt-100">
+                    <af:outputText value="Additional Information" id="ot12"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl38" layout="vertical" styleClass="AFStretchWidth">
+                    <af:panelGroupLayout id="pgl39" layout="vertical" styleClass="form-group float-left"
+                                         inlineStyle="margin-bottom: 50px;width:50%;">
+                        <af:outputLabel value="COMPANY URL" id="ol10" styleClass="field-title mb-5 mt-40"/>
+                        <af:inputText id="it10" placeholder="Enter Company URL" styleClass="AFStretchWidth"
+                                      value="#{pageFlowScope.partnerOrgDetailBean.companyUrl}" autoSubmit="true"
+                                      valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.companyUrlChangeListener}"/>
+                        <af:outputText value="#{pageFlowScope.partnerOrgDetailBean.companyUrlWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1" id="ot25"
+                                       inlineStyle="display: -webkit-inline-box;"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl40" layout="vertical" styleClass="mt-50 AFStretchWidth"
+                                     inlineStyle="padding-right: 40px">
+                    <af:panelGroupLayout id="pgl45" layout="vertical" styleClass="upload-document AFStretchWidth">
+                        <af:panelGroupLayout id="pgl41" layout="vertical" styleClass="pull-left file-name">
+                            <af:panelGroupLayout id="pgl43" layout="vertical" styleClass="fs-16 color-black">
+                                <af:outputText value="#{pageFlowScope.partnerOrgDetailBean.doc1FileName}" id="ot13"/>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl42" layout="vertical" styleClass="fs-12 color-grey mt-5">
+                                <af:outputText value="PDF, PNG, JPG files only with max. file size 2mb" id="ot14"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl44" layout="vertical" styleClass="pull-right mt-10">
+                            <!--<af:button text="button 1" id="b2">
+                                <af:clientListener method="callJavaScript" type="click"/>
+                            </af:button>-->
+                            <!--<af:link text="BROWSE" id="upload_link" binding="#{pageFlowScope.partnerOrgDetailBean.doc1Pan}" styleClass="fs-14-1"/> " -->
+                            <af:inputFile id="if1" styleClass="fs-14-1" autoSubmit="true"
+                                            valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.panDocChange}" 
+                                          value="#{pageFlowScope.partnerOrgDetailBean.doc1PanUploadedfile}"/>
+                            <af:outputText value="#{pageFlowScope.partnerOrgDetailBean.panDocWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1 if1"
+                                       inlineStyle="display: -webkit-inline-box;" id="ot28"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <!--<af:panelGroupLayout id="pgl46" layout="vertical" styleClass="mt-50 AFStretchWidth"
+                                     inlineStyle="padding-right: 40px">
+                    <af:panelGroupLayout id="pgl47" layout="vertical" styleClass="upload-document AFStretchWidth">
+                        <af:panelGroupLayout id="pgl48" layout="vertical" styleClass="pull-left file-name">
+                            <af:panelGroupLayout id="pgl49" layout="vertical" styleClass="fs-16 color-black">
+                                <af:outputText value="#{pageFlowScope.partnerOrgDetailBean.doc2FileName}" id="ot15"/>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl50" layout="vertical" styleClass="fs-12 color-grey mt-5">
+                                <af:outputText value="PDF, PNG, JPG files only with max. file size 2mb" id="ot11"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl51" layout="vertical" styleClass="pull-right mt-10">
+                            --><!--<af:link text="BROWSE" id="l1" styleClass="fs-14-1"/>  --><!--
+                            --><!--<af:inputFile styleClass="fs-14-1" id="if2" 
+                                          autoSubmit="true" valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.companyRegistrationDocChange}" 
+                                          binding="#{pageFlowScope.partnerOrgDetailBean.doc2CompanyRegistration}"
+                                          />--><!--
+                            <af:inputFile id="if2" styleClass="fs-14-1" autoSubmit="true"
+                                            valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.companyRegistrationDocChange}" 
+                                          value="#{pageFlowScope.partnerOrgDetailBean.doc2CompanyRegistrationUploadedfile}"/>
+                            <af:outputText value="#{pageFlowScope.partnerOrgDetailBean.companyRegistrationDocWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1"
+                                       inlineStyle="display: -webkit-inline-box;" id="ot29"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>-->
+                <af:panelGroupLayout id="pgl37" layout="vertical" styleClass="mt-50 AFStretchWidth"
+                                     inlineStyle="padding-right: 40px"
+                                      rendered="#{pageFlowScope.partnerOrgDetailBean.isPanProprietory}" partialTriggers="it2 smc1">
+                    <af:panelGroupLayout id="pgl61" layout="vertical" styleClass="upload-document AFStretchWidth">
+                        <af:panelGroupLayout id="pgl62" layout="vertical" styleClass="pull-left file-name">
+                            <af:panelGroupLayout id="pgl63" layout="vertical" styleClass="fs-16 color-black">
+                                <af:outputText value="#{pageFlowScope.partnerOrgDetailBean.doc3FileName}" id="ot26"/>
+                            </af:panelGroupLayout>
+                            <af:panelGroupLayout id="pgl64" layout="vertical" styleClass="fs-12 color-grey mt-5">
+                                <af:outputText value="PDF, PNG, JPG files only with max. file size 2mb" id="ot27"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                        <af:panelGroupLayout id="pgl65" layout="vertical" styleClass="pull-right mt-10">
+                            <!--<af:button text="button 1" id="b2">
+                                <af:clientListener method="callJavaScript" type="click"/>
+                            </af:button>-->
+                            <!--<af:link text="BROWSE" id="l2" styleClass="fs-14-1"/>  -->
+                            <!--<af:inputFile  styleClass="fs-14-1" id="if3"
+                                          autoSubmit="true" valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.proprietorshipDocChange}" binding="#{pageFlowScope.partnerOrgDetailBean.doc3Proprietorship}"
+                                          />-->
+                            <af:inputFile id="if3" styleClass="fs-14-1" autoSubmit="true"
+                                            valueChangeListener="#{pageFlowScope.partnerOrgDetailBean.proprietorshipDocChange}" 
+                                          value="#{pageFlowScope.partnerOrgDetailBean.doc3ProprietorshipUploadedfile}"/>
+                            <af:outputText value="#{pageFlowScope.partnerOrgDetailBean.proprietorshipDocWarningMsg}"
+                                       styleClass="error-msg" partialTriggers="b1"
+                                       inlineStyle="display: -webkit-inline-box;" id="ot30"/>
+                        </af:panelGroupLayout>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl52" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl53" layout="horizontal" styleClass="mt-120 text-right"
+                                     inlineStyle="float:right;margin-right:40px;">
+                    <af:message  id="m1" for="b1"/>
+                    <af:panelGroupLayout id="pgl54" layout="vertical" styleClass="mr-80 a-span-hover">
+                        <af:link text="SAVE" id="l3" inlineStyle="font-size:16px; color:red;line-height: 24px;"
+                                 actionListener="#{pageFlowScope.partnerOrgDetailBean.onSaveButtonClick}"/>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl55" layout="vertical" styleClass="btn-padding">
+                        <af:button text="SUBMIT" id="b1" styleClass="btn btn-lg"
+                                   action="#{pageFlowScope.partnerOrgDetailBean.onSubmitButtonClick}"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl59" layout="vertical" styleClass="clear"></af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl56" layout="vertical" styleClass="footer mt-50">
+                <af:panelGroupLayout id="pgl57" layout="horizontal" styleClass="pull-left" inlineStyle="width:55%;">
+                    <af:link text="HELP CENTER" id="l4" styleClass="fs-14" inlineStyle="color: #000 !important;"
+                    destination="https://www.airtel.in/help/"/>
+                    <af:link text="VISIT AIRTEL.IN" id="l5" styleClass="fs-14"
+                             inlineStyle="color: #000 !important;padding-left: 50px!important"
+                             destination="https://www.airtel.in/"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl58" inlineStyle="float: right;">
+                    <!--&gt;-->
+                    <af:outputText value="Airtel India 2018 - All Rights Reserved" id="ot18"
+                                   inlineStyle="font-size:12px;margin-top:50px;"/>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+    <af:popup childCreation="deferred" autoCancel="disabled" id="p4">
+        <af:dialog id="d4" type="cancel" closeIconVisible="false"  styleClass="MyDialog" cancelTextAndAccessKey="CLOSE">
+            <af:panelGroupLayout id="pgl8" layout="vertical" inlineStyle="padding: 40px;">
+                <af:panelGroupLayout id="pgl66" layout="vertical" inlineStyle="padding-bottom: 30px;">
+                    <af:outputText value="Dear Buyer," id="ot32"
+                                   inlineStyle="font-size: 24px;line-height: 28px;letter-spacing: 0;margin-bottom: 30px;"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl67" layout="vertical" styleClass="fs-16 color-grey">
+                    <af:outputText value="Please click on “View Attachments” and ensure the following :" id="ot33"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl68" layout="vertical" styleClass="fs-16 color-grey mt-30">
+                    <af:outputText value="1). Scan is readable" id="ot34"/>
+                    <af:outputText value="2). Information provided on scan copy is accurate" id="ot31"/>
+                </af:panelGroupLayout>
+                <!--<af:panelGroupLayout id="pgl39" layout="vertical" styleClass="popup-btn-class"
+                                 inlineStyle="float: right;     margin-top: 30px;     margin-bottom: 40px;">
+                <af:button text="CLOSE" id="b2" styleClass="btn btn-lg fs-16"/>
+            </af:panelGroupLayout>-->
+            </af:panelGroupLayout>
+        </af:dialog>
+    </af:popup>
+</jsp:root>

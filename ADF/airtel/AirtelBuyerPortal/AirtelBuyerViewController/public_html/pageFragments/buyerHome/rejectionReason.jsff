@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+<af:panelGroupLayout id="pgl101" styleClass="AFStretchWidth " >
+        <af:panelGroupLayout id="pgl2" styleClass="float-left full-viewport-height width-35 pl-80 pr-100 bg-color-f6"
+                             layout="vertical">
+            <af:panelGroupLayout id="pgl1" layout="vertical" styleClass="mt-200 fs-48" inlineStyle="margin-top:200px;">
+                <af:outputText value="Rejection" id="ot1"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl6" layout="vertical" styleClass="fs-48 color-red">
+                <af:outputText value="Reason" id="ot3"/>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pgl3" styleClass="float-left width-65 pl-150 pr-100 pb-50 bg-white min-height-100vh"
+                             layout="vertical">
+            <af:panelGroupLayout id="pgl10" styleClass="field-title mb-5" layout="vertical" inlineStyle="margin-top:190px;">
+                 <af:outputText value="PLEASE ENTER THE REASON FOR REJECTION" id="ot4"/>
+                <af:inputText id="it2" rows="7" styleCLass="text" 
+                              inlineStyle="border-bottom:none !important;width:65%;resize: none !important;"
+                              value="#{pageFlowScope.buyerHomeBean.rejectionReason}"
+                              autoSubmit="true"
+                              valueChangeListener="#{pageFlowScope.buyerHomeBean.onRejectionReasonVC}"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl8" layout="horizontal" styleClass="AFStretchWidth"  inlineStyle="margin-top:135px!important;width:100px;float:right;">
+                <af:panelGroupLayout id="pgl4" >
+                    <af:commandLink text="CANCEL" id="l2" styleClass="signup-style"
+                                    inlineStyle="margin-right:80px;background-color:transparent;color:#e40000;box-sizing:border-box;font-size:16px;"
+                                    action="cancel"/>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl5" styleClass="login-btn-class">
+                    <af:button text="SUBMIT" id="b1" styleClass="btn btn-lg"
+                               actionListener="#{pageFlowScope.buyerHomeBean.rejectVendorReqBtnClick}" binding="#{pageFlowScope.buyerHomeBean.submitBtn}"
+                               disabled="#{pageFlowScope.buyerHomeBean.disableSubmitBtn}"
+                               action="afterRejectionReasonSubmit"/>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+</jsp:root>

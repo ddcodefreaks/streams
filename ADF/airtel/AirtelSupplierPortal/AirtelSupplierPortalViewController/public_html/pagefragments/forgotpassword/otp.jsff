@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:h="http://java.sun.com/jsf/html"-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <?audit suppress oracle.ide.xml.validation-error?>
+    <af:panelGroupLayout id="pgl101" styleClass="AFStretchWidth">
+        <af:panelGroupLayout id="pgl2" styleClass="float-left full-viewport-height width-35 pl-80 pr-100 bg-color-f6"
+                             layout="vertical">
+            <af:panelGroupLayout id="pgl1" layout="vertical" styleClass="mt-200 fs-48" inlineStyle="margin-top:200px;">
+                <af:outputText value="Forgot" id="ot1" inlineStyle="font-weight:100;"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl6" layout="vertical" styleClass="fs-48 color-red">
+                <af:outputText value="Password" id="ot3"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl7" layout="vertical" styleClass="fs-16 mt-30 color-grey mt-15">
+                <af:outputText value="Please check your email. We’ve sent a code to #{pageFlowScope.forgotpasswordBean.emailAddress}"
+                               id="ot2"/>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pgl3" styleClass="float-left width-65 pl-150 pb-50 bg-white min-height-100vh;"
+                             layout="vertical">
+            <af:panelGroupLayout layout="vertical" styleClass="pull-right notification" id="pgl26"
+                                 rendered="#{pageFlowScope.forgotpasswordBean.showNotification}"
+                                 binding="#{pageFlowScope.forgotpasswordBean.notificationPGL}">
+                <af:link  id="l3" styleClass="cross" inlineStyle="right: 20px;top: 20px;"
+                         actionListener="#{pageFlowScope.forgotpasswordBean.closeNotificationAL}"/>
+                <af:outputText value="#{pageFlowScope.forgotpasswordBean.notificationHeader}"  styleClass="fs-16 color-green" id="ot13"/>
+                <af:panelGroupLayout  layout="vertical" inlineStyle="margin-top:5px;" id="pgl27">
+                 <af:outputText value="#{pageFlowScope.forgotpasswordBean.notificationBody}"  styleClass="fs-12 color-black" id="ot15"/>
+                       </af:panelGroupLayout>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl11" layout="vertical" styleClass="pr-100">
+                <af:panelGroupLayout id="pgl9" styleClass="field-title mb-5" layout="vertical"
+                                     inlineStyle="margin-top:250px;width:67%;">
+                    <af:outputText value="CODE" id="ot4"/>
+                    <af:inputText id="it2" placeholder="Enter code" styleCLass="AFStretchWidth"
+                                  value="#{pageFlowScope.forgotpasswordBean.inputOTP}"
+                                  valueChangeListener="#{pageFlowScope.forgotpasswordBean.otpValueChangeListener}"
+                                  autoSubmit="true" partialTriggers="b1"/>
+                    <af:panelGroupLayout id="pgl10" styleClass="error-msg" inlineStyle="display: block;"
+                                         layout="vertical">
+                        <af:outputText id="ot5" binding="#{pageFlowScope.forgotpasswordBean.otpValidationMessage}"
+                                       clientComponent="true" styleClass="error-msg" inlineStyle="display: block;"
+                                       value="#{pageFlowScope.forgotpasswordBean.otpValidationMessageString}"/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout id="pgl8" layout="horizontal" styleClass="AFStretchWidth"
+                                     inlineStyle="margin-top:206px!important;width:100px;float:right;">
+                    <af:panelGroupLayout id="pgl4">
+                        <af:commandLink text="CANCEL" id="l2" styleClass="signup-style"
+                                        inlineStyle="margin-right:80px;background-color:transparent;color:#e40000;box-sizing:border-box;font-size:16px;"
+                                        action="#{pageFlowScope.forgotpasswordBean.onCancel}"/>
+                    </af:panelGroupLayout>
+                    <af:panelGroupLayout id="pgl5">
+                        <af:button text="SUBMIT" id="b1" styleClass="btn btn-lg"
+                                   action="#{pageFlowScope.forgotpasswordBean.submitOTP}" partialTriggers="it2 ot5"
+                                   disabled='#{pageFlowScope.forgotpasswordBean.isDisableSubmitOtp eq "true"}'/>
+                    </af:panelGroupLayout>
+                </af:panelGroupLayout>
+            </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:panelGroupLayout>
+</jsp:root>
+<!--/ui:composition-->

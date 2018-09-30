@@ -1,0 +1,62 @@
+/*@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+@font-face{
+    font-family:Tondo-Bold;
+    src:url(./fonts/tondo/tondo-bold-webfont.eot);
+    src:url(../fonts/tondo/tondo-bold-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/tondo/tondo-bold-webfont.woff2) format("woff2"),url(../fonts/tondo/tondo-bold-webfont.woff) format("woff"),url(../fonts/tondo/tondo-bold-webfont.ttf) format("truetype"),url(../fonts/tondo/tondo-bold-webfont.svg#tondobold) format("svg");
+    font-weight:500;
+    font-style:normal
+}
+@font-face{
+    font-family:Tondo;
+    src:url(../fonts/tondo/tondo-regular-webfont.eot);
+    src:url(../fonts/tondo/tondo-regular-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/tondo/tondo-regular-webfont.woff2) format("woff2"),url(../fonts/tondo/tondo-regular-webfont.woff) format("woff"),url(../fonts/tondo/tondo-regular-webfont.ttf) format("truetype"),url(../fonts/tondo/tondo-regular-webfont.svg#tondoregular) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:Tondo-Light;
+    src:url(../fonts/tondo/tondo-light-webfont.eot);
+    src:url(../fonts/tondo/tondo-light-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/tondo/tondo-light-webfont.woff2) format("woff2"),url(../fonts/tondo/tondo-light-webfont.woff) format("woff"),url(../fonts/tondo/tondo-light-webfont.ttf) format("truetype"),url(../fonts/tondo/tondo-light-webfont.svg#tondolight) format("svg");
+    font-weight:100;
+    font-style:normal
+}
+@font-face{
+    font-family:airtel-icons;
+    src:url(../fonts/icons/airtel-icons.eot?version=1527242882017);
+    src:url(../fonts/icons/airtel-icons.eot?version=1527242882017) format("embedded-opentype"),url(../fonts/icons/airtel-icons.woff?version=1527242882017) format("woff"),url(../fonts/icons/airtel-icons.ttf?version=1527242882017) format("truetype");
+    font-weight:400;
+    font-style:normal
+}
+/* for selection */
+::-moz-selection{
+    background:#e40000 !important;
+    color:#fff !important;
+}
+::selection{
+    background:#e40000 !important;
+    color:#fff !important;
+}
+/* for scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.06);
+}

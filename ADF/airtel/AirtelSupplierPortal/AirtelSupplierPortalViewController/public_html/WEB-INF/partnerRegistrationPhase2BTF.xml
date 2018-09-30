@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+    <task-flow-definition id="partnerRegistrationPhase2BTF">
+        <default-activity>checkCountry</default-activity>
+        <data-control-scope>
+            <shared/>
+        </data-control-scope>
+        <managed-bean id="__1">
+            <managed-bean-name>partnerRegistrationPhase2</managed-bean-name>
+            <managed-bean-class>com.airtel.supplierportal.bean.partnerRegistrationPhase2.PartnerRegistrationPhase2</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__17">
+            <managed-bean-name>domesticSiteBean</managed-bean-name>
+            <managed-bean-class>com.airtel.supplierportal.bean.partnerRegistrationPhase2.DomesticSiteBean</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__25">
+            <managed-bean-name>NonDomesticSiteRegistration</managed-bean-name>
+            <managed-bean-class>com.airtel.supplierportal.bean.partnerRegistrationPhase2.NonDomesticSiteRegistration</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <method-call id="checkCountry">
+            <method>#{pageFlowScope.partnerRegistrationPhase2.checkCountry}</method>
+            <outcome>
+                <to-string>true</to-string>
+            </outcome>
+        </method-call>
+        <view id="addDomesticSiteAdress">
+            <page>/pagefragments/partnerRegistrationPhase2/addDomesticSiteAdress.jsff</page>
+        </view>
+        <view id="addNonDomesticSiteAddress">
+            <page>/pagefragments/partnerRegistrationPhase2/addNonDomesticSiteAddress.jsff</page>
+        </view>
+        <view id="sitesAddThankyouDomestic">
+            <page>/pagefragments/partnerRegistrationPhase2/sitesAddThankyouDomestic.jsff</page>
+        </view>
+        <view id="sitesAddThankyouNonDomestic">
+            <page>/pagefragments/partnerRegistrationPhase2/sitesAddThankyouNonDomestic.jsff</page>
+        </view>
+        <task-flow-return id="onCancelReturn">
+            <outcome>
+                <name>onCancelReturn</name>
+            </outcome>
+        </task-flow-return>
+        <task-flow-call id="addAnotherSiteAddressBTF">
+            <task-flow-reference>
+                <document>/WEB-INF/addAnotherSiteAddressBTF.xml</document>
+                <id>addAnotherSiteAddressBTF</id>
+            </task-flow-reference>
+        </task-flow-call>
+        <control-flow-rule id="__2">
+            <from-activity-id>checkCountry</from-activity-id>
+            <control-flow-case id="__3">
+                <from-outcome>domestic</from-outcome>
+                <to-activity-id>addDomesticSiteAdress</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__4">
+                <from-outcome>nonDomestic</from-outcome>
+                <to-activity-id>addNonDomesticSiteAddress</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__5">
+            <from-activity-id>addDomesticSiteAdress</from-activity-id>
+            <control-flow-case id="__6">
+                <from-outcome>submit</from-outcome>
+                <to-activity-id>sitesAddThankyouDomestic</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__9">
+                <from-outcome>cancel</from-outcome>
+                <to-activity-id>onCancelReturn</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__21">
+                <from-outcome>goToNonDomestic</from-outcome>
+                <to-activity-id>addNonDomesticSiteAddress</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__7">
+            <from-activity-id>addNonDomesticSiteAddress</from-activity-id>
+            <control-flow-case id="__8">
+                <from-outcome>submit</from-outcome>
+                <to-activity-id>sitesAddThankyouNonDomestic</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__10">
+                <from-outcome>cancel</from-outcome>
+                <to-activity-id>onCancelReturn</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__11">
+            <from-activity-id>sitesAddThankyouDomestic</from-activity-id>
+            <control-flow-case id="__12">
+                <from-outcome>cancel</from-outcome>
+                <to-activity-id>onCancelReturn</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__16">
+                <from-outcome>addAnotherSiteAddress</from-outcome>
+                <to-activity-id>addAnotherSiteAddressBTF</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__13">
+            <from-activity-id>sitesAddThankyouNonDomestic</from-activity-id>
+            <control-flow-case id="__14">
+                <from-outcome>cancel</from-outcome>
+                <to-activity-id>onCancelReturn</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__15">
+                <from-outcome>addAnotherSiteAddress</from-outcome>
+                <to-activity-id>addAnotherSiteAddressBTF</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <use-page-fragments/>
+    </task-flow-definition>
+</adfc-config>

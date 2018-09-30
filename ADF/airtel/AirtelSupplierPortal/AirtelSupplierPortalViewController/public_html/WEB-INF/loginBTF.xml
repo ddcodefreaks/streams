@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="loginBTF">
+    <default-activity>onLoadLogin</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <managed-bean id="__1">
+      <managed-bean-name>LoginBean</managed-bean-name>
+      <managed-bean-class>com.airtel.supplierportal.bean.login.LoginBean</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <view id="partnerLoginView">
+      <page>/pagefragments/login/partnerLoginView.jsff</page>
+    </view>
+    <view id="partnerLoginMobile">
+      <page>/pagefragments/login/partnerLoginMobile.jsff</page>
+    </view>
+    <method-call id="onLoadLogin">
+      <method>#{pageFlowScope.LoginBean.onloadLogin}</method>
+      <outcome>
+        <fixed-outcome>onLoadLogin</fixed-outcome>
+      </outcome>
+    </method-call>
+    <control-flow-rule id="__2">
+      <from-activity-id>partnerLoginView</from-activity-id>
+      <control-flow-case id="__3">
+        <from-outcome>mobile</from-outcome>
+        <to-activity-id>partnerLoginMobile</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__4">
+      <from-activity-id>partnerLoginMobile</from-activity-id>
+      <control-flow-case id="__5">
+        <from-outcome>email</from-outcome>
+        <to-activity-id>partnerLoginView</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__8">
+      <from-activity-id>onLoadLogin</from-activity-id>
+      <control-flow-case id="__9">
+        <to-activity-id>partnerLoginView</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>
