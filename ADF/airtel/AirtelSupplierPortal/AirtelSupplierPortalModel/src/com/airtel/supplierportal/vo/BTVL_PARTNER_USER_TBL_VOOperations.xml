@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding='windows-1252'?>
-<!DOCTYPE OperationDefinitions SYSTEM "jbo_03_01.dtd">
-<OperationDefinitions xmlns="http://xmlns.oracle.com/bc4j" Name="BTVL_PARTNER_USER_TBL_VOOperations">
-  <ExpressionCodeSource
-    Name="BTVL_PARTNER_USER_TBL_VORow"
-    Type="Static"
-    URI="com/airtel/supplierportal/vo/BTVL_PARTNER_USER_TBL_VORow.bcs"/>
-</OperationDefinitions>

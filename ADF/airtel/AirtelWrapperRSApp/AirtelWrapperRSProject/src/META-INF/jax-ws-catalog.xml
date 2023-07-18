@@ -1,4 +1,0 @@
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-  <system systemId="http://10.13.80.155:16200/idcws/GenericSoapPort/#%7Burn%3AGenericSoap%7DGenericSoapService?wsdl"
-          uri="../com/airtel/rs/proxy/dms/GenericSoapService.wsdl"/>
-</catalog>
