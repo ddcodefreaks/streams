@@ -1,0 +1,722 @@
+*****************************************airtel project works********************************************
+Partner Login URL:
+https://partners.airtel.in/SupplierPortal/faces/pages/login/partnerLogin.jspx
+ Partner Registration URL:
+https://partners.airtel.in/SupplierPortal/faces/pages/partnerSignup/signup.jspx
+buyer login :: https://partners.airtel.in/BuyerPortal/faces/pages/login/buyerLogin.jspx
+***************************************Ends*********************************************************
+
+*************************************ADF*********************************
+http://www.oracle.com/webfolder/technetwork/tutorials/obe/db/12c/r1/Windows_DB_Install_OBE/Installing_Oracle_Db12c_Windows.html
+oracle database:: installed in d>app>dell with password welcome1 > Pluggable Database Name: 
+pdborcl
+TO CHECK THE DEFGAULT ORACLE HOME DATA BASE 
+Open up a command prompt
+Start -> Run -> "cmd.exe"
+Start sqlplus as administrator
+sys/<Password>@orcl as sysdba
+sqlplus / as sysdba
+There's a system stored procedure called get_env for retrieving the value for ORACLE_HOME, thanks Sabdar Syed for the query.
+SQL > var OHM varchar2(100);
+SQL > EXEC dbms_system.get_env('ORACLE_HOME', :OHM) ;
+SQL > PRINT OHM
+****************************************adf coding********************************#**
+http://www.jobinesh.com/2009/11/creating-data-capture-form-using-ejb.html
+http://www.jobinesh.com/2011/06/building-programmatically-managed.html
+http://www.jobinesh.com/2011/06/building-programmatically-managed_25.html
+http://andrejusb.blogspot.com/2008/09/jdeveloper-11g-crud-in-adf-form.html
+http://biemond.blogspot.com/2009/03/some-handy-code-for-backing-beans-adf.html
+http://sqltech.cl/doc/oas10gR31/web.1013/b28967/web_getstarted005.htm
+http://andrejusb.blogspot.com/2010/11/how-to-access-page-element-value-from.html
+http://andrejusb.blogspot.com/2015/12/very-practical-crud-with-jet-and-adf-bc.html
+http://waslleysouza.com.br/en/2014/04/implementing-commit-and-rollback-programmatically-in-adf-task-flow/
+-----------------------------------------------------------
+https://www.codeproject.com/Articles/1027230/Oracle-c-Installation-on-Windows-Step-by-Step
+http://www.catgovind.com/adf/adf-iterate-view-object-programmatically/
+http://www.catgovind.com/oracle/how-to-install-oracle-database-12c-enterprise-edition-on-windows/
+http://www.awasthiashish.com/2012/11/most-used-codes-in-adf-iterate-voget.html
+http://www.catgovind.com/oracle-adf-tutorial-12c/
+https://docs.oracle.com/middleware/1221/jdev/develop-extensions/index.html
+https://docs.oracle.com/cd/E18941_01/tutorials/jdtut_11r2_55/jdtut_11r2_55_1.html
+https://blogs.oracle.com/shay/how-do-i-start-learning-oracle-adf-and-jdeveloper-11g
+https://docs.oracle.com/cd/E53569_01/tutorials/tut_rich_app_alta/tut_rich_app_alta_1.html#section1
+https://www.quora.com/What-is-the-best-step-by-step-method-to-learn-Oracle-ADF
+https://docs.oracle.com/cd/E53569_01/tutorials/tut_rich_app/tut_rich_app.html
+https://docs.oracle.com/middleware/1212/adf/ADFFD/taskflows.htm#ADFFD23476
+https://docs.oracle.com/cd/E23943_01/web.1111/b31974/taskflows_activities.htm#ADFFD1663
+https://www.youtube.com/watch?v=bmKV4tBCKvQ&list=PL9E7mNRuukkVA3IaBJe3qq9C5EpU8egzd&index=1
+https://blogs.oracle.com/shay/how-do-i-start-learning-oracle-adf-the-12c-edition 
+https://docs.oracle.com/cd/E21764_01/web.1111/b31974/adding_security.htm#ADFFD877
+https://docs.oracle.com/cd/E53569_01/tutorials/tut_rich_app_alta/tut_rich_app_alta_1.html#section1
+https://docs.oracle.com/cd/E53569_01/tutorials/tut_btf/tut_btf.html
+https://docs.oracle.com/middleware/12213/adf/index.html
+http://www.catgovind.com/adf/bounded-task-flow-navigation-example/
+http://www.catgovind.com/adf/adf-router-activity-task-flow/
+https://docs.oracle.com/cd/E23943_01/web.1111/b31974/taskflows_activities.htm#ADFFD1663
+http://www.catgovind.com/adf/adf-security-login-logout/
+https://www.journaldev.com/9123/jax-ws-tutorial
+https://docs.oracle.com/middleware/1213/adf/develop/adf-bc-web-services.htm#ADFFD534
+http://www.awasthiashish.com/2015/12/create-soap-web-service-with-application-module-quickly-in-adf-12-2-1.html
+http://waslleysouza.com.br/en/2014/07/expose-application-module-as-soap-web-service/
+https://docs.oracle.com/cd/E24382_01/web.1112/e16182/bcservices.htm#ADFFD1491
+http://rohanwalia.blogspot.com/2015/04/adf-bc-web-service-return-list-of.html
+http://www.awasthiashish.com/2015/12/create-soap-web-service-with-application-module-quickly-in-adf-12-2-1.html
+http://www.awasthiashish.com/2016/01/consuming-soap-web-service-quickly.html
+***********************************************************************
+******************logical delete*****************************************************
+https://github.com/dzinot/spring-boot-jpa-data-rest-soft-delete
+https://dzone.com/articles/datetime-formattingparsing
+********************************************exception handling************************************************junit testing*****************************
+https://dzone.com/articles/spring-boot-rest-api-unit-testing-with-junit
+**************************************************************exceptional handling******************************************
+http://www.baeldung.com/jackson-exception
+
+https://www.journaldev.com/2651/spring-mvc-exception-handling-controlleradvice-exceptionhandler-handlerexceptionresolver
+http://www.baeldung.com/global-error-handler-in-a-spring-rest-api
+https://www.toptal.com/java/spring-boot-rest-api-error-handling
+https://www.toptal.com/java/spring-boot-rest-api-error-handling
+************************************************************************************************************************************
+*******************************************improvements****************************
+Unit Testing
+Stream apis 
+servlet
+bootstrap
+genrics and lambda expressions
+regex in java for  email and password and phone number validation 
+stream api 
+collection 
+iterate list under list
+how to send email with attachments
+how to upload and download files utility methods 
+https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/
+https://forum.theodinproject.com/c/introductions
+https://gitter.im/TheOdinProject/theodinproject--community
+https://forum.theodinproject.com/c/introductions
+https://forum.theodinproject.com/categories
+html 5 & angular
+follow codeacademy to learn concepts easily
+https://tomato-timer.com/#
+https://www.theodinproject.com/
+https://spring.io/guides/gs/rest-service/
+https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework
+https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html
+https://www.happybearsoftware.com/how-to-get-a-programmer-job
+*********************spring boot app**************************************
+https://www.codejava.net/frameworks/spring/spring-mvc-send-e-mail-with-attachments
+http://javasampleapproach.com/spring-framework/perform-form-validation-spring-boot
+http://javasampleapproach.com/java-integration/integrate-angular-4-springboot-web-app-springtoolsuite
+https://www.concretepage.com/spring-boot/spring-boot-rest-angular-2-jpa-hibernate-mysql-crud-example
+https://spring.io/guides/gs/spring-boot/
+https://spring.io/guides/gs/accessing-data-jpa/
+https://stackoverflow.com/questions/27822703/java-8-stream-filtering-value-of-list-in-a-list
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-single-sign-on
+http://spring.io/
+https://www.freeprojectz.com/user/register
+http://directory.apache.org/
+http://directory.apache.org/studio/
+http://www.keycloak.org/downloads.html
+http://wildfly.org/downloads/
+http://www.springboottutorial.com/spring-boot-vs-spring-mvc-vs-spring
+https://in28minutes.teachable.com/p/spring-framework-tutorial-for-beginners
+https://in28minutes.teachable.com/courses/enrolled/126488
+http://directory.apache.org/apacheds/basic-ug/1.2-some-background.html
+
+http://krams915.blogspot.in/2011/01/ldap-apache-directory-studio-basic.html
+http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+http://websystique.com/spring-boot/spring-boot-rest-api-example/
+http://slackspace.de/articles/authentication-with-spring-boot-angularjs-and-keycloak/
+http://slackspace.de/articles/authentication-with-spring-boot-angular-2-and-keycloak/
+https://github.com/cternes/slackspace-angular2-spring-keycloak
+>>> jar download : https://jar-download.com/explore-java-source-code.php?a=spring-boot&g=org.springframework.boot&v=1.5.1.RELEASE&downloadable=1
+https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.6.RELEASE
+https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/
+https://spring.io/guides/gs/spring-boot/
+https://josepraveen.com/2016/11/05/integrate-swagger-with-spring-boot-application-for-restful-api-documentation-lab-4/
+https://dzone.com/articles/spring-boot-restful-api-documentation-with-swagger
+>>>>>>>https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>jpa>>>>>>>>>>>>>>>>>>>>>
+https://www.tutorialspoint.com/jpa/jpa_architecture.htm
+*****************************spring boot maven repository **********>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+
+******************************>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>> spring boot cli jars  list : http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/
+https://howtoprogram.xyz/2016/08/27/install-spring-boot-command-line-interface-on-windows/
+https://superuser.com/questions/603026/mysql-how-to-fix-access-denied-for-user-rootlocalhost
+
+http://websystique.com/spring-boot/spring-boot-rest-api-example/
+https://www.draw.io/
+>>>>> wildfly : user : admin1 password : welcome1
+http://xpam.pl/blog/?p=154
+>>>>>>>>>>>>db creation>>>>>>>>>
+https://github.com/Codingpedia/codingmarks.org/wiki/Move-keycloak-database-from-H2-to-MySql
+https://community.appian.com/support/w/kb/318/kb-1095-jbas013412-timeout-after-300-seconds-waiting-for-service-container-stability-error-thrown-during-jboss-startup
+http://hpehl.info/jdbc-driver-setup.html
+https://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#mvc
+>>>>>>>>>>>>>>>>postman >>>>>>>>>>>>
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/logout
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/token
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/userinfo
+http://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+http://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+http://192.168.1.160:8180/auth/realms/NileHCMRealm/protocol/openid-connect/token
+//>>>>>>> json structure 
+https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial
+https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial
+http://dev.wavemaker.com/wiki/bin/Dev/HqlTutorial#HHQLTutorialFeaturesandScreenshot
+>>>>>>>>>>>>>studyyyy--- https://tzamouranis.gr/best-websites-a-programmer-should-visit/
+>>>>>>>>>>>>>generate pdf >>>>>>
+http://zetcode.com/articles/springbootpdfreport/
+http://www.oodlestechnologies.com/blogs/How-To-Create-PDF-through-HTML-Template-In-Spring-Boot
+https://stackoverflow.com/questions/21562442/how-to-fetch-data-from-multiple-table-query-by-hibernate
+https://stackoverflow.com/questions/23026973/how-to-check-value-alrady-exists-on-table-using-hibernatespring
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>treee set>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+http://www.java2novice.com/java-collections-and-util/treeset/comparator-object/
+>>>>>>>>>>>>>>>>>>>>>>>>>keycloak>>>>>>>>>>>>>>>>>>>>>>>>>
+http set up>>> http://www.keycloak.org/docs/latest/server_installation/index.html#setting-up-https-ssl
+>>clustering>> http://www.keycloak.org/docs/latest/server_installation/index.html#_clustering
+>>https://docs.jboss.org/author/display/WFLY10/Documentation?_sscc=t
+>>>>https://docs.jboss.org/author/display/WFLY10/Domain+Setup
+>>>>>>>>>>>>>>>>>>>>>>>>>html to pdf>>>>>>>>>>>
+https://www.qoppa.com/pdfwriter/demo/download/https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-single-sign-on
+http://spring.io/
+http://directory.apache.org/
+http://directory.apache.org/studio/
+http://www.keycloak.org/downloads.html
+http://wildfly.org/downloads/
+http://www.springboottutorial.com/spring-boot-vs-spring-mvc-vs-spring
+https://in28minutes.teachable.com/p/spring-framework-tutorial-for-beginners
+https://in28minutes.teachable.com/courses/enrolled/126488
+http://directory.apache.org/apacheds/basic-ug/1.2-some-background.html
+
+http://krams915.blogspot.in/2011/01/ldap-apache-directory-studio-basic.html
+http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+http://websystique.com/spring-boot/spring-boot-rest-api-example/
+http://slackspace.de/articles/authentication-with-spring-boot-angularjs-and-keycloak/
+http://slackspace.de/articles/authentication-with-spring-boot-angular-2-and-keycloak/
+https://github.com/cternes/slackspace-angular2-spring-keycloak
+>>> jar download : https://jar-download.com/explore-java-source-code.php?a=spring-boot&g=org.springframework.boot&v=1.5.1.RELEASE&downloadable=1
+https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.6.RELEASE
+https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/
+https://spring.io/guides/gs/spring-boot/
+https://josepraveen.com/2016/11/05/integrate-swagger-with-spring-boot-application-for-restful-api-documentation-lab-4/
+https://dzone.com/articles/spring-boot-restful-api-documentation-with-swagger
+>>>>>>>https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>jpa>>>>>>>>>>>>>>>>>>>>>
+https://www.tutorialspoint.com/jpa/jpa_architecture.htm
+*****************************spring boot maven repository **********>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot</artifactId>
+    <version>1.5.6.RELEASE</version>
+</dependency>
+******************************>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>> spring boot cli jars  list : http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/
+https://howtoprogram.xyz/2016/08/27/install-spring-boot-command-line-interface-on-windows/
+https://superuser.com/questions/603026/mysql-how-to-fix-access-denied-for-user-rootlocalhost
+
+http://websystique.com/spring-boot/spring-boot-rest-api-example/
+https://www.draw.io/
+>>>>> wildfly : user : admin1 password : welcome1
+http://xpam.pl/blog/?p=154
+>>>>>>>>>>>>db creation>>>>>>>>>
+https://github.com/Codingpedia/codingmarks/wiki/Move-keycloak-database-from-H2-to-MySql
+https://community.appian.com/support/w/kb/318/kb-1095-jbas013412-timeout-after-300-seconds-waiting-for-service-container-stability-error-thrown-during-jboss-startup
+http://hpehl.info/jdbc-driver-setup.html
+https://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#mvc
+>>>>>>>>>>>>>>>>postman >>>>>>>>>>>>
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/logout
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/token
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/userinfo
+http://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+http://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+http://192.168.1.160:8180/auth/realms/NileHCMRealm/protocol/openid-connect/token
+//>>>>>>> json structure 
+https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial
+https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial
+>>>>>>>>>>>>>>>>>>>>>>>>>>>mail>>>>>>>>>
+>>>>>http://www.opencodez.com/java/java-mail-framework-using-spring-boot.htm
+>>>https://www.java-tips.org/
+>>>http://www.opencodez.com/java/java-mail-framework-using-spring-boot.htm
+>>>>>>>https://vangjee.wordpress.com/2010/11/02/how-to-create-an-in-memory-pdf-report-and-send-as-an-email-attachment-using-itext-and-java/
+https://www.java-tips.org/other-api-tips-100035/61-javamail/616-how-to-send-an-email-with-a-file-attachment.html
+https://vangjee.wordpress.com/2010/11/02/how-to-create-an-in-memory-pdf-report-and-send-as-an-email-attachment-using-itext-and-java/
+http://javasampleapproach.com/java-integration/upload-multipartfile-spring-boot
+>>>http://javasampleapproach.com/spring-framework/spring-boot/multipartfile-create-spring-angularjs-multipartfile-application-downloadupload-files-springboot-angularjs-bootstrap
+>>http://javasampleapproach.com/spring-framework/spring-boot/angular-4-uploadget-multipartfile-tofrom-spring-boot-server
+https://stackoverflow.com/questions/10307026/how-do-you-read-a-text-file-and-print-it-to-the-console-window-java
+http://www.thymeleaf.org/doc/articles/springmail.html
+>>>>>>>>>>>>>>>>>>>>>postgres hql >>>>>>>>>>>>>>>>
+how to reteieve jsonb type data from postgres using hql
+>https://blog.2ndquadrant.com/using-hibernate-query-language-hql-with-postgresql/
+>https://www.thoughts-on-java.org/persist-postgresqls-jsonb-data-type-hibernate/
+>http://vojtechruzicka.com/postgresqls-jsonb-type-mapping-using-hibernate/
+>https://www.postgresql.org/docs/9.5/static/functions-json.html
+>https://stackoverflow.com/questions/19333106/jsonmappingexception-out-of-start-array-token
+>https://github.com/pires/hibernate-postgres-jsonb
+>DROP SCHEMA public CASCADE;-- to delete all the data in the db
+CREATE SCHEMA public;
+>>how to drop a database :
+REVOKE CONNECT ON DATABASE dummy FROM public;
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'dummy';
+>
+> DROP TABLE f1 CASCADE;-- drop table for foreign key dependents objects 
+>> in order to take backup from the plain file use--- \i backup file path
+>>>>>>>>>>>>>>>>>>>>>>>>>>SPRING DATA JPA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>how to convert array to list:
+int[] spam = new int[] { 1, 2, 3 };
+Arrays.stream(spam)
+      .boxed()
+      .collect(Collectors.toList());
+-----------------------------------------------
+http://viralpatel.net/blogs/java-read-write-excel-file-apache-poi/
+http://viralpatel.net/blogs/java-read-write-excel-file-apache-poi/
+https://www.journaldev.com/924/java-download-file-url
+https://www.callicoder.com/java-read-excel-file-apache-poi/
+http://www.seleniumeasy.com/jxl-tutorials/how-to-read-excel-file-using-java
+https://dzone.com/articles/using-apache-poi-to-read-excel
+https://github.com/ozlerhakan/poiji
+https://stackoverflow.com/questions/22015660/how-to-convert-my-xlsx-sheet-to-java-object-using-apache-poi
+http://poi.apache.org/spreadsheet/quick-guide.html
+https://dzone.com/articles/spring-boot-applicationrunner-and-commandlinerunne
+https://www.callicoder.com/spring-boot-log4j-2-example/
+https://www.callicoder.com/java-read-excel-file-apache-poi/
+https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/
+https://www.callicoder.com/java-write-excel-file-apache-poi/
+>>read from propertiesfile>>http://javasampleapproach.com/spring-framework/inject-properties-from-properties-file-using-spring-environment
+>>https://github.com/spring-projects/spring-data-examples/tree/master/rest/securityhttps://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-single-sign-on
+https://stackoverflow.com/questions/31627992/spring-data-jpa-zoneddatetime-format-for-json-serialization
+http://spring.io/
+http://directory.apache.org/
+http://directory.apache.org/studio/
+http://www.keycloak.org/downloads.html
+http://wildfly.org/downloads/
+http://www.springboottutorial.com/spring-boot-vs-spring-mvc-vs-spring
+https://in28minutes.teachable.com/p/spring-framework-tutorial-for-beginners
+https://in28minutes.teachable.com/courses/enrolled/126488
+http://directory.apache.org/apacheds/basic-ug/1.2-some-background.html
+
+http://krams915.blogspot.in/2011/01/ldap-apache-directory-studio-basic.html
+http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+http://websystique.com/spring-boot/spring-boot-rest-api-example/
+http://slackspace.de/articles/authentication-with-spring-boot-angularjs-and-keycloak/
+http://slackspace.de/articles/authentication-with-spring-boot-angular-2-and-keycloak/
+https://github.com/cternes/slackspace-angular2-spring-keycloak
+>>> jar download : https://jar-download.com/explore-java-source-code.php?a=spring-boot&g=org.springframework.boot&v=1.5.1.RELEASE&downloadable=1
+https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.6.RELEASE
+https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/
+https://spring.io/guides/gs/spring-boot/
+https://josepraveen.com/2016/11/05/integrate-swagger-with-spring-boot-application-for-restful-api-documentation-lab-4/
+https://dzone.com/articles/spring-boot-restful-api-documentation-with-swagger
+>>>>>>>https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>jpa>>>>>>>>>>>>>>>>>>>>>
+https://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#annotations
+https://www.tutorialspoint.com/jpa/jpa_architecture.htm
+*****************************spring boot maven repository **********>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot</artifactId>
+    <version>1.5.6.RELEASE</version>
+</dependency>
+******************************>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>> spring boot cli jars  list : http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/
+https://howtoprogram.xyz/2016/08/27/install-spring-boot-command-line-interface-on-windows/
+https://superuser.com/questions/603026/mysql-how-to-fix-access-denied-for-user-rootlocalhost
+
+http://websystique.com/spring-boot/spring-boot-rest-api-example/
+https://www.draw.io/
+>>>>> wildfly : user : admin1 password : welcome1
+http://xpam.pl/blog/?p=154
+>>>>>>>>>>>>db creation>>>>>>>>>
+https://github.com/Codingpedia/codingmarks.org/wiki/Move-keycloak-database-from-H2-to-MySql
+https://community.appian.com/support/w/kb/318/kb-1095-jbas013412-timeout-after-300-seconds-waiting-for-service-container-stability-error-thrown-during-jboss-startup
+http://hpehl.info/jdbc-driver-setup.html
+https://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#mvc
+>>>>>>>>>>>>>>>>postman >>>>>>>>>>>>
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/logout
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/token
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/userinfo
+http://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+http://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+http://192.168.1.160:8180/auth/realms/NileHCMRealm/protocol/openid-connect/token
+//>>>>>>> json structure 
+https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial
+https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial
+http://dev.wavemaker.com/wiki/bin/Dev/HqlTutorial#HHQLTutorialFeaturesandScreenshot
+>>>>>>>>>>>>>studyyyy--- https://tzamouranis.gr/best-websites-a-programmer-should-visit/
+>>>>>>>>>>>>>generate pdf >>>>>>
+http://zetcode.com/articles/springbootpdfreport/
+http://www.oodlestechnologies.com/blogs/How-To-Create-PDF-through-HTML-Template-In-Spring-Boot
+https://stackoverflow.com/questions/21562442/how-to-fetch-data-from-multiple-table-query-by-hibernate
+https://stackoverflow.com/questions/23026973/how-to-check-value-alrady-exists-on-table-using-hibernatespring
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>treee set>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+http://www.java2novice.com/java-collections-and-util/treeset/comparator-object/
+>>>>>>>>>>>>>>>>>>>>>>>>>keycloak>>>>>>>>>>>>>>>>>>>>>>>>>
+http set up>>> http://www.keycloak.org/docs/latest/server_installation/index.html#setting-up-https-ssl
+>>clustering>> http://www.keycloak.org/docs/latest/server_installation/index.html#_clustering
+>>https://docs.jboss.org/author/display/WFLY10/Documentation?_sscc=t
+>>>>https://docs.jboss.org/author/display/WFLY10/Domain+Setup
+>>>>>>>>>>>>>>>>>>>>>>>>>html to pdf>>>>>>>>>>>
+https://www.qoppa.com/pdfwriter/demo/download/https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-security-oauth2-single-sign-on
+http://spring.io/
+http://directory.apache.org/
+http://directory.apache.org/studio/
+http://www.keycloak.org/downloads.html
+http://wildfly.org/downloads/
+http://www.springboottutorial.com/spring-boot-vs-spring-mvc-vs-spring
+https://in28minutes.teachable.com/p/spring-framework-tutorial-for-beginners
+https://in28minutes.teachable.com/courses/enrolled/126488
+http://directory.apache.org/apacheds/basic-ug/1.2-some-background.html
+
+http://krams915.blogspot.in/2011/01/ldap-apache-directory-studio-basic.html
+http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+http://websystique.com/spring-boot/spring-boot-rest-api-example/
+http://slackspace.de/articles/authentication-with-spring-boot-angularjs-and-keycloak/
+http://slackspace.de/articles/authentication-with-spring-boot-angular-2-and-keycloak/
+https://github.com/cternes/slackspace-angular2-spring-keycloak
+>>> jar download : https://jar-download.com/explore-java-source-code.php?a=spring-boot&g=org.springframework.boot&v=1.5.1.RELEASE&downloadable=1
+https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.6.RELEASE
+https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/
+https://spring.io/guides/gs/spring-boot/
+https://josepraveen.com/2016/11/05/integrate-swagger-with-spring-boot-application-for-restful-api-documentation-lab-4/
+https://dzone.com/articles/spring-boot-restful-api-documentation-with-swagger
+>>>>>>>https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>jpa>>>>>>>>>>>>>>>>>>>>>
+https://www.tutorialspoint.com/jpa/jpa_architecture.htm
+*****************************spring boot maven repository **********>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot</artifactId>
+    <version>1.5.6.RELEASE</version>
+</dependency>
+******************************>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>> spring boot cli jars  list : http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/
+https://howtoprogram.xyz/2016/08/27/install-spring-boot-command-line-interface-on-windows/
+https://superuser.com/questions/603026/mysql-how-to-fix-access-denied-for-user-rootlocalhost
+
+http://websystique.com/spring-boot/spring-boot-rest-api-example/
+https://www.draw.io/
+>>>>> wildfly : user : admin1 password : welcome1
+http://xpam.pl/blog/?p=154
+>>>>>>>>>>>>db creation>>>>>>>>>
+https://github.com/Codingpedia/codingmarks/wiki/Move-keycloak-database-from-H2-to-MySql
+https://community.appian.com/support/w/kb/318/kb-1095-jbas013412-timeout-after-300-seconds-waiting-for-service-container-stability-error-thrown-during-jboss-startup
+http://hpehl.info/jdbc-driver-setup.html
+https://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#mvc
+>>>>>>>>>>>>>>>>postman >>>>>>>>>>>>
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/logout
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/token
+http://localhost:8080/auth/realms/Demo-Realm/protocol/openid-connect/userinfo
+http://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+http://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+http://192.168.1.160:8180/auth/realms/NileHCMRealm/protocol/openid-connect/token
+//>>>>>>> json structure 
+https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial
+https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial
+>>>>>>>>>>>>>>>>>>>>>>>>>>>mail>>>>>>>>>
+>>>>>http://www.opencodez.com/java/java-mail-framework-using-spring-boot.htm
+>>>https://www.java-tips.org/
+>>>http://www.opencodez.com/java/java-mail-framework-using-spring-boot.htm
+>>>>>>>https://vangjee.wordpress.com/2010/11/02/how-to-create-an-in-memory-pdf-report-and-send-as-an-email-attachment-using-itext-and-java/
+https://www.java-tips.org/other-api-tips-100035/61-javamail/616-how-to-send-an-email-with-a-file-attachment.html
+https://vangjee.wordpress.com/2010/11/02/how-to-create-an-in-memory-pdf-report-and-send-as-an-email-attachment-using-itext-and-java/
+http://javasampleapproach.com/java-integration/upload-multipartfile-spring-boot
+https://stackoverflow.com/questions/10307026/how-do-you-read-a-text-file-and-print-it-to-the-console-window-java
+http://www.thymeleaf.org/doc/articles/springmail.html
+http://javasampleapproach.com/spring-framework/spring-core/inject-properties-from-properties-file-using-value-annotation
+>>>	https://spring.io/docs/reference	
+>https://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-three-custom-queries-with-query-methods/
+https://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/#repositories.query-methods.details
+>>https://docs.spring.io/spring-data/jpa/docs/2.0.2.RELEASE/reference/html/
+>>official-- https://docs.jboss.org/hibernate/annotations/3.5/reference/en/html/entity.html
+https://docs.spring.io/spring-data/rest/docs/3.0.2.RELEASE/reference/html/
+https://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-part-two-crud/
+https://www.petrikainulainen.net/spring-data-jpa-tutorial/
+https://docs.spring.io/spring-data/jpa/docs/1.8.x/reference/html/#repositories.definition
+http://fabiomaffioletti.me/blog/2014/04/15/distributed-transactions-multiple-databases-spring-boot-spring-data-jpa-atomikos/
+http://javasampleapproach.com/spring-framework/spring-boot/angular-4-uploadget-multipartfile-tofrom-spring-boot-server#1_Spring_Boot_Server-2
+>>>http://mrbool.com/rest-server-with-spring-data-spring-boot-and-postgresql/34023
+>>>>>https://dzone.com/articles/integrating-spring-data-jpa-postgresql-and-liquiba
+>http://javasampleapproach.com/spring-framework/use-spring-jpa-postgresql-spring-boot
+>>http://projects.spring.io/spring-data-rest/
+http://javasampleapproach.com/spring-framework/spring-data/use-hal-browser-spring-data-rest-springboot-mysql
+>https://cristinanegrean.github.io/2017/03/28/hypermedia-driven-services-with-spring-data-rest
+>https://docs.spring.io/spring-data/rest/docs/current/reference/html/
+>https://docs.spring.io/spring-data/rest/docs/current/reference/html/#_the_hal_browser
+>https://docs.spring.io/spring-boot/docs/current/reference/html/
+https://github.com/olivergierke/spring-restbucks
+>http://www.devglan.com/spring-boot/file-upload-angularjs-spring-boot-rest
+>>>>>https://www.dineshonjava.com/spring-hateoas-hypermedia-driven-restful-web-service/
+https://dzone.com/articles/building-hateoas-hypermedia
+https://spring.io/understanding/HATEOAS
+>>http://www.devglan.com/
+http://www.baeldung.com/spring-data-rest-relationships
+https://stackoverflow.com/questions/43806173/spring-data-rest-foreign-key-is-update-with-null-after-post-call-in-one-to-man
+https://stackoverflow.com/questions/3325387/infinite-recursion-with-jackson-json-and-hibernate-jpa-issue
+>>to eliminate stackoverflow error: @JsonIdentityInfo(
+            generator = ObjectIdGenerators.PropertyGenerator.class,
+            property = "id")
+
+https://dzone.com/articles/add-custom-functionality-to-a-spring-data-reposito
+https://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-introduction-to-query-methods/
+https://dzone.com/articles/adding-queries-spring-data-jpa
+>>http://localhost:8989/organizationHoliday/search/findByCalendarYear?year=2018
+********************************************templating**************************************************************************
+>>https://dzone.com/articles/dynamic-html-templates-with-freemarker-and-vaadin-1
+>>https://github.com/alejandro-du/freemarker-layout/tree/master/freemarker-layout-demo
+>>http://blog.kaczmarzyk.net/2015/01/04/loading-view-templates-from-database-with-thymeleaf/
+>>https://www.concretepage.com/freemarker/java-freemarker-templates-ftl-tutorial-with-html-example
+>>https://stackoverflow.com/questions/357370/load-freemarker-templates-from-database
+>>>>>https://www.programcreek.com/java-api-examples/index.php?source_dir=freemarker-old-master/src/test/java/freemarker/test/TemplateTest.java
+>>https://www.programcreek.com/java-api-examples/index.php?api=freemarker.cache.StringTemplateLoader
+>>https://www.concretepage.com/freemarker/freemarker-filetemplateloader-and-stringtemplateloader-example
+>>>>>>>>>>>>>angular>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>https://medium.com/@asm/animated-slide-panel-with-angular-e985ad646f9-----------tabledata
+https://github.com/angular/angular-cli/wiki 
+>> to run the angular app>>> ng serve --open
+>>http://localhost:4200/HRMS/dashboard/approveattendance
+>>> generate componenets : ng generate component heroes
+>>https://material.angular.io/components/datepicker/examples
+http://192.168.1.160:8180/auth/admin/master/console/#/realms/NileHCMRealm/clients/943cc1a2-9040-400c-9be0-be0eae3079cd
+http://www.c-sharpcorner.com/article/make-autocomplete-textbox-in-angular4-with-typescript/
+
+
+************************************************************************dashboard links******************************
+http://fuse-angular-material.withinpixels.com/apps/file-managers
+http://wrapbootstrap.com/preview/WB0M35410
+https://themefisher.com/30-best-responsive-html5-css3-angularjs-admin-templates-build-awesome-web-apps/
+https://www.strapui.com/themes/material-dashboard-admin-angular/
+http://preview.themeforest.net/item/electric-admin-panel-dashboard-angular-js-template/full_screen_preview/14879635?ref=themefisher1&clickthrough_id=1161054688&redirect_back=true
+>>https://orangehrm-demo-6x.orangehrmlive.com/client/#/noncore/dashboard/index
+>https://orangehrm-demo-6x.orangehrmlive.com/auth/login     
+user-- admin
+password-admin123
+https://novanym.com/collections/software-and-technology-business-names
+npm install --save-dev @angular/cli@latest
+******************************************KeyCloak Admin Rest Api with Java**************************************
+http://gjsimplyjava.blogspot.in/2015/12/creating-users-in-keycloak-using-java.html
+https://stackoverflow.com/questions/43222769/how-to-create-keycloak-client-role-programmatically-and-assign-to-user
+https://gist.github.com/thomasdarimont/0c136d0b8d339b997928e9bef225f941
+https://github.com/keycloak/keycloak/blob/master/services/src/main/java/org/keycloak/services/resources/admin/RealmAdminResource.java
+http://keycloak-user.88327.x6.nabble.com/keycloak-user-Keycloak-admin-rest-api-admin-realms-td314.html
+2018-01-31T11:45:48.519z
+2017-08-02T06:05:30.000Z
+https://secure.quikchex.in/
+https://skyvia.com/gallery/inserting-multiple-rows-in-a-single-postgresql-query
+kevin@quikchex.in
+abcd1234
+coolstarbucks6@gmail.com
+>>>zoned date time exception handling :  
+try {
+attdTemplateAssignmentsObj.setEffectiveFromDb(ZonedDateTime.parse(attdTemplateAssignments.getEffectiveFrom()));
+ }catch(DateTimeParseException e){
+   System.out.println("exception in parsing");
+  e.printStackTrace();
+ }
+>>>>>>>>>>>>>>>>>>>>>*********** server deployment *************************************************
+1.create the war file of your project 
+2.open  postman then request with : 192.168.1.230:8089/shutdown 
+3.open winscp and transfer file in to proh2r api
+4. if missed shutdown then force shutdown :: force server shutdown if deleted :kill -9 14141
+5.open putty console then check if any process is running or not : ps -ef | grep java 
+6.list : ll
+7.run: nohup java -jar ProH2R-0.0.1-SNAPSHOT.war > proh2r.out &
+8.check : tail -500f proh2r.out
+CHECK LOGFILES
+1.open Putty Peagant 
+2. connect with the console: user: 192.168.1.230  pswd: welcome1
+3. Again login 
+4. list command : ll
+5. current directory : pwd
+6 open log : tail -500f proh2r.out
+7. local db connection : user : postgres password : welcome1
+8. to check your process running on your computer : netstat -ao |find /i "listening"
+9. to kill the process : Taskkill /F /IM 12704
+10.run postgres on server : docker ps -a then docker start postgres
+*****************************************CHECK lIST***************************************************************
+CONTROLLER CHECK LIST : 
+1. Method comments 
+2. Signature return and response structure 
+3. Request Handling 
+4. Proper comments 
+SERVICEIMPL CHECKLIST:
+1. Method should implements its parent interface 
+2. Request and Response Handling 
+3. maintains loggs and exceptions 
+4. comments 
+DATABASE CHECKLIST
+1. After commit and pull kindly check if application.properties has changed the db name or not 
+2. create the dump file before create or drop 
+3.check if the repository has been properly maintained or not 
+**********************************************************null Handling*************************************************************
+https://howtodoinjava.com/core-java/exception-handling/how-to-effectively-handle-nullpointerexception-in-java/
+https://examples.javacodegeeks.com/java-basics/exceptions/java-lang-nullpointerexception-how-to-handle-null-pointer-exception/
+***************************************************Keycloak url mappings **************************************************************************************
+
+* 
+* Valid Redirect URIs 
+
+http://192.168.1.230/proh2r/*
+ 
+http://192.168.1.156:8089/proh2r/api/*
+ 
+http://192.168.1.230/proh2radmin/*
+ 
+http://192.168.1.209:8089/proh2r/api/*
+ 
+http://localhost:8089/proh2r/api/*
+ 
+http://localhost:4200/*
+ 
+http://192.168.1.22:4200/proh2radmin/*
+ 
+http://192.168.1.230:8089/proh2r/api/*
+ 
+http://192.168.1.22:4201/proh2r/*
+
+>>> run keycloak on your own ip
+>>>login in to keycloak and map with the url : http://192.168.1.156:8089/proh2r/api/* -- when you put v1 after api it will pass token and authenticate you 
+>>>>>run backend code with the keycloak address ip running on your ip
+>>>>>push : http://192.168.1.156:8089/proh2r/api/v1
+>>push>> http://192.168.1.156:8089/proh2r/api/swagger-ui.html#/
+>>>run your application on your localhost:4200
+********************************************************stream api******************************************************
+https://github.com/square/java-code-styles
+https://www.tutorialspoint.com/java8/java8_streams.htm
+https://medium.com/codezilla/learn-to-java8-streams-super-fast-with-the-hands-on-method-8ec41f2d973d
+https://medium.com/get-started?redirectUrl=https%3A%2F%2Fmedium.com%2F%40AndroidAdvance%2Fmaking-the-java-code-cleaner-1-d016eb71fad3%3Fsource%3D--------------------------post_free
+https://stackoverflow.com/questions/10896883/hibernate-updating-onetomany-relationship?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+https://www.tutorialspoint.com/junit/junit_environment_setup.htm
+http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
+http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html
+https://dzone.com/articles/java-8-concepts-fp-lambda-expressions-and-streams
+https://dzone.com/articles/dont-fear-the-lambda?fromrel=true
+*******************************************************frontend
+https://coursetro.com/posts/code/126/Let's-build-an-Angular-5-Chart.js-App---Tutorial
+************************************angular*****************************
+https://angular.io/guide/architecture
+DOM model : https://www.w3schools.com/js/js_htmldom_methods.asp
+Moderate knowledge of HTML, CSS, and JavaScript.
+Basic Model-View-Controller (MVC) concepts.
+The Document Object Model (DOM)
+https://www.json-generator.com/
+search project angular spring boot bootstrap
+JavaScript functions, events, and error handling.
+http://www.devglan.com/spring-boot/spring-boot-angular-example
+http://www.devglan.com/spring-boot/spring-boot-angular-example
+http://idea.iteblog.com/key.php
+http://idea.imsxm.com/
+https://angular.io/guide/quickstart
+https://www.infoworld.com/article/3213244/javascript/whats-new-in-angular-version-6-is-here.html
+http://www.devglan.com/spring-boot/spring-boot-angular-deployment
+https://www.concretepage.com/angular-2/angular-2-4-required-validation-example
+https://www.concretepage.com/angular-2/angular-2-4-pattern-validation-example
+https://www.concretepage.com/angular-2/angular-2-formcontrol-example
+https://www.concretepage.com/angular-2/angular-2-4-formbuilder-example
+https://blog.angular-university.io/introduction-to-angular-2-forms-template-driven-vs-model-driven/
+https://blog.angular-university.io/introduction-to-angular-2-forms-template-driven-vs-model-driven/
+https://www.concretepage.com/angular-2/angular-2-formgroup-example
+https://www.concretepage.com/angular-2/angular-2-4-email-validation-examples
+https://mydevgeek.com/angular-4-crud-application-with-spring-boot-rest-service-part-1/
+http://mydevgeek.com/angular-4-crud-application-with-spring-boot-rest-service-part-2/
+http://www.agiratech.com/angular-4-template-driven-forms-building-validating/
+https://hackr.io/tutorials/learn-typescript
+https://www.udemy.com/the-complete-javascript-course/?siteID=jU79Zysihs4-.QrCngimwnbF_K4KDTQw7Q&LSNPUBID=jU79Zysihs4
+http://crockford.com/javascript/
+https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro?action=resume_content_item&course_redirect=introduction-to-javascript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
+https://www.freecodecamp.org/
+********************************intellij webstorm****************
+http://www.download82.com/get/download/windows/webstorm/
+http://jetbrains.license.laucyun.com/
+crack file-- http://jetbrains.license.laucyun.com
+https://scotch.io/courses
+-- use 2017.2
+**********************************************normallinks*********
+https://www3.lenovo.com/in/en/laptops/thinkpad/thinkpad-l-series/ThinkPad-L470/p/22TP2TBL470//www3.lenovo.com/in/en/laptops/thinkpad/thinkpad-l-series/ThinkPad-L470/p/22TP2TBL470
+https://www.names4brands.com/?nameOptions=3&l_lang=19&l_char=&l_count=&r_lang=&r_char=&r_count=&submit=Brand+Name+Generator
+https://www.fincash.com/solutions/smart-sip#utm_source=quora&utm_medium=social&utm_campaign=quora_sp
+https://edwisor.com/?ref=QuoraT
+http://www.youworthapp.com/?utm_campaign=Post+Answer&utm_medium=Web&utm_source=Quora
+https://www.freelancer.com/
+https://coderanch.com/t/133070/engineering/Jar-File-java-lang-SecurityException
+https://www.domainracer.com/clients/cart.php?a=view
+*****************************************stream api******************************************************
+https://www.tutorialspoint.com/java8/java8_streams.htm
+https://howtodoinjava.com/java-8/java-8-tutorial-streams-by-examples/
+http://www.programming-free.com/2012/11/simple-word-search-in-pdf-files-using.html
+https://www.hostingraja.in/buy-web-hosting/?task=domaincheckstep2&Itemid=435
+https://www.quora.com/Which-are-the-Best-Cheap-Web-Hosting-Providers-with-India-Data-Centers
+https://www.bloggerfreak.com/cheap-wordpress-hosting-india/
+
+*******************************************interviews java tricks*****************************
+https://www.quora.com/How-should-I-prepare-for-a-job-interview-as-a-java-developer-in-TCS-with-2-5-years-of-industry-experience
+https://codesjava.com/jvm-java-virtual-machine-architecture
+http://www.javainterview.in/p/java-interview-guide.html
+https://www.quora.com/How-do-I-crack-a-Java-developer-interview-easily-with-2+-years-of-experience
+https://javahungry.blogspot.com/2015/05/50-java-collections-interview-questions-and-answers.html
+https://www.futurehosting.com/blog/six-awesome-java-tricks-you-might-not-know-about/
+https://www.geeksforgeeks.org/java-tricks-competitive-programming-java-8/
+http://viralpatel.net/blogs/check-string-is-valid-date-java/
+https://www.geeksforgeeks.org/java-util-hashmap-in-java/
+https://www.quora.com/What-are-some-good-sites-for-Java-interview-questions-for-someone-having-2+-years-of-experience#
+https://javasearch.buggybread.com/OnlineTest/javaTest.php
+https://codesjava.com/java-interview-questions-and-answers
+https://it-ebooks-search.info/search?q=Function+Programming+java+
+https://www.quora.com/What-are-some-good-sites-for-Java-interview-questions-for-someone-having-2+-years-of-experience#
+https://www.quora.com/How-do-I-crack-a-Java-developer-interview-easily-with-2+-years-of-experience
+https://www.quora.com/What-are-some-of-the-good-conceptual-Java-questions-to-ask-in-a-phone-screen-interview
+https://www.geeksforgeeks.org/tag/java-strings/
+https://javarevisited.blogspot.com/2015/01/top-20-string-coding-interview-question-programming-interview.html
+https://javarevisited.blogspot.com/2017/07/top-50-java-programs-from-coding-Interviews.html
+https://javarevisited.blogspot.com/2017/07/top-50-java-programs-from-coding-Interviews.html
+https://www.journaldev.com/1330/java-collections-interview-questions-and-answers
+koha----------https://www.youtube.com/watch?v=Ou7WgoeSmOc
+*******************************hadoop********************************
+https://www.quora.com/How-can-I-learn-Hadoop-from-scratch-on-my-own-when-I-have-no-big-data-to-actually-work-with-and-my-company-has-no-need-for-it
+https://data-flair.training/blogs/hadoop-tutorial/
+https://data-flair.training/blogs/install-yarn-with-hadoop-2/
+https://data-flair.training/blogs/big-data-terminologies-hadoop-concepts-you-must-know/
+***************************inventory **************
+https://github.com/partkeepr/PartKeepr
+**********************************************SAML*******
+https://dzone.com/articles/get-started-with-spring-boot-saml-and-okta
+https://www.youtube.com/watch?v=kBaitgdcNWo
+https://dev-856656-admin.oktapreview.com/admin/app/niletechnologiespvtltddev856656_springsaml_1/instance/0oag0865fdA74B2AV0h7#tab-signon
+https://github.com/deeprot/spring-saml-adfs
+USER:: bhaskar.kumar@niletechnologies.com
+password:: Bk2@1991
+https://developer.okta.com/signup/thank-you/?id=ODY4NzMx
+dev-856656.oktapreview.com 
+Single sign on URL: https://localhost:8443/saml/SSO
+Audience URI: https://localhost:8443/saml/metadata
+//dependency for the saml in spring boot
+<dependency>
+    <groupId>org.springframework.security.extensions</groupId>
+    <artifactId>spring-security-saml-dsl</artifactId>
+  
+</dependency>
+<repositories>
+    <repository>
+        <id>spring-milestones</id>
+        <name>Spring Milestones</name>
+        <url>https://repo.spring.io/libs-milestone</url>
+    </repository>
+</repositories>
+*********************signed as bikku2b@gmail.com******************
+paswwrd: Bk2@1991
+https://github.com/rwinch/spring-security-saml2-okta
+https://devforum.okta.com/t/how-to-logout-from-springboot-app-and-okta/885
+dev-561325.oktapreview.com 
+https://dev-561325.oktapreview.com/app/exkg0s7dcwkKYbAlt0h7/sso/saml/metadata
+keytool -genkey -v -keystore keystore.jks -alias spring -keyalg RSA -keysize 2048 -validity 10000
+https://developer.okta.com/code/java/spring_security_saml
+***********************************
+https://www.devglan.com/spring-boot/spring-boot-angular-example
