@@ -10,12 +10,24 @@ public class Lecture2 {
 
   @Test
   public void range() throws Exception {
-
+	  for(int i = 0; i<=10; i++) {
+		 // System.out.println(i);
+	  }
+	  //outer range open
+	  IntStream.range(0, 11).forEach(System.out::println);
+	  //outer range closed
+	  IntStream.rangeClosed(0, 10).forEach(System.out::println);
   }
 
   @Test
   public void rangeIteratingLists() throws Exception {
     List<Person> people = MockData.getPeople();
+    
+    //use this when u want index from list
+    IntStream.range(0, people.size()).forEach(index-> {
+    System.out.println(people.get(index));
+    });
+    
 
   }
 
