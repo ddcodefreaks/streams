@@ -37,7 +37,6 @@ public class Lecture1 {
     ImmutableList<Person> people = MockData.getPeople();
     List<Person> first10People = people.stream().filter(obj-> obj.getAge()<=18).limit(10).collect(Collectors.toList());
     first10People.forEach(System.out:: println);
-    
     //shorter Style one line code
     MockData.getPeople().stream().filter(obj-> obj.getAge()<=18).limit(10).collect(Collectors.toList()).forEach(System.out:: println);
 

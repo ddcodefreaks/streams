@@ -1,5 +1,8 @@
 package exercises;
 
 public class MoreExercises {
-  // TODO: Coming soon
+  
+  public static void main(String[] args) {
+    System.out.println("yess!!! the test is over");
+  }
 }
