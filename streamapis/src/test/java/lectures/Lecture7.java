@@ -4,6 +4,9 @@ package lectures;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import beans.Car;
+import beans.Person;
+
+import com.google.common.base.Predicate;
 import com.google.common.collect.ImmutableList;
 import java.math.BigDecimal;
 import java.util.DoubleSummaryStatistics;
@@ -16,6 +19,16 @@ public class Lecture7 {
 
   @Test
   public void count() throws Exception {
+	  //count number of females from person
+	  List<Person> persons = MockData.getPeople();
+	  //long femaleCount = persons.stream().filter(person-> person.getGender().equalsIgnoreCase("Female")).count();
+	  //System.out.println("femaleCount::"+ femaleCount);
+	  
+	  //use predicate 
+	  Predicate<Person> checkFemale = person-> person.getGender().equalsIgnoreCase("Female");
+	  long femaleCount1 = persons.stream().filter(checkFemale).count();
+	  System.out.println("femaleCount1::"+ femaleCount1);
+	  
 
   }
 
