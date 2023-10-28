@@ -33,46 +33,71 @@ public class Lecture7 {
   }
 
   @Test
-  public void min() throws Exception {
-
+  public void min() throws Exception 
+  {
+	  // find min without using comparator
+	  // find out minimum price  of the car which is yellow color
+	  List<Car> cars = MockData.getCars();
+	  Predicate<Car> yellowCars = car-> car.getColor().equalsIgnoreCase("Yellow");
+	  double min = cars.stream().filter(yellowCars)
+	  .mapToDouble(Car :: getPrice)
+	  .min().getAsDouble();
+	  System.out.println("minimum price is::"+ min);
   }
 
   @Test
-  public void max() throws Exception {
-
+  public void max() throws Exception 
+  {
+	  	  // find max without using comparator
+		  // find out maximum price  of the car which is yellow color
+		  List<Car> cars = MockData.getCars();
+		  Predicate<Car> yellowCars = car-> car.getColor().equalsIgnoreCase("Yellow");
+		  double max = cars.stream().filter(yellowCars)
+		  .mapToDouble(Car :: getPrice)
+		  .max().getAsDouble();
+		  System.out.println("minimum price is::"+ max);
   }
 
 
   @Test
-  public void average() throws Exception {
+  public void average() throws Exception 
+  {
     List<Car> cars = MockData.getCars();
+    //calculate the average of all the prices for the car
+     double averagePrice = cars.stream()
+    		 .mapToDouble(Car :: getPrice)
+    		 .average().orElse(0);
+     System.out.println("The average of the car prices is::"+ averagePrice);
 
   }
 
   @Test
-  public void sum() throws Exception {
+  public void sum() throws Exception 
+  {
     List<Car> cars = MockData.getCars();
-    double sum = cars.stream()
-        .mapToDouble(Car::getPrice)
-        .sum();
-    BigDecimal bigDecimalSum = BigDecimal.valueOf(sum);
-    System.out.println(sum);
-    System.out.println(bigDecimalSum);
-
+    
+    //calculate the sum of all car prices
+    double sumOfPrices = cars.stream().mapToDouble(Car :: getPrice).sum();
+    System.out.println("The sum of all the prices::"+ sumOfPrices);
+    
+    //readable format
+    BigDecimal bigDecimal = BigDecimal.valueOf(sumOfPrices);
+    System.out.println("Big decimal sum of prices::"+ bigDecimal);
   }
 
   @Test
   public void statistics() throws Exception {
     List<Car> cars = MockData.getCars();
-    DoubleSummaryStatistics statistics = cars.stream()
-        .mapToDouble(Car::getPrice)
-        .summaryStatistics();
-    System.out.println(statistics);
-    System.out.println(statistics.getAverage());
-    System.out.println(statistics.getCount());
-    System.out.println(statistics.getMax());
-    System.out.println(statistics.getMin());
-    System.out.println(statistics.getSum());
+    
+    //get the statistics on price of the car
+    DoubleSummaryStatistics statitics = cars.stream().mapToDouble(Car :: getPrice).summaryStatistics();
+    System.out.println("Statistics::"+ statitics);
+    //get the component from the statistics
+    System.out.println("Statistics::"+ statitics.getCount());
+    System.out.println("Statistics::"+ statitics.getAverage());
+    System.out.println("Statistics::"+ statitics.getMax());
+    System.out.println("Statistics::"+ statitics.getMin());
+    System.out.println("Statistics::"+ BigDecimal.valueOf(statitics.getSum()));
   }
 
 }
