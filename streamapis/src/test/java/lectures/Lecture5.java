@@ -39,7 +39,8 @@ public class Lecture5 {
     // transform from one data type to another
     List<Person> people = MockData.getPeople();
     // transform Person class into PersonDTO
-    List<PersonDTO> dtos = people.stream().map(person -> { 
+    List<PersonDTO> dtos = people.stream().map(person -> 
+    { 
     PersonDTO personDto = new PersonDTO(person.getId(), 
     person.getFirstName(), person.getAge());
     return personDto;
