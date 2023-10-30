@@ -23,15 +23,29 @@ public class Lecture10 {
 
   @Test
   public void withoutFlatMap() throws Exception {
-//    [Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
+      //[Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
+	  List<String> singleList = new ArrayList<>();
+	  arrayListOfNames.forEach(list ->
+	  {
+		  list.forEach(obj -> 
+		  {
+			  singleList.add(obj);
+		  });
+	  });
+	  System.out.println("Print Single list::"+ singleList);
 
   }
+
+  
 
   @Test
-  public void withFlatMap() throws Exception {
-//   [Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
-
-  }
+  public void withFlatMap() throws Exception
+{
+	//[Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
+	//flat map is used to simplify or flat the result
+	List<String> singleList = arrayListOfNames.stream().flatMap(List :: stream).collect(Collectors.toList());
+	System.out.println("Print Single list with flat map::"+ singleList);
+}
 
 }
 
