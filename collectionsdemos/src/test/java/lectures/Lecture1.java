@@ -21,9 +21,12 @@ public class Lecture1 {
     // 1. Find people aged less or equal 18
     // 2. Then change implementation to find first 10 people
     List<Person> first10People = new ArrayList<>();
-    for(Person person : people) {
-    	if(person.getAge()<=18) {
-    		if(first10People.size()<10) {
+    for(Person person : people)
+    {
+    	if(person.getAge()<=18)
+    	{
+    		if(first10People.size()<10)
+    		{
     		first10People.add(person);
     		}
     	}
