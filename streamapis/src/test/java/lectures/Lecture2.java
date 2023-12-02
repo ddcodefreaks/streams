@@ -23,6 +23,8 @@ public class Lecture2 {
   public void rangeIteratingLists() throws Exception {
     List<Person> people = MockData.getPeople();
     
+   
+    
     //use this when u want index from list
     IntStream.range(0, people.size()).forEach(index-> {
     System.out.println(people.get(index));

@@ -30,8 +30,6 @@ public class Lecture5 {
     List<Car> filteredCarswithPred = cars.stream().filter(predicateCar)
     .collect(Collectors.toList());
     //filteredCarswithPred.forEach(System.out::println);
-    
-
   }
 
   @Test
