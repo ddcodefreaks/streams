@@ -60,6 +60,8 @@ public class Lecture8 {
 	  Map<Integer, Long> countElement = Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 	  //printing the output
 	  countElement.forEach((number , count)-> System.out.println(number+ "::"+ count));
+	
+	  
   }
 
 }
