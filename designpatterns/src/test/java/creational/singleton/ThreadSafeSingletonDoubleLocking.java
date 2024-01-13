@@ -1,7 +1,7 @@
 /**
  * 
  */
-package corepatterns.singleton;
+package creational.singleton;
 
 /**
  * 

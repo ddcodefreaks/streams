@@ -1,4 +1,4 @@
-package corepatterns.singleton;
+package creational.singleton;
 
 public class TestSingleton
 {
